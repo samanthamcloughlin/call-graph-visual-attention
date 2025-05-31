@@ -1,6 +1,6 @@
 Welcome!#
 
-Thank you for participating in APCL lab's research study. Your participation in this study is voluntary and may end any time you choose. 
+Thank you for participating in [elide for double blind] lab's research study. Your participation in this study is voluntary and may end any time you choose. 
 
 The overall aim of this study is to record programmer eye-movements during the completion of a code documentation task. 
 
