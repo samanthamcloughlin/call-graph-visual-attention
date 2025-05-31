@@ -1,0 +1,153 @@
+-> Project: "freecol"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 										Project Synopsis:  											|
+| 	FreeCol:  FreeCol is a turn-based strategy game based on the old game Colonization, 			|
+|	and similar to Civilization. The objective of the game is to create an independent nation.		|
+-----------------------------------------------------------------------------------------------------
+
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: freecol>tools>FlagTest.java> SetColors [line 209]
+	Description:
+	1. this function set unioncolor,starcolor, decorationcolor, and background color for the flags.
+	2. this function will be called when a new flag is created or a button is colored, and it will set the color for the flag.
+	3. this function colored the flags when the state changes.
+	
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: freecol>common>model>pathfinding>CostDeciders.java> getCost [line 198]
+	Description:
+	1. this method calculate the cost to move from one place to another place.
+	2. this method is called in CostDecider, is will loop through all the choices, and if the cost is infinite or illegal, it will return illegal move, or it will return the cost value.
+	3. this method helps to find the path through the cost perspective.
+
+
+	Rate your confidence in the description on a scale of 1-5: 4 
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: freecol>client>gui>mapviewer>CanvasMapViewer.java> drawRenderingTimeStrings [line 121]
+	Description:
+
+	1. this method calculate and print the RenderingTime, including the full map (average), full map(last), and last render.
+	2. this method is called when the client is going to view the result, if the fullMapRenderedWithoutUsingBackBuffer is true, it will calculate and assign the needed value.
+	3. this method is helpful to print out the result to the client's side.
+	
+	Rate your confidence in the description on a scale of 1-5: 	5
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: freecol>common>model>FreeColObject.java> compareIds [line 148]
+	Description:
+	1. this method compare two ids and return the result of comparison.
+	2. this method pass in two FreeColObjects, check if they are valid, if they are not null, it will then check their id, if the ids in those two objects are valid, it will then compare them and return an integer to represent the result.
+	3. this method is used to compare two ids, it will be helpful in comparators.
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session |
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: freecol>common>model>Monarch.java> initializeCaches [line 209]
+	Description:
+	1. this method initialize the caches.
+	2. this method is called when there is a valid action and is going to create new arrays for a list of variables.
+	3. this method is used the reset the caches.
+
+	
+
+	Rate your confidence in the description on a scale of 1-5: 1
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: freecol>server>FreeColServer.java> changeServerState [line 349]
+	Description:
+	1. this method change the state of the server.
+	2. this method get a serverstate and change the current state to it.
+	3. this method is called at the begining, loading, and the end of the game to change the state of the server.
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+
+	Method 7: freecol>client>gui>SwingGUI.java> updateUnitPath [line 443]
+	Description:
+	1. this method update the unit path.
+	2. this method is called when clearing and traversing, it will call getActiveUnit first to get the needed information and then check the info are valid, then use setUnitPath to update the path.
+	3. this method could update the path when the game start and change its state.
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: freecol>common>io>FreeColXMLReader.java> readId [line 219]
+	Description:
+	1. this method read in the id.
+	2. this method is called to get the information of the user and if the id is null, it will return null, else it will return the id.
+	3. this method could help to search the information about a user.
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

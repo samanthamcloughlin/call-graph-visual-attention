@@ -1,0 +1,175 @@
+
+-> Project: "srcimage"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 										Project Synopsis:  
+| Scrimage is an immutable, functional, and performant JVM library for manipulation of images.
+| The aim of this library is to provide a simple and concise way to do common image operations, 
+| such as resizing to fit a required width and height, converting between formats, applying filters and so on.
+-----------------------------------------------------------------------------------------------------
+
+
+#####################################---CALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session  |
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: scrimage>canvas>Canvas.java> draw [line 46]
+	Description:
+        
+	The method draws on a given image based on input actions.
+	
+	It creates a copy of the given image and iterates each drawing action that is applied to the copy, and finally return the result copy.
+
+	This method is useful when some additional drawing actions are needed for the given image without directly manipulating the image. 
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: scrimage>ImmutableImage.java> fill [line 320]
+	Description:
+	
+	The method creates a new rectangle drawing area based on the given painter parameters.
+	
+	It checks if the input painter is a linear shape and then assign the colors from the input painter to the linear lines as well as the following rectangle area.
+	
+	This method is useful when a rectangle image is needed to be the background layer of the following drawing actions.
+
+	
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: scrimage>metadata>OrientationTools.java> reorient [line 22]
+	Description:
+	
+	The method provides image transformation functions based on the requests from input metadata.
+	
+	It loads the information from input metadata and then creates the corresponding flip or rotation functions. 
+	
+	This method is useful when additional transformation actions are needed to apply to an image.
+
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: srcimage>nio>internal>GifSequenceReader.java> readHeader [line 577]
+	Description:
+	
+	The method loads the header information of a GIF image to determine its metadata including background color.
+	
+	The method reads the first 6 character bytes to determine if it is an eligible GIF image and then determine the background color of the image.
+	
+	The method is useful when an unknown file is input before it is formally utilized.
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session    |
+-----------------------------------------------------------------------------------------------------
+#####################################---RECALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session    |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: srcimage>scaling>AwtNearestNeighbourScale.java> scale [line 8]
+	Description:
+	
+	The method interpolates the given image to the requested width and height.
+	
+	It firstly creates a buffered image area using the given width and height, and then draw the given image on the area.
+	
+	The method is useful when an image needs to be rescaled to a specific size.
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: srcimage>subpixel>LinearSubpixelInterpolator.java> summands [line 59]
+	Description:
+
+	The method identifies superpixels based on the given width and height values.
+	
+	The method firstly creates a matrix to iterate each internal value from the given width and heights, and then store the pixels without zero pair values.
+	
+	The method is useful when some specific pixels from a given image is required.
+
+	Rate your confidence in the description on a scale of 1-5: 2
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 7: scrimage>AwtImage.java> points [line 174]
+	Description:
+	
+	The method creates a list to store all the pixel points in a rectangle area.
+	
+	It creates an empty list and create a Point object for each element in the list.
+	
+	The method is useful to track all pixels as objects when an image is input.
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 8: scrimage>filter>PipelineFilter.java> apply [line 19]
+	Description:
+	
+	The method applies a set of predefined filters to process the input image.
+	
+	It ensures the image is in correct formats and then create a copy of the image to apply each defined filter on it.
+	
+	The method is useful when some values of a given image needs to be filtered before the usage.
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+	
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!
+

@@ -1,0 +1,138 @@
+-> Project: "mallet"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 					Project Synopsis:  
+| 			MALLET: MAchine Learning for LanguagE Toolkit
+| MALLET is a Java-based package for statistical natural language processing, document classification, 
+| clustering, topic modeling, information extraction, and other machine learning applications to text. 
+-----------------------------------------------------------------------------------------------------
+
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: mallet>regression>LinearRegression.java> predict [line 30]
+	Description: Predicts a double value using a linear regression model by summing the predictors multiplied by weight.
+	
+
+	
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: mallet>types>Multinomial.java> ensureCapacity [line 290]
+	Description: Ensures the length of counts is larger than the parameter index by repeated creating a copy of counts with double the length and assigning the copy to be the counts when the capacity is met.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 5 
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: mallet>cluster>GreedyAgglomerative.java> improveClustering [line 61]
+	Description: Calculates the score by calling getScore() for every two clusters in a clustering, records the highest score and its correlated two clusters to merge. If the highest score is less than the stopping threshold, then it's not converged so combine the two clusters correlated to the highest score.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 	4
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: mallet>types>FeatureInducer.java> induceFeaturesFor [line 179]
+	Description: Converts an InstanceList to a FeatureConjunctionList by casting the data of every instance in the InstanceList to one or many AugmentableFeatureVector. 
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session |
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: mallet>types>InvertedIndex.java> InvertedIndex [line 17]
+	Description: Invert the value and the location for all the data in an InstanceList if the value is not zero. 
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: mallet>regression>CoordinateDescent.java> toString [line 165]
+	Description: Calculates the prediction using the regression model and the training data and the residual, and builds a string storing these values and return the string. 
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+
+	Method 7: mallet>types>SparseMatrixn.java> plusEquals [line 257]
+	Description: Add a factor to a SparseVector or a SparseMatrixn.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: mallet>optimize>OrthantWiseLimitedMemoryBFGS.java> optimize [line 100]
+	Description: Compute gradient descent for numIterations by calculating the steepest direction and the Hessian, store and evaluation the gradient descend. Returns true when a termination condition is met and the gd is converged and false otherwise.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

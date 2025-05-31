@@ -1,0 +1,8 @@
+AwtImage.getType()(2 usages)  (com.sksamuel.scrimage)
+    AwtImage.awt()  (com.sksamuel.scrimage)
+ImmutableImage.copy(int)  (com.sksamuel.scrimage)
+    AwtImage.awt()  (com.sksamuel.scrimage)
+    ImmutableImage.fromAwt(BufferedImage, int)  (com.sksamuel.scrimage)
+Filter.apply(ImmutableImage)  (com.sksamuel.scrimage.filter)
+    PipelineFilter.apply(ImmutableImage)  (com.sksamuel.scrimage.filter)
+    BufferedOpFilter.apply(ImmutableImage)  (com.sksamuel.scrimage.filter)

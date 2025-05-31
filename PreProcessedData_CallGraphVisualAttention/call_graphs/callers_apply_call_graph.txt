@@ -1,0 +1,3 @@
+PipelineFilter.apply(ImmutableImage)  (com.sksamuel.scrimage.filter)
+ImmutableImage.filter(Filter)  (com.sksamuel.scrimage)
+    ImmutableImage.filter(Filter...)  (com.sksamuel.scrimage)

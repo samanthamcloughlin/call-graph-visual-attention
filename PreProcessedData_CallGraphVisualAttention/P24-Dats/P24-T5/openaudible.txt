@@ -1,0 +1,159 @@
+-> Project: "openaudible"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 				     Project Synopsis:  					    |
+| 					OpenAudible						    |
+|	  A cross-platform desktop application for downloading and managing your Audible audiobooks.|
+-----------------------------------------------------------------------------------------------------
+
+#####################################-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: openaudible>Audible.java> find [line 522]
+	Description:So, I think this function is a search function that returns a list when input a string.
+	then the function will convert the string case to lower case and traverse the book elements using the getbook function. then the elements are being compared to see if there's a match.
+	If it s a match the book list is being returned.
+	This functon is a essential search function that check the library to find the correct book.
+	
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: openaudible>AudibleCLI.java> test [line 240]
+	Description:So it is a method to check and calcuate the lenth difference of two files: the audio file and the AAX file if there's one.
+	So it will take a book list as input, the elements in the booklist is being traversed, and for each elements, it will chekced those two audio files, and there lengths are being caluceted and the informaton is being print out.
+	I'm not sure what it does, i think that it printed out the difference because they perfer the shorer length audio files
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: openaudible>util>Util.java> urlGetArgs [line 125]
+	Description:
+This method seems like will take a URl string and map it to a hasmap based on its parameters.
+the url is being parsed if it contains a ? mark, and different symbols to push it to the mapping. the mapping will not happen and output warning messagesm if the URL does not have the correcrt paramters.
+This method is essiential to parse the dolwnloadable urls.
+
+
+	Rate your confidence in the description on a scale of 1-5:3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: openaudible>books>Book.java> checkBook [line 101]
+	Description:this method check wether the intake book object has full or missing required informations.
+	it will chekc the book elements product id and full title, the method will print missing inforamrions if one value is missing,or return a empty string if nothing is missed.
+	this methods is essiential to filter out what required informaton is missing.
+	
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session.	|
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session. 	|
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: openaudible>desktop>swt>manager>menu>CommandCenter.java> reallyQuit [line 260]
+	Description:
+	
+This method is a safety quitting function that check the user to see if he or she really want to quit the action.
+It checks the whether there are any tests in progress, if there are then return true. IF there is, it will show the warning messages to the users.
+This method is essential when quitin the actions for other methods.actionExit and onClose both need this method to happen first to check if the user really want to stop the acton.
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: openaudible>util>DebugBuffer.java> accept [line 35]
+	Description:
+	Thi is a functon from debug buffer, that append the new strings.
+	this funtion will take the debug buffer and append that string s if that string is within the range of this buffer.
+	this buffer is essential to store terminal message or program message that track the user's actions or the proframs action. 
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+
+	Method 7: openaudible>desktop>swt>manager>AudibleGUI.java> connect [line 255]
+	Description:
+	
+This function is one step of connecting the user online to the audio source.
+it will first intialize a progress and checked the user's account information and his or her access to the online source.
+This function is crucial to connect the user properly.
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: openaudible>convert>BookMerge.java> mergeItem [line 27]
+	Description:
+	
+This function is a recursive function itself that return a boolean value if two books are mergeable.
+it check one specfic elements of two books.If that elements is being changed compared to it's older version, then the two book elements are merageable that returns true.
+This function is a pre-check to the actual merge function of the two books.
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

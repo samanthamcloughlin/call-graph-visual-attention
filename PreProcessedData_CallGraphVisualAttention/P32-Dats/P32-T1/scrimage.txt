@@ -1,0 +1,195 @@
+
+-> Project: "srcimage"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 										Project Synopsis:  
+| Scrimage is an immutable, functional, and performant JVM library for manipulation of images.
+| The aim of this library is to provide a simple and concise way to do common image operations, 
+| such as resizing to fit a required width and height, converting between formats, applying filters and so on.
+-----------------------------------------------------------------------------------------------------
+
+
+#####################################---CALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session  |
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: scrimage>canvas>Canvas.java> draw [line 46]
+	Description:
+        
+	The method returns a new Canvas object while passing a copy of the original passed ImmutableImage.
+	
+	It appears to transform the original ImmutableiMage and perform operations before disposing it and returning a new Canvas with the copy of the image.
+	
+	If the function had been implemented properly, it would have applied a series of transforms to the original image and given a Canvas object with the new image.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	3
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: scrimage>metadata>OrientationTools.java> reorient [line 22]
+	Description:
+	
+	The given function attempts to take an image and its metadata and reorients any image that is not properly oriented as per its metadata but fails due to invalid imports.
+	
+	It does so by checking the orientation of the metadata and flips the image accordingly to correct the orientation using a switch case.
+	
+	The given function is responsible for flipping the images to orient them properly.
+	
+
+
+	
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: scrimage>filter>PipelineFilter.java> apply [line 19]
+	Description:
+	
+	The given function converts an ImmutableImage to ARGB image type and continues calling itself.
+	
+	It checks whether an ImmutableImage is ARGB and then copies/converts it to a new variable before attempting to apply a collection of filters resulting in an endless recursion.
+	
+	It would have converted an image to an ARGB image before applying a set of filters.
+	
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	2
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: scrimage>AwtImage.java> points [line 174]
+	Description:
+	
+	The given function creates a one dimensional array of point at every coordinate from (0,0) to the specified (width, height).
+	
+	It creates a point array and a local variable 'k', the kth element of the array is assigned to a new point (x,y) in a nested for loop that increments k each time too.
+	
+	The given function gives the location of each point of the image, this array/ its elements can be used in other functions.
+	
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	5
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session    |
+-----------------------------------------------------------------------------------------------------
+#####################################---RECALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session    |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: srcimage>nio>internal>GifSequenceReader.java> readHeader [line 577]
+	Description:
+	
+	The given function ensures that the header of the GIF is valid.
+	
+	It does so by checking if the first 3 characters of the GIF are valid and checks if the flags are correct before assigning color tables and backgrounds.
+	
+	This function checks the validity of the header of a given GIF before other class operations are applied to it.
+	
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	4
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: srcimage>subpixel>LinearSubpixelInterpolator.java> summands [line 59]
+	Description:
+
+	It return the RGBA values for each pixel until the specified x, y point in the form a two dimensional array.
+	
+	It finds the relative weight of each pixel using another function and then find their RGBA values using the pixel class.
+	
+	Another function sumChannel uses it find the sum of all RGBA values to the specified x, y point.
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 7: scrimage>ImmutableImage.java> fill [line 320]
+	Description:
+	
+	It creates a rectangle with a horizontal/vertical color gradient based on the properties of the painter passed.
+	
+	It checks (x,y) attributes of the passed painter to create the appropriate gradient and then applies it to a rectangle of the specified width and height.
+	
+	The given class contains many functions to change the attributes of an image - this is one of many.
+	
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 8: srcimage>scaling>AwtNearestNeighbourScale.java> scale [line 8]
+	Description:
+	
+	The given function scales the given image.
+	
+	It creates a bufferedImage and then converts its properties using the Graphics2D class and rendering hints.
+	
+	The given function is the whole class and  sets the scale rendering type to nearest neighbors.
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	4
+	
+	
+	
+	
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!
+

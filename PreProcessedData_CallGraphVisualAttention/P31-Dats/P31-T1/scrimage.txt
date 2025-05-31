@@ -1,0 +1,149 @@
+
+-> Project: "srcimage"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 										Project Synopsis:  
+| Scrimage is an immutable, functional, and performant JVM library for manipulation of images.
+| The aim of this library is to provide a simple and concise way to do common image operations, 
+| such as resizing to fit a required width and height, converting between formats, applying filters and so on.
+-----------------------------------------------------------------------------------------------------
+
+
+#####################################---CALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session  |
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: scrimage>canvas>Canvas.java> draw [line 46]
+	Description:
+        
+	This method draws shapes (one or more) on a canvas with a pre-existing image and returns the new Canvas as a result.
+	It does so by making a deep copy of the image in the canvas, extracting the graphics from it, and extending them by drawing the shapes (Drawables) passed to it.
+	I am assuming this is used to make modifications to a canvas in the program for image manipulation.
+
+	Rate your confidence in the description on a scale of 1-5: 
+	4
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: scrimage>AwtImage.java> points [line 174]
+	Description:
+	This method returns an array of Points corresponding to each point in the image.
+	It does so by creating an array for each pixel in the image (width * height) and initializing them to their coordinates.
+	This method must be used to get a point representation of the image to be used for intermediate representations.
+	
+	Rate your confidence in the description on a scale of 1-5: 
+	5
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: scrimage>metadata>OrientationTools.java> reorient [line 22]
+	Description:
+	This method takes an image and corrects its orientation (up is up and not mirrored) by parsing information from its metadata.
+	It does so by using a helper method that returns the orientation(s) from the image metadata as a set and then applying transformations to the image using a switch statement.
+	This method is used to reorient the image when it is being loaded or its binary data parsed.
+
+	Rate your confidence in the description on a scale of 1-5: 
+	5
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: srcimage>nio>internal>GifSequenceReader.java> readHeader [line 577]
+	Description:
+	This method reads the header from a Gif sequence, validates its format, and if it is correct sets the width, height, and some other attributes.
+	The method first reads 6 characters from the buffer and checks if they start with "GIF" as a format validation; next it calls the helper readLSD to set the attributes.
+	This method is used as part of reading a Gif sequence binary.
+
+	Rate your confidence in the description on a scale of 1-5: 
+	4
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session    |
+-----------------------------------------------------------------------------------------------------
+#####################################---RECALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session    |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: scrimage>filter>PipelineFilter.java> apply [line 19]
+	Description:
+	This method applies a list of filters on ARGB and RGB image passed to it (if the image is not of those types a new image is made).
+	The method does this by comparing the type of the image before to ARGB or RGB (if it is not a new image is created). Then the filters are applied to this image in a loop.
+	This method is used to apply filters to images.
+
+	Rate your confidence in the description on a scale of 1-5: 
+	5
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: srcimage>subpixel>LinearSubpixelInterpolator.java> summands [line 59]
+	Description:
+	This method appears to do certain transformation where it gets the weight of a pixel from its x and y coordinates and use that weight to scale the alpha and RGB of an image.
+	The method relies on a helper method that calculates the weight along x and y and then scales the RGBA values of the pixel at that coordinate.
+	The method appears to be used for linear subpixel interpolation (which I do not know the meaning of).
+
+	Rate your confidence in the description on a scale of 1-5: 
+	3
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 7: scrimage>ImmutableImage.java> fill [line 320]
+	Description:
+	This method creates a blank image and fills it by painting it in the way described by the parameter passed to it.
+	First it creates a blank image, then checks if the painter is of type linear gradient to apply some modifications to it. Lastly, it converts the image into a canvas and draws the modified painting on it.
+	This method is used to apply a background gradient on an image.
+
+	Rate your confidence in the description on a scale of 1-5: 
+	4
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 8: srcimage>scaling>AwtNearestNeighbourScale.java> scale [line 8]
+	Description:
+	This method takes an image  and scales it to a certain width and height by rendering it using the nearest neighbour algorithm.
+	The method does this by allocating a new image of that width and height, setting the rendering algorithm to that image, and then drawing the previous image on it.
+	This method is used to scale an awt image to some target width and height.
+
+	Rate your confidence in the description on a scale of 1-5: 
+	4
+	
+	
+	
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!
+

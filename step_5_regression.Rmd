@@ -1,0 +1,257 @@
+---
+title: "eyetracking"
+output: html_document
+date: "2025-05-07"
+---
+
+```{r}
+library(lme4)
+library(lmerTest)
+```
+
+```{r}
+run_single_study <- function(data) {
+  mod <- summary(lmer(total_score ~ node_coverage + (1|participant), data = data))
+  print(mod)
+  p1<- coef(mod)[2,5]
+  mod <- summary(lmer(total_score ~ weighted_node_coverage + (1|participant), data = data))
+  print(mod)
+  p2<- coef(mod)[2,5]
+  mod <- summary(lmer(total_score ~ edge_coverage + (1|participant), data = data))
+  print(mod)
+  p3<- coef(mod)[2,5]
+  mod <- summary(lmer(total_score ~ weighted_edge_coverage + (1|participant), data = data))
+  print(mod)
+  p4<- coef(mod)[2,5]
+  
+  p_values <- c(p1, p2, p3, p4)
+  p_adjusted <- p.adjust(p_values, method = "bonferroni")
+  print(p_adjusted)
+
+  
+  mod <- summary(lmer(confidence ~ node_coverage + (1|participant), data = data))
+  print(mod)
+  p1<- coef(mod)[2,5]
+  mod <- summary(lmer(confidence ~ weighted_node_coverage + (1|participant), data = data))
+  print(mod)
+  p2<- coef(mod)[2,5]
+  mod <- summary(lmer(confidence ~ edge_coverage + (1|participant), data = data))
+  print(mod)
+  p3<- coef(mod)[2,5]
+  mod <- summary(lmer(confidence ~ weighted_edge_coverage + (1|participant), data = data))
+  print(mod)
+  p4<- coef(mod)[2,5]
+  
+  p_values <- c(p1, p2, p3, p4)
+  p_adjusted <- p.adjust(p_values, method = "bonferroni")
+  print(p_adjusted)
+  
+  mod <- summary(lmer(conf_abs_perc_diff ~ node_coverage + (1|participant), data = data))
+  print(mod)
+  p1<- coef(mod)[2,5]
+  mod <- summary(lmer(conf_abs_perc_diff ~ weighted_node_coverage + (1|participant), data = data))
+  print(mod)
+  p2<- coef(mod)[2,5]
+  mod <- summary(lmer(conf_abs_perc_diff ~ edge_coverage + (1|participant), data = data))
+  print(mod)
+  p3<- coef(mod)[2,5]
+  mod <- summary(lmer(conf_abs_perc_diff ~ weighted_edge_coverage + (1|participant), data = data))
+  print(mod)
+  p4<- coef(mod)[2,5]
+  
+  p_values <- c(p1, p2, p3, p4)
+  p_adjusted <- p.adjust(p_values, method = "bonferroni")
+  print(p_adjusted)
+}
+```
+
+```{r}
+run_combined_studies <- function(data) {
+  mod <- summary(lmer(total_score ~ node_coverage + (1|participant) + (1|study), data = data))
+  print(mod)
+  p1<- coef(mod)[2,5]
+  mod <- summary(lmer(total_score ~ weighted_node_coverage + (1|participant) + (1|study), data = data))
+  print(mod)
+  p2<- coef(mod)[2,5]
+  mod <- summary(lmer(total_score ~ edge_coverage + (1|participant) + (1|study), data = data))
+  print(mod)
+  p3<- coef(mod)[2,5]
+  mod <- summary(lmer(total_score ~ weighted_edge_coverage + (1|participant) + (1|study), data = data))
+  print(mod)
+  p4<- coef(mod)[2,5]
+  
+  p_values <- c(p1, p2, p3, p4)
+  p_adjusted <- p.adjust(p_values, method = "bonferroni")
+  print(p_adjusted)
+
+  
+  mod <- summary(lmer(confidence ~ node_coverage + (1|participant) + (1|study), data = data))
+  print(mod)
+  p1<- coef(mod)[2,5]
+  mod <- summary(lmer(confidence ~ weighted_node_coverage + (1|participant) + (1|study), data = data))
+  print(mod)
+  p2<- coef(mod)[2,5]
+  mod <- summary(lmer(confidence ~ edge_coverage + (1|participant) + (1|study), data = data))
+  print(mod)
+  p3<- coef(mod)[2,5]
+  mod <- summary(lmer(confidence ~ weighted_edge_coverage + (1|participant) + (1|study), data = data))
+  print(mod)
+  p4<- coef(mod)[2,5]
+  
+  p_values <- c(p1, p2, p3, p4)
+  p_adjusted <- p.adjust(p_values, method = "bonferroni")
+  print(p_adjusted)
+  
+  mod <- summary(lmer(conf_abs_perc_diff ~ node_coverage + (1|participant) + (1|study), data = data))
+  print(mod)
+  p1<- coef(mod)[2,5]
+  mod <- summary(lmer(conf_abs_perc_diff ~ weighted_node_coverage + (1|participant) + (1|study), data = data))
+  print(mod)
+  p2<- coef(mod)[2,5]
+  mod <- summary(lmer(conf_abs_perc_diff ~ edge_coverage + (1|participant) + (1|study), data = data))
+  print(mod)
+  p3<- coef(mod)[2,5]
+  mod <- summary(lmer(conf_abs_perc_diff ~ weighted_edge_coverage + (1|participant) + (1|study), data = data))
+  print(mod)
+  p4<- coef(mod)[2,5]
+  
+  p_values <- c(p1, p2, p3, p4)
+  p_adjusted <- p.adjust(p_values, method = "bonferroni")
+  print(p_adjusted)
+}
+```
+
+```{r}
+run_single_study(study1_callee_data)
+```
+
+```{r}
+run_single_study(study1_caller_data)
+```
+
+```{r}
+run_single_study(study2_callee_data)
+```
+
+```{r}
+run_single_study(study2_caller_data)
+```
+
+```{r}
+run_combined_studies(all_callee_data)
+```
+
+```{r}
+run_combined_studies(all_caller_data)
+```
+
+```{r}
+  mod <- summary(lmer(accuracy ~ node_coverage + (1|participant) + (1|study), data = all_callee_data))
+  print(mod)
+  p1<- coef(mod)[2,5]
+  mod <- summary(lmer(accuracy ~ weighted_node_coverage + (1|participant) + (1|study), data = all_callee_data))
+  print(mod)
+  p2<- coef(mod)[2,5]
+  mod <- summary(lmer(accuracy ~ edge_coverage + (1|participant) + (1|study), data = all_callee_data))
+  print(mod)
+  p3<- coef(mod)[2,5]
+  mod <- summary(lmer(accuracy ~ weighted_edge_coverage + (1|participant) + (1|study), data = all_callee_data))
+  print(mod)
+  p4<- coef(mod)[2,5]
+  
+  p_values <- c(p1, p2, p3, p4)
+  p_adjusted <- p.adjust(p_values, method = "bonferroni")
+  print(p_adjusted)
+
+  
+  mod <- summary(lmer(conciseness ~ node_coverage + (1|participant) + (1|study), data = all_callee_data))
+  print(mod)
+  p1<- coef(mod)[2,5]
+  mod <- summary(lmer(conciseness ~ weighted_node_coverage + (1|participant) + (1|study), data = all_callee_data))
+  print(mod)
+  p2<- coef(mod)[2,5]
+  mod <- summary(lmer(conciseness ~ edge_coverage + (1|participant) + (1|study), data = all_callee_data))
+  print(mod)
+  p3<- coef(mod)[2,5]
+  mod <- summary(lmer(conciseness ~ weighted_edge_coverage + (1|participant) + (1|study), data = all_callee_data))
+  print(mod)
+  p4<- coef(mod)[2,5]
+  
+  p_values <- c(p1, p2, p3, p4)
+  p_adjusted <- p.adjust(p_values, method = "bonferroni")
+  print(p_adjusted)
+  
+  mod <- summary(lmer(completeness ~ node_coverage + (1|participant) + (1|study), data = all_callee_data))
+  print(mod)
+  p1<- coef(mod)[2,5]
+  mod <- summary(lmer(completeness ~ weighted_node_coverage + (1|participant) + (1|study), data = all_callee_data))
+  print(mod)
+  p2<- coef(mod)[2,5]
+  mod <- summary(lmer(completeness ~ edge_coverage + (1|participant) + (1|study), data = all_callee_data))
+  print(mod)
+  p3<- coef(mod)[2,5]
+  mod <- summary(lmer(completeness ~ weighted_edge_coverage + (1|participant) + (1|study), data = all_callee_data))
+  print(mod)
+  p4<- coef(mod)[2,5]
+  
+  p_values <- c(p1, p2, p3, p4)
+  p_adjusted <- p.adjust(p_values, method = "bonferroni")
+  print(p_adjusted)
+
+  mod <- summary(lmer(clarity ~ node_coverage + (1|participant) + (1|study), data = all_callee_data))
+  print(mod)
+  p1<- coef(mod)[2,5]
+  mod <- summary(lmer(clarity ~ weighted_node_coverage + (1|participant) + (1|study), data = all_callee_data))
+  print(mod)
+  p2<- coef(mod)[2,5]
+  mod <- summary(lmer(clarity ~ edge_coverage + (1|participant) + (1|study), data = all_callee_data))
+  print(mod)
+  p3<- coef(mod)[2,5]
+  mod <- summary(lmer(clarity ~ weighted_edge_coverage + (1|participant) + (1|study), data = all_callee_data))
+  print(mod)
+  p4<- coef(mod)[2,5]
+  
+  p_values <- c(p1, p2, p3, p4)
+  p_adjusted <- p.adjust(p_values, method = "bonferroni")
+  print(p_adjusted)
+```
+```{r}
+library(sjPlot)
+library(ggplot2)
+library(effects)
+
+mod <- lmer(conciseness ~ edge_coverage + (1|participant) + (1|study), data = all_callee_data)
+x <- as.data.frame(effects::effect(term= "edge_coverage", mod= mod))
+
+mod <- lmer(accuracy ~ edge_coverage + (1|participant) + (1|study), data = all_callee_data)
+x2 <- as.data.frame(effects::effect(term= "edge_coverage", mod= mod))
+
+mod <- lmer(clarity ~ edge_coverage + (1|participant) + (1|study), data = all_callee_data)
+x3 <- as.data.frame(effects::effect(term= "edge_coverage", mod= mod))
+
+mod <- lmer(completeness ~ edge_coverage + (1|participant) + (1|study), data = all_callee_data)
+x4 <- as.data.frame(effects::effect(term= "edge_coverage", mod= mod))
+
+mod <- lmer(average_total_score ~ edge_coverage + (1|participant) + (1|study), data = all_callee_data)
+x5 <- as.data.frame(effects::effect(term= "edge_coverage", mod= mod))
+
+
+ggplot() + theme(
+         panel.background = element_rect(fill='transparent'),
+         plot.background = element_rect(fill='transparent', color=NA),
+         panel.grid.major = element_blank(),
+         panel.grid.minor = element_blank(),
+         legend.background = element_rect(fill='transparent'),
+         legend.box.background = element_rect(fill='transparent'),
+         axis.title.x=element_blank(),
+         axis.title.y=element_blank(),
+         aspect.ratio = 1
+       ) +
+  geom_line(data=x, aes(x=edge_coverage, y=fit), color="#0000ff") +
+  geom_line(data=x2, aes(x=edge_coverage, y=fit), color="#ff0000") +
+  geom_line(data=x3, aes(x=edge_coverage, y=fit), color="#9900ff") +
+  geom_line(data=x4, aes(x=edge_coverage, y=fit), color="#38761d") +
+  geom_line(data=x5, aes(x=edge_coverage, y=fit), color="black")
+
+ggsave('subscore_reg.png')
+```

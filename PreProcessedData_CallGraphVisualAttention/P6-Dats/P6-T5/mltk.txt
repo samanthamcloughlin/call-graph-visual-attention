@@ -1,0 +1,206 @@
+
+ Project: "MLTK"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+-----------------------------------------------------------------------------------------------------
+Project Synopsis: MLTK (Machine Learning Tool Kit) is a collection of various supervised machine 
+learning algorithms, which is designed for directly training models and further development.
+-----------------------------------------------------------------------------------------------------
+	
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 1: core>processor>Discretizer.java> computeBins [line 122]
+	Description:
+	
+	This method receives a list of element objects and a maximum bin size and returns a new static
+	Bins object.
+	
+	The method sorts the list of element objects and extracts its weights and compares these against
+	the maximum bin size. From here the boundaries and median values are calculated and these are
+	returned as arguments to a new Bins object.
+	
+	This method would be useful for extracting boundaries from an image or a feature vector for use
+	in various ML tasks.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: predictor>gam>SPLAMLearner.java computeGradient [line 1025]
+	Description:
+	
+	This method calculates a gradient during gradient descent optimization.
+	
+	This is an overloaded method that takes an array index and a block and computes the gradient
+	through summation of the product of multiplying the first row of the block array times a specific
+	row of the rTrain block.
+	
+	This would be useful for calculating the gradient with specific rows or columns as opposed to the
+	other overloaded method that does the dot product of a 2D kernel.
+
+	
+	
+	Rate your confidence in the description on a scale of 1-5: 3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: predictor>tree>TreeInteriorNode.java> write [line 76]
+	Description:
+	
+	This method is defining the method write inherited from an abstract class and is used to write
+	the attributes of the object to standard ouput.
+	
+	Specifically, the method writes the attribute info that belongs to this class and then accesses
+	member variable info that belongs to the Treenode objects within the class and then prints those
+	as well.
+	
+	This method would be useful for visualizing a Tree structure to standard output.
+
+		
+	Rate your confidence in the description on a scale of 1-5: 5
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: core>io>InstancesReader.java> parseDenseInstance [line 159]
+	Description: 
+	
+	This method receives a string array of data and a class index and returns a new instance object.
+	
+	Specifically, the method extracts the characters from the string array and checks if they are
+	a "?", if this is true then a NaN is returned, otherwise the value is converted to a double and
+	logged within vector array and returned as a new instance.
+	
+	This method would be useful for converting string input into weights or double values that can be
+	used in a feature vector.
+	
+		
+
+	Rate your confidence in the description on a scale of 1-5: 3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session.
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: util>OptimUtils.java> fitIntercept [line 108]
+	Description:
+	
+	This method receives a prediction, residual and weights vector and returns the delta value
+	that is the fit intercept value.
+	
+	The method loops through the prediction vector and extracts the eta and theta values. If the
+	absolute value of theta is greater than episilon, then delta is returned as eta divided by
+	theta, otherwise delta is returned as zero.
+	
+	This method is useful in performing a binary classification experiment and can be used to calculate
+	the fit intercept.
+
+		
+	Rate your confidence in the description on a scale of 1-5: 3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 6: core>BinnedAttribute.java> parse [line 66]
+	Description:
+	
+	This method receives a string and returns a new BinnedAttribute object.
+	
+	Specifically, the string passed to the method is parsed so that the relevant substrings are extracted.
+	Upon completion, the number of bins, and the boundaries and medians are created which are then used
+	to created the new BinnedAttribute object.
+	
+	This method is useful for initializing a new BinnedAttribute object from a string input and would
+	be useful in various ML processes.
+
+	
+		
+	Rate your confidence in the description on a scale of 1-5: 5
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 7: predictor>tree>RTreeLearner.java> getStats [line 64]
+	Description:
+	
+	This method receives an Instances object and a stats array and determines if the target values
+	in each of the instances are the same or not.
+	
+	The method grabs the first instance target and compares it to the rest of the instances and
+	will break out and return false if there's a mismatch. If the entire process completes then
+	everything is equal and the method returns true.
+	
+	This method is pivotal for getting the stats of all instances to be used in various Regression
+	Tree experiments.
+	
+
+		
+	Rate your confidence in the description on a scale of 1-5: 4
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: core>processor>InstancesSplitter.java> split [line 286]
+	Description:
+	
+	This method receives an Instances object and extracts attributes and target attributes and 
+	returns this as a static Instances array.
+	
+	Inside the method, the datasets instance array is initialized to the passed in size and the
+	attributes and target attributes of the Instances object are extracted and added to datasets. Finally
+	the method loops through the stratified values and adds them to the datasets object and returns the
+	result.
+	
+	This method is useful for doing a stratified sampling of the wide data set used in the ML process.
+		
+
+		
+	Rate your confidence in the description on a scale of 1-5: 2
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+This library was particularly confusing, there were so many occurences of the word instance and instances
+that at times it made me glaze over.
+
+Please call the administrator!

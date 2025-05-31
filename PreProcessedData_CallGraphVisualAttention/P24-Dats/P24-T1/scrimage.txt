@@ -1,0 +1,173 @@
+
+-> Project: "srcimage"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 										Project Synopsis:  
+| Scrimage is an immutable, functional, and performant JVM library for manipulation of images.
+| The aim of this library is to provide a simple and concise way to do common image operations, 
+| such as resizing to fit a required width and height, converting between formats, applying filters and so on.
+-----------------------------------------------------------------------------------------------------
+
+
+#####################################---CALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session  |
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: scrimage>canvas>Canvas.java> draw [line 46]
+	Description:This draw method will create a image based in the input Collection drawables.
+	
+	This method will copy the object from the immutlatbe class, and copy it to a new instance, and then the graphcis will return a new graphcs object that paints the picture into a new object. Then from the collection of the obejcts
+	the graphics is transfer to a new class called rich2Dgrpahics. Then return a new Canvas obejct with the paint.
+	
+	So In this project, this canvas draw method will take a image that is immutable, and paint over it using 2d Graphics and then tansfer it into a Canvas object.
+        
+
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: srcimage>subpixel>LinearSubpixelInterpolator.java> summands [line 59]
+	Description:This methods looks it sums up the the two double numbers and maps into into the correct pixel doubles pairs with the correct weight.
+	So it firtst takes the two doubles and creates two new list with pair of their numbers and weght and hrishts then it mapps the doubles with the correct values in to the pixel values.
+	
+	So in the context of the whole project, it takes return a correct integer of an image's RGB value and its pixel coordinate 
+	fot this tool to draw the correct color.
+	
+	
+	
+
+
+	
+	Rate your confidence in the description on a scale of 1-5: 2
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: srcimage>scaling>AwtNearestNeighbourScale.java> scale [line 8]
+	Description:
+	
+This method will give the scale of  one target image to the nearst neighbour of its input width and heighth.
+It will fist create a target image out of the buffered image class. and to make the graphics drawables it then create a g2 object out of the graphics 2D class to make a drawable surface, then the target image is drewd out with the new scale and return a new target.
+
+so this function will scale the image and return a new target object that is scaled for user
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: scrimage>ImmutableImage.java> fill [line 320]
+	Description:
+	This method will fill out the pater obejct with the color and returned a new colored target to user with the correct color to its correct canvas size.
+	This method will create an instane of a immutable amage and called the parinter class and paint over the lineargradient color and then used the toCanvas method to draw it in a place with correct with height and its color to be the temp obeject in the fill method to store color
+	This method acts like a crucial method to determine whether the color is beeing filled out in the correct width or heithdf of the canvas. it makre sure the color did not miss filled 
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session    |
+-----------------------------------------------------------------------------------------------------
+#####################################---RECALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session    |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: scrimage>filter>PipelineFilter.java> apply [line 19]
+	Description:So this apply method acting like a function to apply pipe line filter to a image from the immutableimage classes.
+	So first, it will make a copy out of the immurtable image we want to apply the filter on, then the copied image will be matched to the immutable image we had before, lastly we apply filter to that copy of the immutable image, and it will throws errors if we don't have filters.
+	
+	This function override the original apply method and apply the correct pipeline filter to a copy of a image.
+	
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: scrimage>metadata>OrientationTools.java> reorient [line 22]
+	Description:This method will reorient a immutable image according to its image metada.
+	the function will reorient a immutable image crrodring to the index of the metadata class, if the getametadata method return matches any of the cases in the Switch function,
+	will either filp or roate the image based on the metada data value.
+	So the function acts like a rotating tools based on the input streams come from the metadata. it's a crucial step in this sets of tools.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 7: scrimage>AwtImage.java> points [line 174]
+	Description:
+	This function serves as a basic function to intialize the points array with x and y valyes in the point object which is a pair orginally.
+	so it creates a one d array, or the images width and lenth and traverse each elements to fill in the x and y values.
+	
+	This functions serve as a array transfer function to transger a object into a one D array to make easy for other operation that require the images width and height values.
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 8: srcimage>nio>internal>GifSequenceReader.java> readHeader [line 577]
+	Description:
+	So this function will read the gif images caption and check whether this image is a gif image for the function to be able to work on it.
+	it acts like one crucial step to read the gifimages and happens before read Contents of the Gif. So it will check whether this image is a Gif image or else returned with a error and if it is a gif image,
+	it will read in the color tables with size of the image and also the color within thay table before the read contents.
+	
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+	
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!
+

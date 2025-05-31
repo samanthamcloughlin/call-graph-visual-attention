@@ -1,0 +1,153 @@
+-> Project: "freecol"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 										Project Synopsis:  											|
+| 	FreeCol:  FreeCol is a turn-based strategy game based on the old game Colonization, 			|
+|	and similar to Civilization. The objective of the game is to create an independent nation.		|
+-----------------------------------------------------------------------------------------------------
+
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: freecol>tools>FlagTest.java> SetColors [line 209]
+	Description:
+	So it is a method to set the correct background color on a button.
+	so first it will get the colors from the flag and inilize an empty list, and then set the color and append to the color list.
+	so this function will be called or used when they need to set the button color correctly.
+	
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: freecol>common>model>pathfinding>CostDeciders.java> getCost [line 198]
+	Description:
+so it is a get method that returns a inter value of the cost number,
+so first, it will intake a unit number, two location number and a move number, then the function will call itself again and checked if the move is legal. is yes, the cost number will then be returned.
+the cost number returned is needed in a lot of the other actions 
+
+
+	Rate your confidence in the description on a scale of 1-5: 2
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: freecol>client>gui>mapviewer>CanvasMapViewer.java> drawRenderingTimeStrings [line 121]
+	Description:
+
+I think this is a method to set the rendering time correctly, so it will prints out rendering times.
+So it will first intake a graphcis object, a time number and a boolean value, it will check if the boolean is true. then it will calcualte the correct time value of the rendering. Finally the graphics obeject will print out correct time strings.
+this function is needed if we want to check the time values of this g object.
+
+	Rate your confidence in the description on a scale of 1-5: 	3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: freecol>common>model>Monarch.java> initializeCaches [line 209]
+	Description:so it will intilace the caches values for storing.
+	so it will intilaize many new empty lists for storing of these caches. Then we will traverse those and append the cache calues of the sepcs etc.
+	This method is essiential in many function that required access the caches value or creating caches to hold so that it will process the large object faser.
+	
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session |
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: freecol>common>io>FreeColXMLReader.java> readId [line 219]
+	Description:So this function will returned a string value of the id number.
+	so this function will check the id number of that object. then it will check the prefix that id and append the correct id strins.
+	the ids returned here is a identifier for many objects which is essential for later processing.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: freecol>client>gui>SwingGUI.java> updateUnitPath [line 443]
+	Description:So it will set the correct path of a active unit.
+	First it will check whether the intake unit is active or not.then it will check the destination value of that object, if the destineation is correct and the object or unit is not at the destinaton, then the set path method will be called.
+	This functon is needed whenever the unit is undergoing transfortmation of moving to somethere else. so the path value needs to be updated accordingly.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+
+	Method 7: freecol>common>model>FreeColObject.java> compareIds [line 148]
+	Description:so it checks and compare two id number of objects.
+	so it will check if one of the id of either one of the object is null, and it will return 0, -1 or 1 accordingly. then it will be further compare and return a larger number based on the objects idtype.
+	
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 1
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: freecol>server>FreeColServer.java> changeServerState [line 349]
+	Description:
+So there are different server state when clients connect to the server, this functoin will update the serve states accordingly.
+there are 4 states in this function, and it was seted up by a switch statement, the states will be changed based on the input case.
+So there methods that are only accessible from different states from a server. So update the server states correctly is essiental.
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

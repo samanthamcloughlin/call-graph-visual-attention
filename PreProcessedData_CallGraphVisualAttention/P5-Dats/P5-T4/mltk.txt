@@ -1,0 +1,152 @@
+
+ Project: "MLTK"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+-----------------------------------------------------------------------------------------------------
+Project Synopsis: MLTK (Machine Learning Tool Kit) is a collection of various supervised machine 
+learning algorithms, which is designed for directly training models and further development.
+-----------------------------------------------------------------------------------------------------
+	
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 1: core>processor>Discretizer.java> computeBins [line 122]
+	Description:
+	
+	The method segments the input values to a specific number of bins.
+	
+	It treats each input value as a bin if the total size is smaller than the specified bins, otherwise, accumulate the values until it achieves the threshold for a bin.
+	
+	The method is useful when the input values are a lot and thus need to be segmented to limited ones.
+	
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: util>OptimUtils.java> fitIntercept [line 108]
+	Description:
+	
+	The method calculates the delta score based on the predicted values and ground truths.
+	
+	It accumulates the residual values from all predictions and summarize the score only if the score is higher than the threshold.
+	
+	The method is useful when evaluating the prediction performance by considering some specific samples.
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: core>BinnedAttribute.java> parse [line 66]
+	Description:
+	
+	The method parses the attributes of a given bin list based on the input string format.
+	
+	It firstly identifies the content position of a given string and then parses the attributes of each bin from the content.
+	
+	The method is useful when extracting numeric attribute values from bins with string format.
+	
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: predictor>gam>SPLAMLearner.java computeGradient [line 1025]
+	Description: 
+	
+	The method computes the value of each gradient based on the previous optimization process.
+	
+	It iterates over each gradient whose value is the sum of all values in the corresponding block and the training value.
+	
+	The method is useful when initilizing the gradient values based on the input blocks.
+	
+	
+	Rate your confidence in the description on a scale of 1-5: 2
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session.
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: core>processor>InstancesSplitter.java> split [line 286]
+	Description:
+	
+	The method splits a set of instances with or without specifying a stratification.
+	
+	It splits the instances in plain ratios if there is no stratification, otherwise, split the data based on each specified attribute and the ratio.
+	
+	The method is useful when splitting the instances based on some attributes as well as the ratios.
+	
+	
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 6: predictor>tree>TreeInteriorNode.java> write [line 76]
+	Description:
+	
+	The method writes the outputs from predictors to a tree based reader.
+	
+	It firstly prints out the calling predictor and then writes the outputs from the predictor to the nodes.
+	
+	The method is useful when recording the outputs from the predictor for debug purpose.
+
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 7: predictor>tree>RTreeLearner.java> getStats [line 64]
+	Description:
+	
+	The method validates the consistency of the target values among a set of input instances.
+	
+	It keeps track of the target values to check their consistency and records the states of each instance.
+	
+	The method is useful when validating the similarity of a group of instances based on their targets.
+	
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: core>io>InstancesReader.java> parseDenseInstance [line 159]
+	Description:
+	
+	The method parses the double format for each instance of the input data with or without class index.
+	
+	It iterates over each instance of the input data to convert the value to double format and assign the value to a new vector based on the class index.
+	
+	The method is useful when ensuring the correct numeric format for each instance of the input data.
+		
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

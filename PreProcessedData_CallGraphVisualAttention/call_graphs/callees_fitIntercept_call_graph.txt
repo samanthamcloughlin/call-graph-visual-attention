@@ -1,0 +1,4 @@
+VectorUtils.add(double[], double)  (mltk.util)
+OptimUtils.computePseudoResidual(double[], double[], double[])  (mltk.util)
+    OptimUtils.getPseudoResidual(double, double)  (mltk.util)
+        OptimUtils.getProbability(double)  (mltk.util)

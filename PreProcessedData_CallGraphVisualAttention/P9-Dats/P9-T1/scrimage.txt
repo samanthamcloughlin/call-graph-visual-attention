@@ -1,0 +1,144 @@
+
+-> Project: "srcimage"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 										Project Synopsis:  
+| Scrimage is an immutable, functional, and performant JVM library for manipulation of images.
+| The aim of this library is to provide a simple and concise way to do common image operations, 
+| such as resizing to fit a required width and height, converting between formats, applying filters and so on.
+-----------------------------------------------------------------------------------------------------
+
+
+#####################################---CALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session  |
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: scrimage>canvas>Canvas.java> draw [line 46]
+	Description:
+	The purpose of this method is to draw a rich 2-d image from an immuatable image. For every pixel in the immutable image, the draw method generates a rich 2-d image. The method then returns a new canvas with the class's target image.  
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: scrimage>ImmutableImage.java> fill [line 320] 
+	Description:
+	The purpose of this method is to insert/fill the color in a immuatable image by taking a Painter object and a blank ImmuatableImage and returning a "painted" ImmutableImage
+	The specific functionalities of this method include checking if the "fill" of the image is a solid color or a gradient, if it is a gradient, then the method checks if the gradient flows from the x or y axis, and completes the gradient based off of this check.
+	This method is needed in the context of the project to create a new ImmutableImage when you have a painter object
+	
+
+
+	
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: srcimage>nio>internal>GifSequenceReader.java> readHeader [line 577] 
+	Description:
+	The purpose of this method is to read the header of the GIF
+	Specific functionalities includes a for loop that reads in the first 6 characters of the id and stores it in the variable "id"; error checking for if the header does not start with GIF
+	The role that this method plays in the wider project is that it is called whenever a GIF is read by the project. 
+	
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: srcimage>scaling>AwtNearestNeighbourScale.java> scale [line 8]
+	Description:
+	This method takes an image and scales it to the give height and width. The method creates a new a new BufferImage of the height and width that the method has been passed, with the same ImageType as the BufferImage that the method was passed, then draws the image from coordinates 0,0 to w,h by scaling the image using the nearest neighbor scaling method where the color sample of the nearest neighbors is used to determine the next pixel's color. This method is used in the project when an image needs to be made bigger or smaller 
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+#####################################---RECALIBRATION REQUIRED---####################################
+
+	Method 5: scrimage>filter>PipelineFilter.java> apply [line 19]
+	Description:
+	This method takes an ImmuatableImage and filters through the image to ensure that it is of type RGB or ARGB. Specifically, it throws an I/O exception if the  method cannot be executed, it then makes a copy of the immuatable image and then checks if it is of type ARGB or RBG; if it is not, it creates a copy of the image that the method was passed in the form ARGB and then it recursively loops through immuatable images in order to filter each one. This method is part of the project's pipeline for filtering images. 
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: scrimage>AwtImage.java> points [line 174] 
+	Description:
+This method creates a 2-d array of points that is the same size as the height and width of the image that the AwtImage class is using. Specifically, the method creates a new, empty 2-d array called points and using two for loops, one of the x and one for the y coordinates, it populates the 2-d array with new Points. It is not clear how this method is used by the project
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 7: srcimage>subpixel>LinearSubpixelInterpolator.java> summands [line 59]
+	Description:
+	
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 8: scrimage>metadata>OrientationTools.java> reorient [line 22] 
+	Description:
+	
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	
+	
+	
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!
+

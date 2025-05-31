@@ -1,0 +1,5 @@
+ColorButton in ConfirmDeclarationDialog.getColor()(4 usages)  (net.sf.freecol.client.gui.dialog)
+Flag.setUnionColor(Color)  (net.sf.freecol.client.gui.dialog)
+Flag.setStarColor(Color)  (net.sf.freecol.client.gui.dialog)
+Flag.setDecorationColor(Color)  (net.sf.freecol.client.gui.dialog)
+Flag.setBackgroundColors(List<Color>)  (net.sf.freecol.client.gui.dialog)

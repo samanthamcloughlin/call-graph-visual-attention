@@ -1,0 +1,5 @@
+FreeColObject.getId()(2 usages)  (net.sf.freecol.common.model)
+FreeColObject.getIdType()(2 usages)  (net.sf.freecol.common.model)
+    FreeColObject.getId()  (net.sf.freecol.common.model)
+    FreeColObject.getIdTypeByName(String)  (net.sf.freecol.common.model)
+FreeColObject.getIdNumber()(2 usages)  (net.sf.freecol.common.model)

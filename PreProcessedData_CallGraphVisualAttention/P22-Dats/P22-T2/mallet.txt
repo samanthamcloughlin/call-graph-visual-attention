@@ -1,0 +1,174 @@
+-> Project: "mallet"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 					Project Synopsis:  
+| 			MALLET: MAchine Learning for LanguagE Toolkit
+| MALLET is a Java-based package for statistical natural language processing, document classification, 
+| clustering, topic modeling, information extraction, and other machine learning applications to text. 
+-----------------------------------------------------------------------------------------------------
+
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: mallet>regression>LinearRegression.java> predict [line 30]
+	Description:
+	
+	The method makes a prediction for an instance using a predefined linear regression.
+	
+	It loops over all of the locations in the instance and adds to the prediction based on the instance value at the location and the parameter that effects that location.
+	
+	This is useful when making predictions on training data.
+	
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	2
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: mallet>cluster>GreedyAgglomerative.java> improveClustering [line 61]
+	Description:
+	
+	The method attempts to improve a clustering by potentially merging together two clusters.
+	
+	It loops through every pair of clusters and merges the pair with the highest score as long as that score is higher than the converging cutoff.
+	
+	This is useful when trying to iteratively find the best clustering of data.
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+
+	4
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: mallet>types>Multinomial.java> ensureCapacity [line 290]
+	Description:
+
+	The method ensures that an array called "counts" is large enough to contain a passed-in index.
+	
+	If the index lies outside of the array, it determines the new length for the array by iteratively doubling the old length until it is larger than the index before allocating a new array of the correct size and copying over the data.
+	
+	This is useful when trying to reference indices in counts without being sure if the index exists in counts such as when trying to increment an arbitrary index.
+
+	Rate your confidence in the description on a scale of 1-5: 	
+
+	4
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: mallet>types>InvertedIndex.java> InvertedIndex [line 17]
+	Description:
+
+	The method is a constructor for an Inverted Index that instantiates all of the instance variables and performs location to instance mapping.
+	
+	It loops through the passed-in ilist and and loops though the locations for each instance and adds a mapping from the location index to the instance.
+	
+	This is useful as it allows to you easily find which instances in the list had a given feature.
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session |
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: mallet>regression>CoordinateDescent.java> toString [line 165]
+	Description:
+
+	The method returns a formatted string representing the Coordinate Descent model.
+	
+	The string is made up of a header with the intercept, one line per dimension with the alphabet entry and parameter, and the calculated sum squared error.
+	
+	This is useful if a user wishes to output a representation of their model.
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	3
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: mallet>optimize>OrthantWiseLimitedMemoryBFGS.java> optimize [line 100]
+	Description:
+
+	The method performs an optimization step for an optimizable model.
+	
+	It finds the direction of steepest descent and takes all of the parameters in a step in that direction.
+	
+	This is useful when training a model and wishing to make the parameters better.
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	3
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+
+	Method 7: mallet>types>SparseMatrixn.java> plusEquals [line 257]
+	Description:
+
+	The method adds one matrix to another while multiplying by a constant factor.
+	
+	It performs some error checking before calling a helper function on the two matrices represented as vectors which actually performs the element by element operation.
+	
+	This is useful when wishing to combine two matrices during training.
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	3
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: mallet>types>FeatureInducer.java> induceFeaturesFor [line 179]
+	Description:
+
+	The method takes an instance list and adds all of the instances and the feature selection to the feature conjunction list.
+	
+	it loops through all of the instances in the ilist and adds it to the feature conjunction list with a value of 1.
+	
+	This is useful if wanting to train a model with feature induction.
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	3
+	
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

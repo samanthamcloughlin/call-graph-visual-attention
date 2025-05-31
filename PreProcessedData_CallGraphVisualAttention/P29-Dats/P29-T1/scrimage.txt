@@ -1,0 +1,161 @@
+
+-> Project: "srcimage"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 										Project Synopsis:  
+| Scrimage is an immutable, functional, and performant JVM library for manipulation of images.
+| The aim of this library is to provide a simple and concise way to do common image operations, 
+| such as resizing to fit a required width and height, converting between formats, applying filters and so on.
+-----------------------------------------------------------------------------------------------------
+
+
+#####################################---CALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session  |
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: scrimage>canvas>Canvas.java> draw [line 46]
+	Description:
+        this is a function that takes a collection of things that are drawable and then places them on a canvas. This happens by copynig the current canvas and altering it by going over each of the
+        drawable items in the collection and applies it to the canvas or changes some underlying data structure for the canvas drawing the drawable onto the canvas. This is important to the Canvas class because
+        it allows for the alteration of a canvas and is what allows the canvas to be drawn on
+
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 1
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: srcimage>nio>internal>GifSequenceReader.java> readHeader [line 577]
+	Description:
+	
+	This function takes the header of a sequence of Gifs and displays it in a correct frame. This looks at at certain portion of a gif and determines if it is a header and then prints it and does it by checking
+	the location of what the are looking at relative to the sequence, I can be completely wrong tho. I think this is important because it allows for the printing of a header for a sequence of GIFs without 
+	having to print them all
+
+
+	
+	Rate your confidence in the description on a scale of 1-5: 1
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: srcimage>scaling>AwtNearestNeighbourScale.java> scale [line 8]
+	Description: This image scales another image, like it takes an image and some parameters and scales it based off that. It takes an image and then centers it at origin 0, 0 and creates a new image from there
+	and displays the passed in image and makes it have the width and length passed in and then returns the image it made without changing the passed in one. This is important because it allows for an image to
+	be rescaled based on the needs of the user.
+	
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: scrimage>filter>PipelineFilter.java> apply [line 19]
+	Description: This method applies a filter to the image and alters it based on the input given. it makes a deep copy of the passed in image and then goes through the image and applies a filter to each part
+	then returns the new copy of the image with filters and doesn't change the initial one. This provides the users of this more of an opportunity to alter their images.
+	
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 2
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session    |
+-----------------------------------------------------------------------------------------------------
+#####################################---RECALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session    |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: scrimage>ImmutableImage.java> fill [line 320]
+	Description: so there are multiple, one that fills with a certain color, fills an image; then there is one that fills and image with the information from the passed in painter basically meaning it is painting
+	an image on the canvas not just a solid color one. This is done for the first one by making a copy of the image and then replacing the pixels with a certain color, washing over it. The next one is the same except
+	for going over the image and making every pixel the same solid color it goes and iterates through a painter or a collection of colors and their locations and then goes paints the corresponding pixel to the color the
+    painter said it was, creating a picture of some sort that isnt all one solid color. This is important to the user because it is what allows them to actually paint the canvas or lets them start painting on it.
+	
+
+
+	Rate your confidence in the description on a scale of 1-5: 2
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: scrimage>AwtImage.java> points [line 174]
+	Description: This creates an array of points that are in the AWT to allow for traversal and manipulation/understanding of the AWT. This is done by taking on each of the width and heitght variables and crating an
+	x,y pair to put into the array for a method of understanding the vertices in the AWT. This is important because it allows for an easier understanding/analysis of the AWT for future uses
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 1
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 7: srcimage>subpixel>LinearSubpixelInterpolator.java> summands [line 59]
+	Description: Yeah this one I have no idea, I looked at it and its call hierarchy and still don't understand it, from my understanding it returns a 2d matrix and that is about as far as I could go with that.
+	I assume that maybe it is taking the x weights and the y weights, maybe the weights are an RGB value for a color, and that is used to determine whayt a sub pixel inside a pizel should do. I feel like this
+	is important because it allows pixes to be broken up into smaller pixels and have more detail to them other than one color
+	
+
+
+	Rate your confidence in the description on a scale of 1-5: 1
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 8: scrimage>metadata>OrientationTools.java> reorient [line 22]
+	Description: This method changes the orientation of a picture without things about the image other than its direction. This is done by setting up a case system that takes in metadata and then 
+	based on what it is, i.e., the number of degrees wanted to turn or a visual description of it, and checks it with a list of cases and if it matches it rotates the image accordingly to what was ever inside 
+	the case statement, reorienting the image. This is important because what if a user wants to go and change the way their image is facing, giving them more customization opportunities
+	
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+	
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!
+

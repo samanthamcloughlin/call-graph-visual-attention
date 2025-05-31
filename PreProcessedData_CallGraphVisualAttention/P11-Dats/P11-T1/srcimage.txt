@@ -1,0 +1,192 @@
+
+-> Project: "srcimage"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 										Project Synopsis:  
+| Scrimage is an immutable, functional, and performant JVM library for manipulation of images.
+| The aim of this library is to provide a simple and concise way to do common image operations, 
+| such as resizing to fit a required width and height, converting between formats, applying filters and so on.
+-----------------------------------------------------------------------------------------------------
+
+
+#####################################---CALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session  |
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: scrimage>canvas>Canvas.java> draw [line 46]
+	Description:
+        
+        This method is used to display the images associated with a given Canvas 
+        
+        The method iterates through a given list of drawable objects and uses RichGraphics2D to draw them
+        
+        This method is useful for controlling at what point in time a set of drawable objects gets displayed
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+		3
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: srcimage>nio>internal>GifSequenceReader.java> readHeader [line 577]
+	Description:
+	
+		This method is used for reading the contents of a gif file
+		
+		This method reads in the start of the file, checks if it is in the right format, and then 
+			stores the contents if so
+		
+		This method would be useful for storing some gif file for use in other parts of the program
+	
+	Rate your confidence in the description on a scale of 1-5: 
+		
+		4
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: scrimage>metadata>OrientationTools.java> reorient [line 22]
+	Description:
+	
+		This method is used for changing the orientation of an image
+		
+		This method permits a set of transformations involving flipping or rotating by 90 degree
+			increments, using the rotate methods from ImmutableImage.java to implement them
+
+		This method is useful say if you want to reorient, say, get the mirror image of an image
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+		5
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: scrimage>AwtImage.java> points [line 174]
+	Description:
+	
+		This method initializes an array to hold data concerning an AwtImage
+		
+		This method creates an array whose dimensions are the same pixel-length dimensions of the 
+			image. Then it intializes a point() object in each position, to represent each pixel 
+		
+		This method is useful for processing images - for example, in lines 238 to 254, several 
+			methods use points() in order to stream in an image and get the color values in various
+			manners
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+		5	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session    |
+-----------------------------------------------------------------------------------------------------
+#####################################---RECALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session    |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: srcimage>scaling>AwtNearestNeighbourScale.java> scale [line 8]
+	Description:
+	
+		This method draws an image scaled to fit
+		
+		This method takes in a specified width and height, and uses java.awt.Graphics.drawImage
+			which scales the image to fit within a rectangle of the given width and height before
+			drawing it
+			
+		This method is useful if the size of the image is larger than the display space, so we can 
+			rescale images to be displayed fully in the space given
+			
+	Rate your confidence in the description on a scale of 1-5: 
+	
+		3
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: scrimage>filter>PipelineFilter.java> apply [line 19]
+	Description:
+		
+		This method applies a sequence of "filters" to an image
+		
+		This method makes a copy of the image, depending on the format, and then applies a sequence
+			of "filters", from a given list. 
+			
+		This method is useful for applying a sequence of modifications to a bunch of images
+
+	Rate your confidence in the description on a scale of 1-5: 
+		
+		3
+		
+		It is unclear to me what a "filter" is, as the definition in filter.Filter just has the 
+			apply() method throw an IOException
+			
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 7: srcimage>subpixel>LinearSubpixelInterpolator.java> summands [line 59]
+	Description:
+	
+		This method applies weights to the colors at each position based off a scaling factor
+			determined by a some sort of interpolation between pixels at a given position inbetween
+		
+		This method takes a list integerPixelCoordinatesAndWeights of weights to be applied to each 
+			x coordinate and y coordinate, then returns the scaled argb values of each position using 
+			the product of the x weight and the y weight
+		
+		This method is used to apply some kind of subpixel interpolation of the argb values - using 
+			the summand function we can get the color values at some point interpolated inbetween two
+			pixels, as seen in the subpixel method
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+		3
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 8: scrimage>ImmutableImage.java> fill [line 320]
+	Description:
+	
+		This method colors the canvas based on a given "painter" scheme - for example, a linear 
+			gradient
+			
+		This method checks if the given gradient is a linear gradient and sets the x/y bounds 
+			appropriately if so - otherwise it passes the painter to RichGraphics2D to fill the canvas
+			with the given pattern
+			
+		This method is used to easily add color or initialize a blank canvas - the RandomPainter 
+			painter scheme looks particularly entertaining to me :)  
+		
+	Rate your confidence in the description on a scale of 1-5: 
+	
+		4
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+	
+	I started and stopped tracking an extra time during RECALIBRATION REQUIRED, because I didn't realize
+		that I had to recalibrate before starting the tracking again. 
+
+Please call the administrator!
+

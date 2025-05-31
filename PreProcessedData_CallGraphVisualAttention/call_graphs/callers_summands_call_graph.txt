@@ -1,0 +1,4 @@
+LinearSubpixelInterpolator.subpixel(double, double)  (com.sksamuel.scrimage.subpixel)
+    AwtImage.subpixel(double, double)  (com.sksamuel.scrimage)
+        ImmutableImage.subpixelSubimage(double, double, int, int)  (com.sksamuel.scrimage)
+            ImmutableImage.subpixelSubimageCenteredAtPoint(double, double, double, double)  (com.sksamuel.scrimage)

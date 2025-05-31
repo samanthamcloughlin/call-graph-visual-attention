@@ -1,0 +1,177 @@
+-> Project: "freecol"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 										Project Synopsis:  											|
+| 	FreeCol:  FreeCol is a turn-based strategy game based on the old game Colonization, 			|
+|	and similar to Civilization. The objective of the game is to create an independent nation.		|
+-----------------------------------------------------------------------------------------------------
+
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: freecol>tools>FlagTest.java> SetColors [line 209]
+	Description:
+	This method sets the colors of a country's flag.
+	
+	The method sets a flags union color, star color, and decoration color to the ones specified in the class's final variables, then iterates through the ColorButtons of the class's background color list and sets the flag's background colors (that are not null) to be these colors.
+	
+	This method helps in displaying the flags of the countries in this game by setting their colors.
+	
+	
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: freecol>server>FreeColServer.java> changeServerState [line 349]
+	Description:
+	
+	This method sets the server's input handler based on an input server state.
+	
+	This method takes in a server state enum, sets the server input handler to this.inputHandler in the case of PRE_GAME, LOAD_GAME, and IN_GAME and to null in the case of END_GAME, and returns the server state enum that was passed in.
+	
+	This method helps to change game states.
+	
+	Rate your confidence in the description on a scale of 1-5: 3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: freecol>common>io>FreeColXMLReader.java> readId [line 219]
+	Description:
+	
+	This method helps to read an ID from an XML file.
+	
+	This method gets the attribute for a particular ID from an XML file, and if the prefix of the ID is "tileitemcontainer" or "tileimprovement" it changes the prefix from all lowercase to camel case.
+	
+	This method helps the program to read in specifications for the FreeCol game from an XML file.
+
+
+	Rate your confidence in the description on a scale of 1-5: 	3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: freecol>common>model>pathfinding>CostDeciders.java> getCost [line 198]
+	Description:
+	
+	This method calculates and returns the cost of a move for a composed cost decider object.
+	
+	The method takes in a unit, old location, new location, and number of moves left, and iterates through a list of cost deciders, return the highest calculated cost from all of the cost deciders in the list, unless one of the cost deciders has a cost of illegal move or infinity, in which case illegal move is returned.
+	
+	This method helps with the game play in moments where the cost of a move needs to be decided.
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session |
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: freecol>common>model>FreeColObject.java> compareIds [line 148]
+	Description:
+	
+	This method compares two FreeColObject ids.
+	
+	The method takes in two FreeColObjects, and returns 0 if the object IDs are the same or -1 if they are not the same, making sure to handle the cases where the FreeColObjects could be null or their IDs could be null and different types of FreeColObject IDs.
+	
+	This method helps two FreeColObjects to be compared to each other (I'm not sure in what contexts they would be compared though).
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: freecol>common>model>Monarch.java> initializeCaches [line 209] 
+	Description:
+	
+	This method helps to initialize lists of unit types for a monarch.
+	
+	For every UnitType in the spec, the method checks the abilities of that unit type to determine if it should be added to the navalTypes, bombardTypes, landTypes or mercenaryTypes lists, then it sets some booleans based on the military roles in the spec.
+	
+	This method helps to initialize a Monarch for game play with certain military abilities.
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+
+	Method 7: freecol>client>gui>SwingGUI.java> updateUnitPath [line 443]
+	Description:
+	
+	This method helps to set a path for a unit to its destination on the GUI (graphical user interface that the user interacts with).
+	
+	This method gets the active unit that is being played (returns if the active unit is null), gets the unit's destination, and finds a path from where the unit is to its destination, and sets the path for  the unit, as long as the unit is disposed, not currently at the destination, and there are no errors.
+	
+	When a player wants to move a unit, this helps to display the path of the unit on the screen to the users playing.
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: freecol>client>gui>mapviewer>CanvasMapViewer.java> drawRenderingTimeStrings [line 121]
+	Description:
+	
+	This method draws information on the screen about the time it has taken to render the map.
+	
+	The method takes in a graphics object, a start time in milliseconds, and a boolean flag indicating if the map was rendered without using the back buffer, calculates the render time based on the current time and the input start time, and draws informational strings about the last render time and the last and average render times for the full map, taking into account if the information passed in was for a full map generation or not.
+	
+	This methods helps users to know how effectively their game is rendering by providing them helpful information about how long the map takes to render. 
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+Project had build errors so I didn't always feel like I could rely on the call hierarchy to help provide context.
+
+
+
+Please call the administrator!

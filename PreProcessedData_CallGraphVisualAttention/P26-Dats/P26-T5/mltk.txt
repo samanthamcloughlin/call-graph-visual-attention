@@ -1,0 +1,161 @@
+
+ Project: "MLTK"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+-----------------------------------------------------------------------------------------------------
+Project Synopsis: MLTK (Machine Learning Tool Kit) is a collection of various supervised machine 
+learning algorithms, which is designed for directly training models and further development.
+-----------------------------------------------------------------------------------------------------
+	
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 1: core>processor>Discretizer.java> computeBins [line 122]
+	Description:
+	
+	Method computes statistics for a collection of bins.
+	It retrieves a list of stats, organizes data into bins, and processes the bins into boundary list and median list.
+	General compute bins functions used by other computerBins functions of different data types. 
+
+
+	Rate your confidence in the description on a scale of 1-5:
+	2
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: predictor>gam>SPLAMLearner.java> computeGradient [line 1025]
+	Description:
+	
+	Method computes the gradient of a block. 
+	It iterates through a block, at each index it computes the gradient based on rTrain values, and adds to cumulative gradient.
+	Used in "one pass" methods to compute gradient while doing a pass through an active set. 
+	
+	
+	Rate your confidence in the description on a scale of 1-5:
+	4
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: predictor>tree>TreeInteriorNode.java> write [line 76]
+	Description:
+	
+	Method prints a description about a TreeInteriorNode class instance.
+	It displays descriptive variables such as name, attindex, splitpoint & recursive call to left and right subtrees too. 
+	Used in various tree classes -- print out the tree and each node.
+	
+
+		
+	Rate your confidence in the description on a scale of 1-5:
+	5
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: core>BinnedAttribute.java> parse [line 66]
+	Description: 
+	
+	Method returns a new BinnedAttribute based on input string.
+	It parses input string and initializes arguments. Then creates new BinnedAttribute based on arguments.
+	Used in attributes reader to parse any binned attributes. 
+	
+		
+
+	Rate your confidence in the description on a scale of 1-5:
+	3
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session.
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: util>OptimUtils.java> fitIntercept [line 108]
+	Description:
+	
+	Method computes and updates prediction and residual values
+	It calculates statistics for a prediction list, and updates VectorUtils and computes pseudo residual.
+	Method is used in building binary classifiers and finding the max lambda binomial. 
+
+		
+
+	Rate your confidence in the description on a scale of 1-5:
+	2
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 6: core>io>InstancesReader.java> parseDenseInstance [line 159]
+	Description:
+	
+	Methods create a new instance from input data.
+	It parses through input data to create a new vector, and initializes new instance with the vector.
+	Used in other methods performing reads on instances.
+
+	
+		
+	Rate your confidence in the description on a scale of 1-5:
+	3
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 7: predictor>tree>RTreeLearner.java> getStats [line 64]
+	Description:
+	
+	Method computes statistics on a collection of instances.
+	It calculates weight and target for each instance, updates stats array, and returns boolean indicating whether first target value is repeated.
+	Used in various pass algorithms, as well as in creating tree nodes. 
+	
+
+		
+	Rate your confidence in the description on a scale of 1-5:
+	3
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: core>processor>InstancesSplitter.java> split [line 286]
+	Description:
+	
+	Method splits a collection of instances by strata.
+	It creates a new dataset of instances, computes ratios, and partitions instances.
+	Used by other methods to split a collection of instances into smaller sets.
+		
+
+		
+	Rate your confidence in the description on a scale of 1-5:
+	1
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

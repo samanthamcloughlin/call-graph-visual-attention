@@ -1,0 +1,178 @@
+-> Project: "mallet"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 										Project Synopsis:  
+| 						MALLET: MAchine Learning for LanguagE Toolkit
+| MALLET is a Java-based package for statistical natural language processing, document classification, 
+| clustering, topic modeling, information extraction, and other machine learning applications to text. 
+-----------------------------------------------------------------------------------------------------
+
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: mallet>regression>LinearRegression.java> predict [line 30]
+	Description:
+	This method makes a prediction for an input piece of data based on the trained linear regression model.
+	
+	This method takes in an Instance which contains the data to make the prediction for, and then uses the intercept location of the trained linear regression model and adds the index multiplied by the value of each location in the feature vector for the input data to the intercept location to make the final prediction. 
+	
+	This method is important for the trained linear regression model in this toolkit to actually be able to make predictions.
+	
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: mallet>regression>CoordinateDescent.java> toString [line 165]
+	Description:
+	
+	This method formats information about the training data and the sum squared error into an informational String format.
+	
+	The method calculates the sum squared error between all of the predicted and actual values for the training data, and then creates a string with the intercept index of the regression line, every element of training data and its parameters in the regression line, and the sum squared error.
+	
+	When users of the toolkit are using CoordinateDescent, this method can help illuminate the regression line that is being trained from the training data including helping users to see where the training data falls on the regression line and how big the sum squared error is (which can indicate how well the training process went). 
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: mallet>types>FeatureInducer.java> induceFeaturesFor [line 179]
+	Description:
+	
+	This method takes in data of type InstanceList and converts it to a list of feature vectors.
+	
+	The method takes in data of type InstanceList, gets the feature selection using InstanceLists' getFeatureSelection() method, and then puts the feature vector and feature selection into a FeatureConjuction list.
+	
+	I'm not sure what the significance in the overall program is other than some design decision was made to have an object (FeatureConjuction.list) that holds an object's feature selection and feature vectors in one object.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 	2
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: mallet>types>InvertedIndex.java> InvertedIndex [line 17]
+	Description:
+	
+	This is the constructor for the InvertedIndex class, which helps to access Instances by feature index.
+	
+	This constructor takes in an InstanceList and creates a mapping from each Instance in the list's feature vectors to the data for that Instance.
+	
+	In the InstanceList class, the Instances are mapped to their features; this allows for the opposite where features can be mapped to their Instances.
+
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session |
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: mallet>types>Multinomial.java> ensureCapacity [line 290]
+	Description:
+	
+	This method ensures that a Multinomial feature vector array is of a particular size.
+	
+	The method takes in a parameter index which is the size to make the feature vector, adjusts the feature vector's size according to the input index, and copies over the values in the existing feature vector.
+	
+	This helps users of the toolkit adjust the size of feature vectors if necessary.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6:  mallet>types>SparseMatrixn.java> plusEquals [line 257]
+	Description:
+	
+	This method adds a matrix to a sparse matrix, scaling the values by a factor.
+	
+	This method takes in a matrix of type ConstantMatrix and a scaling factor, checks to make sure that the matrices can be added together, and performs the matrix (or vector) addition with the SparseMatrix and scaling factor.
+	
+	This is a helper method for various machine learning algorithms that need to add matrices of data together in training. 
+	
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+
+	Method 7: mallet>optimize>OrthantWiseLimitedMemoryBFGS.java> optimize [line 100]
+	Description:
+	
+	This method performs an optimization using the Orthant Wise Limited Memory BFGS method.
+	
+	For a specified number of iterations, this method performs the OWL-BFGS optimization by finding the steepest descent direction using the L1 weight, mapping the direction by the inverse Hessian, fixing the direction signs if necessary, storing the new gradient, performing a back tracking line search, and evaluating the new gradient.
+	
+	This method helps to optimize the gradient descent process in cases of limited memory.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: mallet>cluster>GreedyAgglomerative.java> improveClustering [line 61]
+	Description:
+	
+	This method takes in an already existing cluster (like clusters of data) and improves it if necessary.
+	
+	This method takes in an arrangement of data in clusters, determines if any data should be merged into different or new clusters, and performs the merge for a specified threshold of iterations.
+	
+	When creating data clusters, the general process is to make initial clusters and continue to iterate on them to make them better--this method does that.
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+The project was not fully built, meaning that it was difficult to trace the call hierarchy and find declarations.
+
+
+Please call the administrator!

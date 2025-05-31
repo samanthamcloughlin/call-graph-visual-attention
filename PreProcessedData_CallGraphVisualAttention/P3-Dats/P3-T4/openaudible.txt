@@ -1,0 +1,180 @@
+-> Project: "openaudible"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 										Project Synopsis:  
+| 										   OpenAudible
+|	  A cross-platform desktop application for downloading and managing your Audible audiobooks.
+-----------------------------------------------------------------------------------------------------
+
+#####################################-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: openaudible>Audible.java> find [line 522]
+	Description:
+	This method finds all books with a particular asin, author, title, or narrator from a list of books.
+	
+	This method takes in a string, matches that string to the asin, author, title, and narrator from a list of books, and returns a list of all books where the input string matches the asin, author, title, and/or narrator.
+	
+	This method is used as a helper when Audible's find command is executed in the AudibleCLI; I assume this command is executed in the case where a user wants to search for books with a keyword.
+	
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: openaudible>books>Book.java> checkBook [line 101]
+	Description:
+	
+	This method validates that a book has the required associated data of a product ID and full book title.
+	
+	This method specifies the product ID and full book title as required elements of a book, then loops over them for the Book object calling this method on itself and returns an empty string if both the product ID and full book title are specified or a string specifying which of the product ID or book title is missing if one is missing.
+	
+	Although I can't find this method being used anywhere in the codebase, I assume this method is used to validate that Book objects have the minimum required data to be useful.
+
+
+	Rate your confidence in the description on a scale of 1-5: 5
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: openaudible>convert>BookMerge.java> mergeItem [line 27]
+	Description:
+	
+	This method helps to merge the data of two books together.
+	
+	The method takes in two Book objects and a BookElement and calls the other mergeItem method that takes in strings, this method returns the second book's BookElement if the element is cust_id, user_id, or infoLink, otherwise it returns whichever book's element was longer.
+	
+	This method helps to reduce the number of book entries when there are multiple Books with the same product ID by merging entries of books with the same product ID together.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 	5
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: openaudible>util>Util.java> urlGetArgs [line 125]
+	Description:
+	
+	This method gets arguments from a URL string.
+	
+	This method takes in a String URL and parses the string for ?, &, and = characters to extract the URL parameters.
+	
+	This method is called by parseDownloadURL in LibraryParser.java to extract out the parameters from a URL specifying a book to be downloaded by a user so that those parameters can be passed into the findByName method to search for the book.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session.	|
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session. 	|
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: openaudible>AudibleCLI.java> test [line 240]
+	Description:
+	
+	For a list of books, this method prints out the name of the book's MP3 files, length of MP3 and AAX files, and the difference in lengths of the MP3 and AAX files.
+	
+	This method takes in a list of Book objects and iterates through every book object, getting the MP3 and AAX files for each book, comparing the differences in their lengths, and printing out the relevant information to the console.
+	
+	The "test" command is one of the main commands the Audible CLI allows users to run, although I'm not sure why users would need to know the difference in lengths of MP3 and AAX files for their specified books.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: openaudible>desktop>swt>manager>AudibleGUI.java> connect [line 255] 
+	Description:
+	
+	This method allows users to connect to the audible website.
+	
+	This method creates a new ProgressTask object and overrides its run method to call the other method called connect, which actually handles connecting to the Audible web client, and then actually runs the ProgressTask.
+	
+	This method enables the audible GUI to connect to the Audible website.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+
+	Method 7: openaudible>desktop>swt>manager>menu>CommandCenter.java> reallyQuit [line 260]
+	Description:
+	
+	This method asks users if they really want to quit the Audible application when they tests in progress, and quits if the user says yes.
+	
+	This method sets testsInProgress to 0, then if testsInProgress is > 0 (which I don't know how this could be the case if it was just set to 0, but maybe there's something I'm missing) the method constructs a string asking the user if they really want to quit, and displays this message to the user and gets their response of yes or no using MessageBoxFactory.showGeneral, and returns the users response if they had tests in progress or returns true if there were no tests in progress in the first place.
+	
+	This method allows users to safely quit the application by first double checking if they want to quit in the even that they have tests in progress.
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: openaudible>util>DebugBuffer.java> accept [line 35]
+	Description:
+	
+	This method helps to create helpful strings for debugging.
+	
+	The method takes in a String s, then creates a new StringBuffer if one doesn't exist, appends the string "sep" to it, and then appends the string s if there is enough room in the stringbuffer, and if the string buffer is at the maximum length then it replaces the existing content with "..." before appending string s.
+	
+	This method assists in debugging by creating helpful error messages that aren't too long.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

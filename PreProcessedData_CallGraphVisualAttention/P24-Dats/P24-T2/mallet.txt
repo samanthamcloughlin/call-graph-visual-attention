@@ -1,0 +1,163 @@
+-> Project: "mallet"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 					Project Synopsis:  
+| 			MALLET: MAchine Learning for LanguagE Toolkit
+| MALLET is a Java-based package for statistical natural language processing, document classification, 
+| clustering, topic modeling, information extraction, and other machine learning applications to text. 
+-----------------------------------------------------------------------------------------------------
+
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: mallet>regression>LinearRegression.java> predict [line 30]
+	Description: This function in this linear regression class will returned the predictors accround to the interceprt index as its paramters.
+	
+it does that by taversing the predictors in the predictors array and then transform into a new double array/
+
+This method is useful for calculating the leastSquaures, and also for convert the result in the toString method.
+
+	
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: mallet>types>InvertedIndex.java> InvertedIndex [line 17]
+	Description: we can tell that this is a intialization for the class inverted Index which is a list objhect.
+	
+We will fisrst start with a empty list, and it is a fearturevector data can only be handled, we will then transform the data in featurevector and trnasfer to the new invertedndex object, if the value does noe equal to 0.
+
+overall, i think it serces as a filter to the featrurevectror data.
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: mallet>types>SparseMatrixn.java> plusEquals [line 257]
+	Description:
+	this function acts like a router to decide which type of input vector it read to to the coorect additions to the vector or matrix.
+   I thnk it addes up values in the matirx using the plusEqualSparse function which added the sparse vector to a factor.
+   
+   this function then decides whether the input matrix m is a instance of sparseVector or SparseMatrix, to do this addition to each elements of the vector or matrix.
+   
+  
+
+	Rate your confidence in the description on a scale of 1-5: 	4
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: mallet>types>Multinomial.java> ensureCapacity [line 290]
+	Description:
+This function checks the capacity of the data structure exceed its capactiy.
+
+this fuctuon will take the input as the index number of the data structure, then it will chekc that index number againts its size. if the index is smaller then the data container will expand its size by 2/
+
+It acts like a check in this program where it call this function to whether the input data container is capable of storing some value, if not the nexpand the size by 2.
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session |
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: mallet>types>FeatureInducer.java> induceFeaturesFor [line 179]
+	Description: This is functionality for the featuresinducer which will induce the feature and add 1 to its existing features for training.
+	It will check what class the intake list is to see which class the instance it belongs t0, then it will calls the addto function to each elements of the list through featureslection.
+	
+	This function will spe the induces feature process to train the data, the features are then induced to its original lists, there's no return type.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: mallet>cluster>GreedyAgglomerative.java> improveClustering [line 61]
+	Description:
+This function improve the clustering problem and merge the scores to a smaller size.
+ It does that by  intialize an toMerge array and traverse the scores in the clustering  and updating the bestscore by compareing it to the previous one. we will then check the covergeabilty of this clustering with the stopp thresold. if the bollean returned true,
+ we will converge the clustering to a smaller size.
+
+Thi function acts like a imporement function for a smallering clustering and checks for possible covergeabilities.
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+
+	Method 7: mallet>regression>CoordinateDescent.java> toString [line 165]
+	Description:
+
+This function will covert numeric values to string.
+
+it reads in and traervse all of the values in the tranning data and apply the prediction functon to calulate it its summeanSquare. and return the result to sting.
+
+The output String format will be formatted and displayed with each one with its specic seummeanSqureError.
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: mallet>optimize>OrthantWiseLimitedMemoryBFGS.java> optimize [line 100]
+	Description:
+This rfunction return a bolean variable whether each training goes well. 
+it takes in the iterations that we want to train, and for each iteratons, we will check wheather it is time to terminate, and whether the converagabiolity is true. also store and update the values for grad and its paramters.
+I think since this optizer returns a boolean variables, it main prupose is to check whether the traning data is be optimzed before the actual tranning. We can put small iterationsin here first to check whether our models works and values are correct and the convergability. this optimzer will then return the boolean variables 
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

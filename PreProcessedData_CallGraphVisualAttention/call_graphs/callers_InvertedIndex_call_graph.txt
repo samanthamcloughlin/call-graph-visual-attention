@@ -1,0 +1,2 @@
+CoordinateDescent.CoordinateDescent(InstanceList, double)  (cc.mallet.regression)
+    CoordinateDescent.main(String[])  (cc.mallet.regression)

@@ -1,0 +1,168 @@
+ 
+-> Project: "srcimage"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 										Project Synopsis:  
+| Scrimage is an immutable, functional, and performant JVM library for manipulation of images.
+| The aim of this library is to provide a simple and concise way to do common image operations, 
+| such as resizing to fit a required width and height, converting between formats, applying filters and so on.
+-----------------------------------------------------------------------------------------------------
+
+
+#####################################---CALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session  |
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: scrimage>canvas>Canvas.java> draw [line 46]
+	Description:
+    The method draws a 2D image on a canvas and returns the canvas.
+    The method receives a immutable image target as a reference, configures a collection of drawable objects according to the target, and returns the new canvas.
+    The method is needed for updating collections of drawable objects    
+
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	3
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: scrimage>metadata>OrientationTools.java> reorient [line 22]
+	Description:
+	The method reorients the angle rotation of a given image.
+	Given an input image and metadata, the method rotates (reorients) the image based on various rotation angle cases provided by the image metadata. 
+	Beyond simply editing the image, this method in other parts of the program in order to properly load/calibrate an image. 
+	
+
+
+	
+	Rate your confidence in the description on a scale of 1-5: 
+	5
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: srcimage>nio>internal>GifSequenceReader.java> readHeader [line 577]
+	Description:
+	The method reads the header of an GIF and to update appropriate information associated with the GIF.
+	The method parses through the GIF header, ensuring that it is in GIF format, and then it stores information on the GIF's color, sizing, and flags.
+	The method is used by other methods of the Gif Sequence Reader file, particularly for opening and loading new input streams. 
+	
+	
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	4
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: scrimage>AwtImage.java> points [line 174]
+	Description:
+	The method is used to map out the points of an image.
+	The method createds a 2d array of points - it iterates through an image and creates an x,y mapping for every point in the image. Returns array
+	The method is used by other image processing functions to map out the point dimensions of an image. 
+	For example, it is commonly used in 'for each' loops in order to provide an x,y input of all of the points.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	4
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session    |
+-----------------------------------------------------------------------------------------------------
+#####################################---RECALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session    |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: scrimage>filter>PipelineFilter.java> apply [line 19]
+	Description:
+	This method applies a filter onto an image.
+	Given an input image, this method makes a copy of the image, checks that it is of Buffered Image type, and then applies image filters onto the copy.
+	This method is needed to apply filters to immutable images. 
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	4
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: scrimage>ImmutableImage.java> fill [line 320]
+	Description:
+	This method fills a blank image with an input painter object. 
+	The method is given a painter object, and it verifies whether it is a linear gradient. If it is, it calibrates the input painter object based on the gradient. 
+	Finally, it fills (draws) a blank canvas based on the input/gradient and returns. 
+	This method is needed for drawing images, as well as initializing new images based on a reference input image.
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	3
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 7: srcimage>scaling>AwtNearestNeighbourScale.java> scale [line 8]
+	Description:
+	This method scales a given image.
+	The method is given an input image, as well as a specified width & height. Method creates a new image of desired dimensions, and renders the input image onto new image.
+	This method is a base scaling method used in order more specified methods of scaling.
+	
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	3
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 8: srcimage>subpixel>LinearSubpixelInterpolator.java> summands [line 59]
+	Description:
+	This method determines the color weights for each pixel coordinate of an image.
+	The method creates pair lists of each pixel's coordinates and weight in an image. The method then calculates 4 metrics of color weights
+	for each pixel (red, blue, green, ...)
+	The method is needed for image processing tools, as it provides a useful quantitative overview of the color weights comprising an image.
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	2
+	
+	
+	
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!
+

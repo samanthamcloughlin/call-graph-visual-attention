@@ -1,0 +1,156 @@
+
+-> Project: "srcimage"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 										Project Synopsis:  
+| Scrimage is an immutable, functional, and performant JVM library for manipulation of images.
+| The aim of this library is to provide a simple and concise way to do common image operations, 
+| such as resizing to fit a required width and height, converting between formats, applying filters and so on.
+-----------------------------------------------------------------------------------------------------
+
+
+#####################################---CALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session  |
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: scrimage>canvas>Canvas.java> draw [line 46]
+	Description:
+	The method takes copy of the images from a vector to start the decomposition of each element and transform in a object of type RichGraphics to be able to draw.
+	This will only happened if the vector is not empty and the casting can be performed for the object of type Graphics2D.
+	This method will be useful when it would be necessary convert an specific type of object to another and draw the specific images to transform. 
+        
+
+	Rate your confidence in the description on a scale of 1-5: 2
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: srcimage>subpixel>LinearSubpixelInterpolator.java> summands [line 59]
+	Description:
+	Transforms the one dimension into a data structure of 2 dimensions given the x and y values.
+	If the values transformed are equal to zero (weight) the method will set an standard value if it not the case, more calculations will be performed to get the dimensions.
+	Method will be useful when could be necessary transform two simple values in the pixel format (RGB) to get the righ color.
+	
+	
+
+
+	
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: scrimage>ImmutableImage.java> fill [line 320]
+	Description:
+	Verifies if the object is instance of the LinearGradient, and extracts painter metadata to transform and draw in the canvas with the proper format.
+	This transformation  will only happened if the input object is an instance of Painter, if it is not the object be fill directly in the canvas.
+	Method would be useful to fill the canvas in the right format and see the images in the canvas.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: srcimage>scaling>AwtNearestNeighbourScale.java> scale [line 8]
+	Description:
+	Based on the type of color model, tweaks the scale of color in the BufferedImage.
+	Only will occur if the color model is between the enum list.
+	Would be useful to resize and render the images. 
+	
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session    |
+-----------------------------------------------------------------------------------------------------
+#####################################---RECALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session    |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: srcimage>nio>internal>GifSequenceReader.java> readHeader [line 577]
+	Description:
+	
+	Reads the header of the GIF to get the specific metadata.
+	If it is not a GIF the code will throw an error.
+	Useful when it is necessary read GIFS, mandatory extract the error and see if it is possible read the first part of the GIF.
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: scrimage>filter>PipelineFilter.java> apply [line 19]
+	Description:
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 7: scrimage>AwtImage.java> points [line 174]
+	Description:
+	
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 8: scrimage>metadata>OrientationTools.java> reorient [line 22]
+	Description:
+	
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	
+	
+	
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!
+

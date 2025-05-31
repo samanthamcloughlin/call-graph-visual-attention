@@ -1,0 +1,162 @@
+
+ Project: "MLTK"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+-----------------------------------------------------------------------------------------------------
+Project Synopsis: MLTK (Machine Learning Tool Kit) is a collection of various supervised machine 
+learning algorithms, which is designed for directly training models and further development.
+-----------------------------------------------------------------------------------------------------
+	
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 1: core>processor>Discretizer.java> computeBins [line 122]
+	Description:
+	This method transforms an input list into several bins with the constraint of max number of bins.
+	
+	If the number of elements in the list is less than the max number of bins then it directly create the histogram, otherwise, it calculates the boundary and median of each bin and create bins by these two parameters.
+	
+	This method is useful if you want to use a list of data to create a histogram.
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: core>BinnedAttribute.java> parse [line 66]
+	Description:
+	This method parses an input string and use the parsed data to create new bins.
+	
+	It extracts the content after ":" and inside the parenthesis, splits them by ";"; and if there is only one number then directly create a bin, otherwise, it creates the bins based on the parsed boundary and median.
+	
+	This method is useful if you want to create bins based on an input string command.
+	
+	
+	Rate your confidence in the description on a scale of 1-5: 4
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: predictor>gam>SPLAMLearner.java> computeGradient [line 1025]
+	Description:
+	This method calculates the gradient based on the training data and the block.
+	
+	It goes through all the values in block, and for each value, it adds itself with the product of training data and the block as the gradient for this step.
+	
+	This method is useful if you want to calculate the gradient for each step.
+
+		
+	Rate your confidence in the description on a scale of 1-5: 3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: core>io>InstancesReader.java> parseDenseInstance [line 159]
+	Description: 
+	This method parses the input string data into vectors in the Double type.
+	
+	If the class index is less than zero, then it parses all the string values into double; otherwise, it extracts the class value based on the class index and parses all the other data into vectors.
+	
+	This method is useful if want to parse a string of data with a given class
+	
+
+	Rate your confidence in the description on a scale of 1-5: 4
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session.
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: core>processor>InstancesSplitter.java> split [line 286]
+	Description:
+	This method splits the data based on the input ratio and may stratify the data before the split.
+	
+	If there is no requirement for stratify the data, then it splits the data by the given ratio, otherwise, it stratify the data by the data attributes and then split them by the given ratio.
+
+	This method is useful if you want to split data by ratio and/or stratify the data by its attributes and then split it.
+
+	Rate your confidence in the description on a scale of 1-5: 5
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 6: predictor>tree>TreeInteriorNode.java> write [line 76]
+	Description:
+	This method prints the node information of a tree in the order of root/canopy, left, and right.
+	
+	It first prints the root information, including the split point and its index, and then recursively runs itself to print the node information in the left and right subtree.
+	
+	This method is useful if you want to show a tree's information in the order of root, left, and right.  
+	
+		
+	Rate your confidence in the description on a scale of 1-5: 5
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 7: predictor>tree>RTreeLearner.java> getStats [line 64]
+	Description:
+	This method calculates the weighted average and identify if the standard deviation equals to zero for given instances.
+	
+	If there is only one instance then it directly returns the standard deviation equals to zero, otherwise, it compare if each instance are the same and if not then the standard deviation is not equal to zero, plus it also calculates the weighted average by dividing the weighted sum by the sum of the weights.
+	
+	This method is useful if you want to know the statistical information of given instances, including if their standard deviation is zero and the weighted average.
+
+		
+	Rate your confidence in the description on a scale of 1-5: 5
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: util>OptimUtils.java> fitIntercept [line 108]
+	Description:
+	This method calculates the fit intercept based on the predict results and the residual between predict and real values.
+	
+	It calculates eta by summing up all the residuals and calculates theta by summing up the product between the absolute value of the residual and 1 minus the absolute number; if theta is larger than epsilon then it calculates the pseudoresidual and the final return is eta divided by theta.	
+	
+	This method is useful if you want to evaluate a prediction and see the intercept of the fit results.
+
+		
+	Rate your confidence in the description on a scale of 1-5: 3
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

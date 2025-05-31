@@ -1,0 +1,186 @@
+-> Project: "openaudible"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 				     Project Synopsis:  					    |
+| 					OpenAudible						    |
+|	  A cross-platform desktop application for downloading and managing your Audible audiobooks.|
+-----------------------------------------------------------------------------------------------------
+
+#####################################-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: openaudible>Audible.java> find [line 522]
+	Description:
+	
+		This method looks in the library of books and returns all that involve the given string
+		
+		This method takes the collection of all books, and then creates a list with all the books
+			whose title, author name, narrator, or "asin" contains the given string
+			
+		This method is useful for finding books from a library based on a topic, or by some author
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+		5
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: openaudible>convert>BookMerge.java> mergeItem [line 27]
+	Description:
+
+		This method combines two elements from two different books into a single one
+		
+		This method takes the elements from two different books (they are strings) and then if one
+			element is contained in the other the smaller one gets merged into the larger one, which
+			gets returned
+			
+		This method is useful if there are two incomplete entries of the same book, which can be 
+			merged into a single more complete entry element-wise using mergeItem
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+		4
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: openaudible>AudibleCLI.java> test [line 240]
+	Description:
+
+		This method checks the encoding of the audible file
+		
+		This method reads in the file as an mp3 and as an aax, and then returns the different lengths
+			of the files, comparing them
+			
+		This method is callable as a doCommandallows, and allows the user to check which encoding of 
+			the audible file is longer, maybe perhaps to see which one should be retained
+
+	Rate your confidence in the description on a scale of 1-5:
+
+		2
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: openaudible>desktop>swt>manager>menu>CommandCenter.java> reallyQuit [line 260]
+	Description:
+	
+		This method creates a notice to make sure the user is ABSOLUTELY CERTAIN they want to quite
+			the program
+			
+		This method displays a MessageBox that states the number of tests still running and then
+			asks the user to confirm if they are sure, "Do you really want to quit/exit?"
+			
+		This method is useful in case a user pressed the quit button without thinking too hard, or 
+			accidentally pressed it, and makes sure progress then not lost unnecessarily. 
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+		5
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session.	|
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session. 	|
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: openaudible>util>DebugBuffer.java> accept [line 35]
+	Description:
+	
+		This method adds some string, perhaps a message used for debugging, to a DebugBuffer
+		
+		This method clears the buffer if it is filled up, adds a separating character, then adds the
+			incoming message to the buffer. 
+			
+		This method is useful to help manage an incoming log of messages for debugging, as it will
+			manage the size of the buffer and not let it get too much bigger than the max size
+		
+	Rate your confidence in the description on a scale of 1-5: 
+	
+		4
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: openaudible>desktop>swt>manager>AudibleGUI.java> connect [line 255]
+	Description:
+	
+		This method adds a user-friendly display to monitor logging into an Audible account 
+		
+		This method uses a ProgressDialog to monitor the progress of logging in, and if the program
+			fails to log the user in then a MessageBox with an error message gets displayed
+			
+		This method allows the user to see whether their logging in succeeds or fails, and displays
+			an error message to let them know to act accordingly - which is quite helpful
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+		3
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+
+	Method 7: openaudible>util>Util.java> urlGetArgs [line 125]
+	Description:
+	
+		This method is used to parse information from a given url
+		
+		This method assumes the url contains key value assignments of the form "k=v&k=v&...&k=v"
+			which occur after a '?', and so a hash table is created which assigns the string "v" to
+			the key "k", for every assignment in the url
+			
+		This method allows the program to reliably extract information from urls, and handle errors 
+		accordingly
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+		4
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: openaudible>books>Book.java> checkBook [line 101]
+	Description:
+	
+		This method checks that the book description meets the minimum information requirements
+		
+		This method makes sure the book has product_id and fullTitle set, and returns an error
+			message if the book does not have these two fields
+			
+		This method helps ensure the library of books is well-formed, and prevents errors further
+			down the line if you want to perform operations on a book but realize it doesn't have
+			a product or title
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+		5
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

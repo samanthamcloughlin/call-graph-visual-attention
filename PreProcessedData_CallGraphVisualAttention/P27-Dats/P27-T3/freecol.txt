@@ -1,0 +1,168 @@
+-> Project: "freecol"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 										Project Synopsis:  											|
+| 	FreeCol:  FreeCol is a turn-based strategy game based on the old game Colonization, 			|
+|	and similar to Civilization. The objective of the game is to create an independent nation.		|
+-----------------------------------------------------------------------------------------------------
+
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: freecol>tools>FlagTest.java> SetColors [line 209]
+	Description:
+	This method sets the different color components of the Flag object.
+	
+	There are defaults set for each of the colors at the top of the file.
+	
+	This method is called when the event listeners of this JFrame are called to update the colors before drawing the flag, based on user interaction.
+	
+	
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: freecol>common>model>pathfinding>CostDeciders.java> getCost [line 198]
+	Description:
+	This method determines the cost of a unit moving from a location to another location considering the number of moves remaining by using a list of cost deciders.
+
+	If any of the cost deciders determine that the move is illegal or has infinite cost, that cost decider is selected and immediately returns, marking it as invalid
+
+	This method is part of the AI used to determine the actions of CPU players in the game.
+
+	Rate your confidence in the description on a scale of 1-5: 3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: freecol>client>gui>SwingGUI.java> updateUnitPath [line 443]
+	Description:
+	This method sets the path of the currently active unit if there is one.
+
+	This method fails to find a path if the unit is already at the destination, the destination object has been destroyed, or if there was an exception while determining the path.
+	
+	This method is used when the user clicks on a tile with an active unit in order to determine the path to follow and draw.
+
+	Rate your confidence in the description on a scale of 1-5: 4	
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: freecol>server>FreeColServer.java> changeServerState [line 349]
+	Description:
+
+	This method changes the server state by changing the message handler for connected clients.
+	
+	If the server state is changing to end game, the handler will be set removed, but all other states will use the same handler
+	
+	This method is called whenever the game is started or ended, and the game considered to be ended when the player (or admin in a multiplayer game) quits, goes to the main screen, or starts a new game.
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session |
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: freecol>client>gui>mapviewer>CanvasMapViewer.java> drawRenderingTimeStrings [line 121]
+	Description:
+	
+	This method white text at top left of the screen to describe render time statistics.
+	
+	This method only computes the average of frames where the frame contained the map, which occurs when there's a game with a map.
+
+	This method is only called if the debug rendering checbox is set in the debug menu.
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: freecol>common>io>FreeColXMLReader.java> readId [line 219]
+	Description:
+	
+	This methods reads the "id" attribute of an XML tag.
+
+	If the id starts with "tileitemcontainer:" or "tileimprovement:", it converts the prefix to camel case.
+	
+	This method is uses to read the id attribute of XML files when loading save files or reading options.
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+
+	Method 7: freecol>common>model>FreeColObject.java> compareIds [line 148]
+	Description:
+	
+	This method compares the ids of two FreeColObjects, returning -1 if fco1 < fco2, 1 if fco1 > fco2, and 0, if fco1 == fco2.
+	
+	First, the objects and their ids are checked for null, before checking the id type, and then finally the integer id number is checked.
+
+	This method is used whenenever any FreeColObject is being put in a sorted container, or just needs to be compared.
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: freecol>common>model>Monarch.java> initializeCaches [line 209]
+	Description:
+	
+	This method organizes the units usable by a Monarch by ability and role, using the game specification.
+
+	For the roles, this method uses the first role that matches the conditions
+	
+	This method is used whenever the monarch attempts to make an action, and the units and roles populated are used to validate the action.
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

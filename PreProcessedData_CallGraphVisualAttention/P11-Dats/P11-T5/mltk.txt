@@ -1,0 +1,188 @@
+
+ Project: "MLTK"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+-----------------------------------------------------------------------------------------------------
+Project Synopsis: MLTK (Machine Learning Tool Kit) is a collection of various supervised machine 
+learning algorithms, which is designed for directly training models and further development.
+-----------------------------------------------------------------------------------------------------
+	
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 1: core>processor>Discretizer.java> computeBins [line 122]
+	Description:
+
+		This method, per my best guess, takes a list of data and divides it into a given number
+			of "bins"
+		
+		This method seems to divide the list of values into smaller lists, with a maximum number of
+			sublists given by maxNumBins and the total sum within each sublist balanced across them
+			all
+		
+		This method is useful for dividing the computational load of processing a list into a 
+			number of smaller, roughly equal-sized subproblems
+
+	Rate your confidence in the description on a scale of 1-5:
+
+		1aaaa
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: predictor>gam>SPLAMLearner.java> computeGradient [line 1025]
+	Description:
+
+		This method computes the gradient at each position in a block
+		
+		This method takes the value of each position in the block and multiplies it by a value
+			retrieved from the corresponding position in an rTrain array, and then saves this at
+			the corresponding position in a gradient array
+			
+		This method seems to be helpful for managing gradient calculations, particularly when the 
+			parameters are divided into blocks
+	
+	Rate your confidence in the description on a scale of 1-5:
+
+		3
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: predictor>tree>TreeInteriorNode.java> write [line 76]
+	Description:
+		
+		This method prints the tree as a string
+		
+		This method recursively writes the left subtree followed by the right subtree, at each
+			iteration printing a canonical name, attIndex, and splitPoint values
+			
+		This method is useful for checking the value of a tree in a readable format
+		
+	Rate your confidence in the description on a scale of 1-5:
+
+		4
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: util>OptimUtils.java> fitIntercept [line 108]
+	Description: 
+	
+		This method modifies the prediction by adding a delta value
+		
+		This method computes a delta value by summing the value at each position and then dividing 
+			it by a theta value, which is a sum of a function of the abs of each value
+			
+		This method seems to help with the prediction in some manner, as we add the delta and also 
+			compute a computePseudoResidual function involving the prediction
+
+	Rate your confidence in the description on a scale of 1-5:
+
+		2
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session.
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: core>BinnedAttribute.java> parse [line 66]
+	Description:
+
+		This method parses a string that contains information about some bins
+		
+		This method takes a string formatted as ATTRIBUTE:BINS where there is an attribute followed 
+			by bins string, which contains information such as how many bins, the strs associated with 
+			each bin, etc, and then all of this is placed into a BinnedAttribute
+			
+		This method is useful for passing around information about a bin, without having to go into 
+			the bins and check everything
+
+	Rate your confidence in the description on a scale of 1-5:
+
+		3
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 6: predictor>tree>RTreeLearner.java> getStats [line 64]
+	Description:
+
+		This method is used to get information about a series of data
+		
+		This method appears to calculate a weighted average over the elements in the data (passed in
+			as an instance and a stats list)
+			
+		This method could be useful for checking the function/correctness of a program, by being 
+			able to easily survey some characteristics of the result of a prediction. say 
+		
+	Rate your confidence in the description on a scale of 1-5:
+
+		3
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 7: core>processor>InstancesSplitter.java> split [line 286]
+	Description:
+	
+		This method seems to be use to split a series of data into a customizeable series of subsets
+			of the data
+			
+		This method takes in a list of attributes to stratify, and then iterates through them, and 
+			for each item in the series of data the method creates partitions according to some 
+			given relationship specified by the ratios given to the method
+			
+		This method seems to be part of the overall purpose of the file which is to split the data
+			in various ways - for example for the purpose of cross validation
+		
+	Rate your confidence in the description on a scale of 1-5:
+
+		2
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: core>io>InstancesReader.java> parseDenseInstance [line 159]
+	Description:
+		
+		This method takes a list of data as strings and then tries to parse it as a new instance 
+			of data with some vector/class
+			
+		This method parses the list of strings each of them in as a double, and then adds them all
+			to a vector, while maintaining track of the classValues specified by the data, and then
+			at the end creates a data instance using the vector and final classValue
+			
+		This method is useful for taking the data in string format, which perhaps is what is
+			referred to by 'dense', and then using the information from that representation to get
+			the class and data values into an Instance object	
+		
+	Rate your confidence in the description on a scale of 1-5:
+
+		3
+		
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

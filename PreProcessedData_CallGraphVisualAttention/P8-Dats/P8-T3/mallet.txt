@@ -1,0 +1,161 @@
+-> Project: "mallet"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 					Project Synopsis:  
+| 			MALLET: MAchine Learning for LanguagE Toolkit
+| MALLET is a Java-based package for statistical natural language processing, document classification, 
+| clustering, topic modeling, information extraction, and other machine learning applications to text. 
+-----------------------------------------------------------------------------------------------------
+
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: mallet>regression>LinearRegression.java> predict [line 30]
+	Description:
+	Calculates the value following the formula of a linear regression.
+	Given the parameters the formula will perform a regression to estimate one value.
+	Useful to perform simple prediction given a period time.
+	
+	
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: mallet>optimize>OrthantWiseLimitedMemoryBFGS.java> optimize [line 100]
+	Description:
+	
+	Optimizes the parameters given a certain type of iterations.
+	Returns true if the optimization converged based on the evaluation of the gradient and value.
+	Useful to improve and verify the operations to perform an optimization. 
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: mallet>types>InvertedIndex.java> InvertedIndex [line 17]
+	Description:
+
+	Iterates as a matrix a list and invert the values based on the instant position.
+	When the object is instance of FeatureVector an exception will be throw, otherwise the swap will be performed.
+	Useful to swap the values of x based on the value of the cell and the position
+
+	Rate your confidence in the description on a scale of 1-5: 	2
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: mallet>regression>CoordinateDescent.java> toString [line 165]
+	Description:
+	
+	Performs a regression and prints the result of the regression with an specific format.
+	The standard error also will be printed and a specific format of the prediction
+	Useful to print in a specific format the result of a regression with the split of all the values.
+
+
+	Rate your confidence in the description on a scale of 1-5: 2
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session |
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: mallet>types>SparseMatrixn.java> plusEquals [line 257]
+	Description:
+
+	Detects the type of the matrix and transforms into an equal sparse.
+	If the object is a type of instance SpaceVector or SpaceMatrix certain operations will be performed to equals the spare, but if it is not the case the addition will not be perform.
+	Useful to detect the type of matrix and add the different values. 
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6:  mallet>cluster>GreedyAgglomerative.java> improveClustering [line 61]
+	Description:
+	
+	Detects the best cluster and improve the clusters based on the best score of each cluster.
+	The cluster with the lowest score will be merged into antoher one and will calculate the converge value for each new cluster.
+	Useful to identify the best cluster and improve the existing cluster.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+
+	Method 7: mallet>types>FeatureInducer.java> induceFeaturesFor [line 179]
+	Description:
+	
+	Based on the type of vector add am induced feature if it is possible with value 1.0.
+	Iterates over the list of objects and detect the type of Object, if it is augmentable feature vector add the induced feature or if it is feature vector sequence applies different rules to add the feature. 
+	Useful to add feautires for each different element in the list.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: mallet>types>Multinomial.java> ensureCapacity [line 290]
+	Description:
+
+	Restablish the capacity based on the index and size making a comparison between them.
+	If the count lenght is less than the pre-established min capacity then keeps that capacity, if it is not the case, asign the length of the counts and continues this process until the lenght will overcome the index.
+	Useful to re adjust the capacity given the index. 
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

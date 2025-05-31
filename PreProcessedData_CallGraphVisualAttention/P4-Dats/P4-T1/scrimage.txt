@@ -1,0 +1,160 @@
+
+-> Project: "srcimage"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 										Project Synopsis:  
+| Scrimage is an immutable, functional, and performant JVM library for manipulation of images.
+| The aim of this library is to provide a simple and concise way to do common image operations, 
+| such as resizing to fit a required width and height, converting between formats, applying filters and so on.
+-----------------------------------------------------------------------------------------------------
+
+
+#####################################---CALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session  |
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: scrimage>canvas>Canvas.java> draw [line 46]
+	Description:
+	
+	This method draws an existing image on a canvas/screen.
+	This method first makes a copy of the image that it wants to d4raw, and then assign it to a new 2D graph object and draw it an canvas, and last it dispose the copy of this image.
+    This method can be used to either draw a 2D image on a new canvas, or to draw a 2D image in place (on current canvas)
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: scrimage>ImmutableImage.java> fill [line 320]
+	Description:
+	
+	This method fills an existing rectangle with colors.
+	This method can specifically choose the color for filling depending on the location of the rectangle.
+	This method can be used to fill a rectangle whose center is aligned with the center of the background.
+
+	
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: srcimage>nio>internal>GifSequenceReader.java> readHeader [line 577]
+	Description:
+	
+	This method reads the header of a list of inputs or the header of a table.
+	This method first check whether the input format is GIF, and quit if it is not GIF; if the input format is GIF, it then gets the GCT flag and returns background color.
+	This method can be used to parse the header of a direct input or a stream of buffered input.
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: scrimage>AwtImage.java> points [line 174]
+	Description:
+	
+	This method creates a new list of points.
+	This method first creates a list whose length is a given width multiply by a given height, then the element in the list if the position of the points (x, y).
+	This method can be used in many cases, mostly it can be used to either set or modify the value of a color pixel.
+
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session    |
+-----------------------------------------------------------------------------------------------------
+#####################################---RECALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session    |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: scrimage>metadata>OrientationTools.java> reorient [line 22]
+	Description:
+	
+	This method allows one to change the orientation of an image.
+	This method can change the orientation of an image in different ways including: mirror, rotate 180 degrees, rotate 180 degrees and mirror,
+		rotate 90 degrees, rotate 90 degrees and mirror, rotate 270 degrees, rotate 270 degrees and mirror, or to just return the original image.
+	This method can be used to modify/reorient an image while loading the image.
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: srcimage>scaling>AwtNearestNeighbourScale.java> scale [line 8]
+	Description:
+	
+	This method can scale an existing image into a new size.
+	This method specifically scale the image into a new size by interpolating pixels based on the pixel values of the neighbours of a pixel.
+	This method is used to re-scale a buffered image into a target size.
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 7: srcimage>subpixel>LinearSubpixelInterpolator.java> summands [line 59]
+	Description:
+	
+	This method calculates weighted values for each pixel in each channel.
+	This method returns a list of zeroes if the weight is zero, otherwise, it goes through each position/pixel in the list and calculate 
+		a weight values for 4 channels (blue, green, red, alpha)
+	This method can be used to calculate the weighted sum of each channel for an image.
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 8: scrimage>filter>PipelineFilter.java> apply [line 19]
+	Description:
+	
+	This method basically checks the type of an given image and then make a copy.
+	This method checks the type of an given image first: if its type is either RBG or ARBG, return a copy of the image; otherwise, convert this image into ARBG and returns the copy of ARGB image.
+	This method can be used in an image filter to make sure all the images are in the desired type.
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+	
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!
+

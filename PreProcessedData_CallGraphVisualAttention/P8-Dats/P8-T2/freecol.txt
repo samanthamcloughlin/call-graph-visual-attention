@@ -1,0 +1,160 @@
+
+-> Project: "freecol"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 										Project Synopsis:  											|
+| 	FreeCol:  FreeCol is a turn-based strategy game based on the old game Colonization, 			|
+|	and similar to Civilization. The objective of the game is to create an independent nation.		|
+-----------------------------------------------------------------------------------------------------
+
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: freecol>tools>FlagTest.java> SetColors [line 209]
+	Description:
+	Assigns different colors in the background based on the buttons.
+	It will iterate over the array of buttons and assign color if the color button is different than null the background will have a specific color from the array of buttons.
+	This method will help to start the game and assign the desire color for the background
+	
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: freecol>common>model>Monarch.java> initializeCaches [line 209]
+	Description:
+	Counts the type of resources of the player getting the unique type of abilities for armament and for soldiers.
+	Extracts from the specification the unique features to initializes the list of unique resources for the first iteration the method extracts the unit type and for the second the military role.
+	This method will help to save the resources of the player in real time and will help later to update the list of resources during the game.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: freecol>common>io>FreeColXMLReader.java> readId [line 219]
+	Description:
+
+	Detects and read the player table and detects the container id.
+	Within an specific table the x dimension for specific id will be extracted and an specific id will be returned.
+	Useful to extract the positions for x dimension to get the specific id of the object.
+
+
+	Rate your confidence in the description on a scale of 1-5: 	2
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: freecol>common>model>pathfinding>CostDeciders.java> getCost [line 198]
+	Description:
+	
+	Identifies if the desire movement is illegal.
+	If the cost implies an illegal movement based on the old and new location a message of illegal movement will be throw if not, the new index and cost will be updated.
+	Useful to detect illegal movements and update the cost based on prior and new locations. 
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session |
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: freecol>server>FreeColServer.java> changeServerState [line 349]
+	Description:
+	
+	Changes the status of the game depending on the current state and send message to start deploying stopping or ending the game
+	If the game already start or if the user is in the game or if it has ended the method will update the value
+	Helpful to get the current overall status of the game.
+
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: freecol>client>gui>mapviewer>CanvasMapViewer.java> drawRenderingTimeStrings [line 121]
+	Description:
+
+	Calculates and draws the text given the text and time parameters.
+	Calculates the mean of the render time and draws the text getting as output the time it takes to draw the specified text.
+	Useful to calculate the average rate of render given the text string.
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+
+	Method 7: freecol>client>gui>SwingGUI.java> updateUnitPath [line 443]
+	Description:
+
+	Based on the active cells and destination, updates the path.
+	If it is not active the method will not perform the next sequence, else will check the disposed cells and update the path.
+	Useful to update the active cells and paths based on destination.
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: freecol>common>model>FreeColObject.java> compareIds [line 148]
+	Description:
+
+	Returns the id 1, 0 or -1 based on the comparison of two objects to detect the free space to set a color.
+	If the value of the first object is null  and the value of second is also null it will be set to 0 which means the cell is free, if the result is -1 the second object will take hierarchy. If the values are not null that means it is possible make a comparison between the ids.
+	Useful to compare the free cells and get the specific id if it is a cell free.
+	
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+Have the opportunity to interact better with the editor IDE, use shortcuts, split window, write comments.
+
+Please call the administrator!

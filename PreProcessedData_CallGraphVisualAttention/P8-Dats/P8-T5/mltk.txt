@@ -1,0 +1,151 @@
+
+ Project: "MLTK"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+-----------------------------------------------------------------------------------------------------
+Project Synopsis: MLTK (Machine Learning Tool Kit) is a collection of various supervised machine 
+learning algorithms, which is designed for directly training models and further development.
+-----------------------------------------------------------------------------------------------------
+	
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 1: core>processor>Discretizer.java> computeBins [line 122]
+	Description:
+	
+	Calculates the boundaries and medians given a list.
+	If the total weight is less than the provided maximum number of bins there will be an iteration to fill the vector of stats else the total weight will be calculated.
+	Useful to calculate the weigh of the vector.
+
+
+	Rate your confidence in the description on a scale of 1-5:1
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: core>processor>InstancesSplitter.java> split [line 286]
+	Description:
+	
+	Creates partitions for the dataset given a specific ratio.
+	Given a dataset identify the type of attributes and start calculating the partition if the ratio is grater than 1 
+	Useful to split the data set in specific partitions and returns the split based on a previous calculation.
+	
+	
+	Rate your confidence in the description on a scale of 1-5:2
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: core>BinnedAttribute.java> parse [line 66]
+	Description:
+	
+	Identifies the start and end of string in order to get the median and boundaries to create the Binned attribute.
+	If the length of the split string is equal to 1 the Binned Attributes will be returned inmediately, else a new parse for each element will be performed.
+	Useful to parse the actual string into Binned attributes.  
+
+		
+	Rate your confidence in the description on a scale of 1-5:2
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: util>OptimUtils.java> fitIntercept [line 108]
+	Description: 
+	
+	Calculates the value of delta, eta and theta in order to optimize the value of delta.
+	Calculates theta based on the residual value of each position. Theta is the entire value of the absolute value of the residual. If the value is bigger than the value of epsilon this will calculates delta  
+	Useful to optimize the value delta in the operation.
+	
+	Rate your confidence in the description on a scale of 1-5:3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session.
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: predictor>tree>TreeInteriorNode.java> write [line 76]
+	Description:
+	
+	For each type of method, prints a formatted version of the result.
+	Displays the result of the prediction in a formatted version.
+	Useful for every method such as regressionTree, Prediction Writer, etc. 
+		
+
+	Rate your confidence in the description on a scale of 1-5:4
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 6: core>io>InstancesReader.java> parseDenseInstance [line 159]
+	Description:
+
+	Given a vector of values transform to a dense version.
+	If the value can not be calculated a missing value will be placed in that position.
+	Useful to transform a vector of numbers into a dense instance with the new values and number of elements 
+		
+	Rate your confidence in the description on a scale of 1-5:4
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 7: predictor>tree>RTreeLearner.java> getStats [line 64]
+	Description:
+	
+	Gets weight and target to calculate the stats and returns a boolean value if the stats are different from the target.
+	Iterates over each instance and recover the weight and target verify that this value is different form the first value and set the boolean value equals to true or false.
+	Useful to recover the stats and verify if the target already have the desire value.
+		
+	Rate your confidence in the description on a scale of 1-5:3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: predictor>gam>SPLAMLearner.java computeGradient [line 1025]
+	Description:
+		
+	Calculates the gradient of each position if the vector.
+	Iterates over the vector block and for each position calculates the gradient (the train vector result multiply by each position of the initial vector.
+	Useful to do one pass in the method and calculate the gradient given an specific index, the vector, the r train vector, and one value for the gradient.
+		
+	Rate your confidence in the description on a scale of 1-5:3
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

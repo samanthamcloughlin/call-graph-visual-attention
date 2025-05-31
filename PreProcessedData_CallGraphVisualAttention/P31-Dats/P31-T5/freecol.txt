@@ -1,0 +1,163 @@
+-> Project: "freecol"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 										Project Synopsis:  											|
+| 	FreeCol:  FreeCol is a turn-based strategy game based on the old game Colonization, 			|
+|	and similar to Civilization. The objective of the game is to create an independent nation.		|
+-----------------------------------------------------------------------------------------------------
+
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: freecol>tools>FlagTest.java> SetColors [line 209]
+	Description:
+	
+	This method sets the colors of the displayed flag when running a flag test. It does so by invoking helper
+	methods on the flag to propogate the union color, star color and decoration color; it also collects all 
+	background colors from the buttons and sets those. This method is used to render the flag when an action is
+	performed or some state changes.
+	
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	4
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: freecol>common>io>FreeColXMLReader.java> readId [line 219]
+	Description:
+
+	This method reads and returns the ID attribute tag value from the freecol XML reader. It does so using the
+	getAttribute helper method; then it checks if the id starts with tileitemcontainer or tileimprovement and if
+	so capitalizes those parts and then returns the id. This method is used to read the id attribute which is used
+	to identify distinct entities in gameplay.
+
+	Rate your confidence in the description on a scale of 1-5: 
+
+	5
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: freecol>client>gui>SwingGUI.java> updateUnitPath [line 443]
+	Description:
+
+	This method is used to update the path from the current location to destination for the active unit. It does
+	so by getting the active unit and its destination and finding a path if the unit is not already at the destination;
+	when a path is found, it is set. This method is used to update the path for the active unit once it has been moved.
+
+	Rate your confidence in the description on a scale of 1-5: 	
+
+	5
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: freecol>common>model>pathfinding>CostDeciders.java> getCost [line 198]
+	Description:
+
+	This method returns the cost of performing a certain move (moving an unit from an old location to new location) based
+	on a list of different costDeciders which provides rules for the game. The method iterates through all cost deciders
+	and if the proposed move is illegal or costs infinity according to any cost decider then it is not allowed; else the
+	highest cost from all deciders is returned. This method is likely used to determine if a move is valid for some unit
+	and what the cost for it will be.
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	5
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session |
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: freecol>server>FreeColServer.java> changeServerState [line 349]
+	Description:
+
+	This method is used to change the state of the freecol server and update the message handler for all
+	connections as that happens. This is done by passing the new server state to this method which updates it
+	and then uses switch statements to set a message handler for connections accordingly; the new server state
+	is returned. This method is used to update the server state when the game is loaded, started or ended.
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	5
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: freecol>common>model>FreeColObject.java> compareIds [line 148]
+	Description:
+
+	This method is used to compare ids of two freecol objects and returns 1 if first obj > second obj, 0
+	if both are equal and -1 if second obj > first obj. The method first checks if either object or its id
+	is null, then it lexographically compares the id type and if those are the same it compares id number.
+	This method is used to compare ids of different AI units by the AI player.
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	4
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+
+	Method 7: freecol>common>model>Monarch.java> initializeCaches [line 209]
+	Description:
+
+	This method initializes the cache for a Monarch object by retrieving units and roles from the specification
+	and classifying them as naval, bombard, land and mercenary types based on their abilities. The method does so
+	by getting the unit type list from the spec and classifying units based on what ability they have; the different
+	military roles are also assigned in a similar manner. This method is used at the start of other methods in the
+	Monarch class to ensure that these data structures have been populated so they can be used.
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	5
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: freecol>client>gui>mapviewer>CanvasMapViewer.java> drawRenderingTimeStrings [line 121]
+	Description:
+
+	This method outputs debugging information with statistics about rendering time for the full map on the canvas if
+	debugging is enabled. It does so by comparing the current system time with the start time before rendering began
+	to find the render time; if the map was rendered without using a buffer, the average render time is updated; finally
+	the method outputs the average rendering time, last rendering time and the corresponding frames per second. This
+	method is used to provide useful performance information visually when a developer is debugging the application.
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	5
+	
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

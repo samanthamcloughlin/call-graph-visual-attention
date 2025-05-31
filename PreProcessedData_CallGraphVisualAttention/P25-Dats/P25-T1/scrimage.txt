@@ -1,0 +1,146 @@
+
+-> Project: "srcimage"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 										Project Synopsis:  
+| Scrimage is an immutable, functional, and performant JVM library for manipulation of images.
+| The aim of this library is to provide a simple and concise way to do common image operations, 
+| such as resizing to fit a required width and height, converting between formats, applying filters and so on.
+-----------------------------------------------------------------------------------------------------
+
+
+#####################################---CALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session  |
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: scrimage>canvas>Canvas.java> draw [line 46]
+	Description:
+        
+
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: srcimage>scaling>AwtNearestNeighbourScale.java> scale [line 8]
+	Description:
+	
+	
+
+
+	
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: scrimage>filter>PipelineFilter.java> apply [line 19]
+	Description:
+	
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: scrimage>AwtImage.java> points [line 174]
+	Description:
+	
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session    |
+-----------------------------------------------------------------------------------------------------
+#####################################---RECALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session    |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: srcimage>nio>internal>GifSequenceReader.java> readHeader [line 577]
+	Description:
+	
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: scrimage>ImmutableImage.java> fill [line 320]
+	Description:
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 7: scrimage>metadata>OrientationTools.java> reorient [line 22]
+	Description:
+	
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 8: srcimage>subpixel>LinearSubpixelInterpolator.java> summands [line 59]
+	Description:
+	THE METHOD ADDS UP THE FLOOR AND CEILING WEIGHTS OF EACH PIXEL AND RETURNS THE WEIGHTS OF EACH PIXEL IN A LISTTHE METHOD FIRST STARTS BY DETERMINING THE WEIGHTS OF THE X AND Y CREATING PAIRS OF THE COORDINATE FOR EACH PIXEL AS WELL THE WEIGHT, ONE FOR CEILING AND ONE FOR FLOOR. THERE IS ONE LIST OF PAIRS FOR EACH AXIS, X AND Y, OF EACH PIXEL WITH EITHER 0 IF EITHER THE WEIGHT OF THE X OR Y AT THAT POINT IS 0 OR WITH THE SUM OF THE ARGB THIS IS PROBABLY USEFUL FOR SOME SORT OF INTERPOLATOR, BUT I DON'T KNOW WHAT THAT DOES IN PHOTOS. SUBIMAGING     A SUBIMAGE IS. C- CREATING
+
+
+	Rate your confidence in the description on a scale of 1-5: 1
+	
+	
+	
+	
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!
+

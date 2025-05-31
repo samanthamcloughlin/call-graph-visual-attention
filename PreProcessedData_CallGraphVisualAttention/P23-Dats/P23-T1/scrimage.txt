@@ -1,0 +1,166 @@
+
+-> Project: "srcimage"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 										Project Synopsis:  
+| Scrimage is an immutable, functional, and performant JVM library for manipulation of images.
+| The aim of this library is to provide a simple and concise way to do common image operations, 
+| such as resizing to fit a required width and height, converting between formats, applying filters and so on.
+-----------------------------------------------------------------------------------------------------
+
+
+#####################################---CALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session  |
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: scrimage>canvas>Canvas.java> draw [line 46]
+	Description:
+        
+	this method draw a list of images into the canvas.
+	It accepts a collection of images and returns a new created canvas.
+	This method is useful when we are inserting images when we are initializing a canvas.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: scrimage>AwtImage.java> points [line 174]
+	Description:
+
+	This method create an array of new points which take all the positions in the image.
+	It is a constructor that does not accept any inputs and return an array of points which represent all the locations in the image.
+	This method is useful when initializing the image and is convenient for the later work to change the color of quality of each point in the image.
+	
+
+
+	
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: srcimage>scaling>AwtNearestNeighbourScale.java> scale [line 8]
+	Description:
+	
+	this method scale a buffer image.
+	It accept a buffer image, its width and length, and return the changed image.
+	This method is useful when want to change the scale of an image.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: scrimage>metadata>OrientationTools.java> reorient [line 22]
+	Description:
+	this method rotated the image.
+	It accepts an image and metadata about rotation instructions and return the changed data.
+	This method is useful when we want to orient the image.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session    |
+-----------------------------------------------------------------------------------------------------
+#####################################---RECALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session    |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: srcimage>subpixel>LinearSubpixelInterpolator.java> summands [line 59]
+	Description:
+	this method calculate the sum of mands.
+	It accepts two double value and returns a two dimensional array.
+	This method is useful when we are calculating information from the image.
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: srcimage>nio>internal>GifSequenceReader.java> readHeader [line 577]
+	Description:
+	
+	this method helps with reading in an image.
+	It accept nothing and return nothing, but if the image's header is start with GIF, it will set the status to Error.
+	this method if useful when we are loading in an image and could ensure we are not reading in some images those type is not acceptable.
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 7: scrimage>ImmutableImage.java> fill [line 320]
+	Description:
+	
+	this method fill the image with painter.
+	It accepts a painter and return the changed image.
+	This method is useful when we want to paint the image and make changes.
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 8: scrimage>filter>PipelineFilter.java> apply [line 19]
+	Description:
+	
+	this method applies a filter on an image.
+	It accepts an image as input, create a copy of the image, and add a filter on the copied version.
+	This method is useful when want to add a filter on our image.
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	
+	
+	
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!
+

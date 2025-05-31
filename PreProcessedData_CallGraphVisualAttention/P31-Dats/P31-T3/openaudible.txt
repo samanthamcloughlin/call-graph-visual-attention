@@ -1,0 +1,170 @@
+-> Project: "openaudible"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 				     Project Synopsis:  					    |
+| 					OpenAudible						    |
+|	  A cross-platform desktop application for downloading and managing your Audible audiobooks.|
+-----------------------------------------------------------------------------------------------------
+
+#####################################-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: openaudible>Audible.java> find [line 522]
+	Description:
+	
+	This method finds books that match some string and returns a list of them. It does so by
+	iterating through all available and then checking if their asin, author, title or narratedBy
+	elements contain the provided string; if so, a match is found and that book is added to the
+	list to be returned. This method is used to find books matching a query for users of the CLI.
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	5
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: openaudible>util>DebugBuffer.java> accept [line 35]
+	Description:
+
+	This method is used to add debugging information to a string buffer. It does this by accepting
+	a string s, creating a buffer if not already present / appending a separator to the buffer and
+	then appending the string. This method is used in the project to report errors of various types.
+
+	Rate your confidence in the description on a scale of 1-5: 
+
+	5
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: openaudible>desktop>swt>manager>menu>CommandCenter.java> reallyQuit [line 260]
+	Description:
+
+	This method is used to display a confirmation window asking a user of the desktop application if
+	they really to quit the app if tests are in progress. It does so by checking if any tests are in
+	progress; if so, it generates a string asking for confirmation and shows a pop-up to the user with
+	buttons for quit and cancel; if the user wants to quit, true is returned. This method is used when
+	the application is being closed to confirm the user choice.
+
+	Rate your confidence in the description on a scale of 1-5:
+
+	5
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: openaudible>AudibleCLI.java> test [line 240]
+	Description:
+	
+	This method iterates through a list of books and checks if the audible application contain an mp3 for it;
+	if it does, the method prints the name of the mp3 file with its size and the size of the corresponding
+	AAX file and the difference between them. The method uses this by iterating through the passed booklist,
+	checking the file cache using hasMP3 helper method, reading the mp3 and aax files and finding the difference
+	in size between them. This method is used as part of the test2 command in the CLI to report statistics for
+	files matching some string.
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	5
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session.	|
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session. 	|
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: openaudible>books>Book.java> checkBook [line 101]
+	Description:
+	
+	This method is used to check that a book has the required elements productId and fullTitle and if
+	it does not a string indicating such is returned. The method makes this check by iterating through
+	a list of required book elements and checking if they are present using the has method. This method
+	is used in operations like importing aax files and loading and updating the book library.
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	5
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: openaudible>desktop>swt>manager>AudibleGUI.java> connect [line 255]
+	Description:
+	
+	This method connects the GUI to an audible scraper using credentials for an account from a
+	browser and logs into that account; if this operation is not successful a message and stack trace
+	is printed. The method works by creating a new ProgressTask instance and overriding its run method;
+	this task is then passed into a ProgressDialog doProgressTask method to be executed by it. This
+	method is used by the GUI to run the connect command.
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	5
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+
+	Method 7: openaudible>util>Util.java> urlGetArgs [line 125]
+	Description:
+	
+	This method is used to parse arguments from a URL passed to it. It does so by extracting the query
+	string (part after ?) from the URL, splitting it into different parameters using & and then extracting
+	key/value from each of them (splitting on =); if any validation error or exception occurs, it is logged.
+	This method is used to parse elements of a book from the download URL and then set those elements as
+	attributes of that book.
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	5
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: openaudible>convert>BookMerge.java> mergeItem [line 27]
+	Description:
+	
+	This method is used to merge a book element attribute when new information for books in the audible library
+	is found on the audible scraper (verified using product ids). This method gets string values for both books
+	and uses helper method mergeItem to check for changes and choose which version to pick; the method returns true
+	if the book element was changed. This method is used to update information about books in the local library
+	when new information is found from an audible scraper which is connected to as part of the libary command in the
+	CLI.
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	5
+	
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

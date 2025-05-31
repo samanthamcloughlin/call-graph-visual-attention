@@ -1,0 +1,173 @@
+-> Project: "freecol"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 										Project Synopsis:  											|
+| 	FreeCol:  FreeCol is a turn-based strategy game based on the old game Colonization, 			|
+|	and similar to Civilization. The objective of the game is to create an independent nation.		|
+-----------------------------------------------------------------------------------------------------
+
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: freecol>tools>FlagTest.java> SetColors [line 209]
+	Description:
+	This method sets colors in the different elements in the flag variable.
+	
+	This method gradually sets colors in the unicorn, star, decoration, buttons and in the background of the flag variable.
+	
+	This method is used to set colors in the Flag object after an action or state change.
+	
+	
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: freecol>client>gui>mapviewer>CanvasMapViewer.java> drawRenderingTimeStrings [line 121]
+	Description:
+	
+	This method draws the rendering time string in the graphics.
+	
+	This method finds out the render time by subtracting the start time and current time, then recalculates the average render time if the full map is rendered without using the  backbuffer, and finally draws these information on the graphics.
+	This method can be helpful during debugging and rendering information can provide valuable information.
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: freecol>common>io>FreeColXMLReader.java> readId [line 219]
+	Description:
+	This method reads the ID of a FreeColObject object and returns it.
+	
+	This method first get the ID attributes of a FreeColObject object, if it is not null, it checks if the length of the prefix of the id identified by ":" is greater than 10 or not,  if it is greater than 10, it finds the ID type and appends it with the remaining part of ID, and finally returns it.
+	This method can be helpful to read the Id and identify it.
+	
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 	3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: freecol>server>FreeColServer.java> changeServerState [line 349]
+	Description:
+	This method changes the state of the server.
+	
+	This method checks in which state the server is in, unless it is not in the END_GAME state, it sends the right input handler, otherwise it sends null as input handler, and finally it returns the previous server state. 
+	This method is needed in every state of the server to have the server in the right state.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session |
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: freecol>common>model>Monarch.java> initializeCaches [line 209]
+	Description:
+	This method initializes the caches to store information.
+	
+	This method creates ArrayList for naval, bombard, land and mercenary types, get REFUnit for naval and land types, iterates over the unit types and adds them to the right ArrayList, and then it checks the MilitaryRole types for armed,  mounted or ref unit.
+	
+	This method initializes the caches whenever there is a valid action or the game wants to get Naval Ref unit and support, or load mercenaries or mercenary force.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: freecol>common>model>FreeColObject.java> compareIds [line 148]
+	Description:
+	This method compares Ids between two FreeColObject objects.
+	
+	This method checks if the objects are null or not, then it checks their Ids are null or not by extracting them, and finally, it first compares based on the Id types and then, as number if necessary.
+	
+	This method helps to compare Ids between two  FreeColObject objects which can be helpful about determining their locations.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+
+	Method 7: freecol>client>gui>SwingGUI.java> updateUnitPath [line 443]
+	Description:
+	This method helps to set the path of an active unit.
+	
+	This method gets the active unit and its destination location, after checking the validity, it gets the path for the destination location, and sets it using setUnitPath method.
+	
+	This method can be used to traverse, perform or clear the Goto path of an active unit.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: freecol>common>model>pathfinding>CostDeciders.java> getCost [line 198]
+	Description:
+	This method calculates the cost to move an unit from an old location to a new one.
+	
+	This method traverses the costDeciders array, checks if the cost is an ILLEGAL_MOVE or INFINITY, if it is not, it returns the cost for the move from an old location to the new location.
+	
+	This method helps to calculate cost which is a contributing factor to make a move.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

@@ -1,0 +1,146 @@
+
+ Project: "MLTK"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+-----------------------------------------------------------------------------------------------------
+Project Synopsis: MLTK (Machine Learning Tool Kit) is a collection of various supervised machine 
+learning algorithms, which is designed for directly training models and further development.
+-----------------------------------------------------------------------------------------------------
+	
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 1: core>processor>Discretizer.java> computeBins [line 122]
+	Description:
+	First creating a linked list of doubles and adding every valid double in the array x in the list.
+	Finally calling the computeBins function that accepts a list and max NumBins to calculate the bins.
+	This method tries to filter out the value in the array that is NaN before calling another computeBins to create the bins.
+
+
+	Rate your confidence in the description on a scale of 1-5: 5
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: predictor>gam>SPLAMLearner.java> computeGradient [line 1025]
+	Description:
+
+	Compute the gradient by iterating through two arrays. I'm not entirely sure on the detail math for the calculation.
+	
+	Rate your confidence in the description on a scale of 1-5: 3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: core>BinnedAttribute.java> parse [line 66]
+	Description: Process the string to create and return the appropriate BinnedAttribute object.
+	
+	The second argument in the BinnedAttribute constructor is either from parseInt of the first part of str between "(" and ";" or from the boundary and median if there are at least one ";" in str.
+	
+
+		
+	Rate your confidence in the description on a scale of 1-5: 4
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: core>processor>InstancesSplitter.java> split [line 286]
+	Description: 
+	Returns a dataset which is an array of Instances.
+	It either calls split(instance, ratio) if the stratify attribute is null or the getstrata of intance and atttostratify is null.
+	
+	Otherwise, it uses the instances to create the dataset and then use the ratio variable to perform the calculation to split the instances into a dataset.
+		
+
+	Rate your confidence in the description on a scale of 1-5: 3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session.
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: core>io>InstancesReader.java> parseDenseInstance [line 159]
+	Description:
+	Creates a vector of double using the data parameter. 
+	The class value is either NaN if class index is negative or is the ith position of data.
+	Returns an Instance with the vector and class value.
+		
+
+	Rate your confidence in the description on a scale of 1-5: 5
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 6: util>OptimUtils.java> fitIntercept [line 108]
+	Description:
+	Calculates theta which is sum of the products of all the absolute value of the residual times 1 - the absolute value of the residual.
+	Returns delta which is 0 if theta is less than or equals to epsilon, otherwise, it's eta/theta. Eta is the sum of the residuals.
+	
+		
+	Rate your confidence in the description on a scale of 1-5: 4
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 7: predictor>tree>TreeInteriorNode.java> write [line 76]
+	Description: 
+	Print the tree by printing the canonical name, attindex, splintpoint, with new lines of each node.
+	Then resursively calling this write method on the left and right child.
+	
+
+		
+	Rate your confidence in the description on a scale of 1-5: 5
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: predictor>tree>RTreeLearner.java> getStats [line 64]
+	Description:
+		
+	Returns true if instances is empty or if the target of every instance in instances is the same as the first target.
+	Changes stats[0] to be the sum of the weight of the instances, stats[1] to be the sum of weight * target of the instances and stats[2] to be stats[1]/stats[0].
+	
+		
+	Rate your confidence in the description on a scale of 1-5:4
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project: I thought I had already clicked start tracking before I started the first method but I did not.
+So the first method was done without tracking. I clicked start tracking and stop tracking and start tracking again before starting the second method.
+
+
+
+Please call the administrator!

@@ -1,0 +1,173 @@
+-> Project: "mallet"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 					Project Synopsis:  
+| 			MALLET: MAchine Learning for LanguagE Toolkit
+| MALLET is a Java-based package for statistical natural language processing, document classification, 
+| clustering, topic modeling, information extraction, and other machine learning applications to text. 
+-----------------------------------------------------------------------------------------------------
+
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: mallet>regression>LinearRegression.java> predict [line 30]
+	Description:
+	
+	This method generates predictions for some input vectors.
+	This method checks each feature vector and calculate the prediction at that location and adds it to the prediction;
+		at the end it returns the final prediction.
+	This method can be used to calculate the prediction for a linear regression algorithm.
+	
+	
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: mallet>optimize>OrthantWiseLimitedMemoryBFGS.java> optimize [line 100]
+	Description:
+
+	This method optimizes existing parameters for a model for a certain iterations based on OWL-BFGS.
+	For a given number of iterations, this method checks parameters and optimize the gradient based on OWL-BFGS algorithm;
+		it returns true if the model converges, otherwise returns false.
+	This method can be used as a part of the implementation of OWL-BFGS optimizer.
+
+	Rate your confidence in the description on a scale of 1-5: 3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: mallet>cluster>GreedyAgglomerative.java> improveClustering [line 61]
+	Description:
+	
+	This method improves existing clusters.
+	This method first checks the existing clusters, and updates current cluster if it provides a better score;
+		then it checks whether the model converges, and merges clusters if it doesnt;
+		finally it returns the updated clusters.
+	This method can be used to update the clusters in a greedy algorithm.
+
+
+	Rate your confidence in the description on a scale of 1-5: 	4
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: mallet>types>InvertedIndex.java> InvertedIndex [line 17]
+	Description:
+	
+	This method inverts the indices of a data feature vector.
+	This method checks all the features vectors: it throws an error if the entry is not a FeatureVector data,
+		otherwise, it adds the index to the feature vector.
+	This method can be used to generate inverted index for feature vectors and then be sued to check whether
+		features are contained in the reverted index.
+
+
+	Rate your confidence in the description on a scale of 1-5: 2
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session |
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: mallet>regression>CoordinateDescent.java> toString [line 165]
+	Description:
+	
+	This method converts the output to type string.
+	To be specific, this method first calculate the square error from the predictions, and then it
+		sends the data, prediction and error to the string builder and return results as string.
+	This method can be used to convert data and results to string while applying coordinate descent 
+		in linear regression.
+		
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6:  mallet>types>Multinomial.java> ensureCapacity [line 290]
+	Description:
+		
+	This method checks and updates the capacity of an array.
+	This method checks the size of given data, and if current length is smaller than the size of the
+		data, double the size and return a new array whose length is this new size.
+	This method can be used when size of the data is increased or to make sure a dictionary have
+		enough capacity for data when applying multinomial estimation.
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+
+	Method 7: mallet>types>SparseMatrixn.java> plusEquals [line 257]
+	Description:
+	
+	This method adds a new value element-wise onto an existing matrix.
+	This method checks the type of input first, if it is a sparseVector or sparseMatrixn, it add new value
+		multiplied by a factor element-wise to input matrix; otherwise, it throws error on the operation.
+	This method can be used to update current matrix by adding a new value or adding new value based on a multiplier.
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: mallet>types>FeatureInducer.java> induceFeaturesFor [line 179]
+	Description:
+	
+	This method can be used to induce feature vectors.
+	This method checks the type of given features, and if the feature belongs to AugmentableFeatureVector
+		or FeatureVector Sequence, it adds the feature to AugmentableFeatureVectoer; otherwise it throws
+		error for unsupported data type.
+	This method can be used in a feature inducer to check the type of features and add them to feature
+		conjuction lists.
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

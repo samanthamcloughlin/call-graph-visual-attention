@@ -1,0 +1,5 @@
+Discretizer.computeBins(double[], int)  (mltk.core.processor)
+Discretizer.computeBins(Instances, int, int)  (mltk.core.processor)
+    Discretizer.discretize(Instances, int, int)  (mltk.core.processor)
+        FAST.main(String[])  (mltk.predictor.gam.interaction)
+        Discretizer.main(String[])  (mltk.core.processor)

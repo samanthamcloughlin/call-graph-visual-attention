@@ -1,0 +1,2 @@
+BackgroundGradient.apply(ImmutableImage)  (com.sksamuel.scrimage.transform)
+    ImmutableImage.transform(Transform)  (com.sksamuel.scrimage)

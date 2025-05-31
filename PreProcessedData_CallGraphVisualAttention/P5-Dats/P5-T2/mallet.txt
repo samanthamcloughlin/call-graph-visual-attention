@@ -1,0 +1,170 @@
+-> Project: "mallet"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 									Project Synopsis:  
+| 					MALLET: MAchine Learning for LanguagE Toolkit
+| MALLET is a Java-based package for statistical natural language processing, document classification, 
+| clustering, topic modeling, information extraction, and other machine learning applications to text. 
+-----------------------------------------------------------------------------------------------------
+
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: mallet>regression>LinearRegression.java> predict [line 30]
+	Description:
+	
+	The method predicts a single value for an input feature vector.
+	
+	The method firstly extracts a list of parameters and then multiplies each parameter with the corresponding value from the feature vector.
+	
+	The method is useful when a single value is needed from a set of located points.
+	
+	
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: mallet>regression>CoordinateDescent.java> toString [line 165]
+	Description:
+
+	The method prints out the calculation process of sum squared error.
+	
+	The method takes each sample from the training data as input to generate the value gaps between the predicted value and the ground truth one, and prints out the calculation process.
+	
+	The method is useful when evaluating the performance of a regression model on the training data and understanding the internal process. 
+
+	Rate your confidence in the description on a scale of 1-5: 5
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: mallet>cluster>GreedyAgglomerative.java> improveClustering [line 61]
+	Description:
+
+	The method improves the clustering performance by merging one pair of built clusters.
+	
+	The method iterates all unique pairs of  built clusters to identify the pair with highest score, then merge the pair to one cluster if the score is higher than the stop threshold.
+	
+	The method is useful when there are several or more clusters that could be merged to improve the clustering performance.
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: mallet>types>Multinomial.java> ensureCapacity [line 290]
+	Description:
+
+	The method ensures the capacity of an Estimator to always have sufficient storage to hold incoming counts.  
+	
+	The method firstly checks if the current counts are enough for the incoming index, and, if not, double the current counts to cover the index.
+	
+	The method is useful to maintain the valid count number before processing the incoming index.
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session |
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: mallet>optimize>OrthantWiseLimitedMemoryBFGS.java> optimize [line 100]
+	Description:
+
+	The method updates the parameter values based on the calculated optimization directions.
+	
+	The method iteratively re-calculates the a list of parameters as the optimization direction based on the current gradients, and then use the direction, as well as the gradients to update the Y values.
+	
+	The method is useful when optimizing given Y values based on a customized direction and pre-defined coverage rules.
+
+	Rate your confidence in the description on a scale of 1-5: 2
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6:  mallet>types>FeatureInducer.java> induceFeaturesFor [line 179]
+	Description:
+
+	The method selects feature vectors from a list of instances with correct feature types.
+	
+	The method iterates over each instance to identify single or list of feature vectors, and then select the augmentable feature vectors. 
+	
+	The method is useful when filtering out feature vectors with illegal types from the input instances.
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+
+	Method 7: mallet>types>SparseMatrixn.java> plusEquals [line 257]
+	Description:
+
+	The method adds the value of the input matrix to the current matrix.
+	
+	The method checks the data structure of the input matrix and performs sparse add operation between the matrix and the current matrix.
+	
+	The method is useful when there are additional values from another matrix needed for the current matrix.
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: mallet>types>InvertedIndex.java> InvertedIndex [line 17]
+	Description:
+
+	The method inverts and collects the index of input instances with non-zero values.
+	
+	The method first filters the instances with valid feature vectors and inverts the internal index of the vectors if the corresponding values are non-zero.
+	
+	The method is useful when identifying the specific index  from the instances where the values on the inside locations are non-zero.
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

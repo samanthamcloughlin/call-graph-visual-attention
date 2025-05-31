@@ -1,0 +1,1 @@
+SparseMatrixn.plusEquals(ConstantMatrix)  (cc.mallet.types)

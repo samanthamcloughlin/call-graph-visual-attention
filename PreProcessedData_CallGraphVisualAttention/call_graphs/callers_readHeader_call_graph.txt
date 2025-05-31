@@ -1,0 +1,4 @@
+GifSequenceReader.read(InputStream)  (com.sksamuel.scrimage.nio.internal)
+    AnimatedGifReader.read(ImageSource)  (com.sksamuel.scrimage.nio)
+GifSequenceReader.read(BufferedInputStream)  (com.sksamuel.scrimage.nio.internal)
+    GifSequenceReader.read(String)  (com.sksamuel.scrimage.nio.internal)

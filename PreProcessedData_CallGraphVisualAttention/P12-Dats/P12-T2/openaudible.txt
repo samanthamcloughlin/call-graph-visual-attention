@@ -1,0 +1,162 @@
+-> Project: "openaudible"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 				     Project Synopsis:  					    |
+| 					OpenAudible						    |
+|	  A cross-platform desktop application for downloading and managing your Audible audiobooks.|
+-----------------------------------------------------------------------------------------------------
+
+#####################################-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: openaudible>Audible.java> find [line 522]
+	Description:
+	This method finds the first book that contain certain string from all the books.
+	
+	It construct a BookElement struct and then loop through all the books to find and return the first book that contains the input string.
+	
+	This method is useful if you want to find a book that contains a specific string from all the books.
+
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: openaudible>AudibleCLI.java> test [line 240]
+	Description: This method identifies if the books in the book list contain mp3 files and output the length difference between the mp3 file and the aax file.
+	
+	It goes through the books in the book list to check whether each book has a mp3 file, and if it has, then it calculate the length difference between its mp3 file and and its aax file.
+
+	This method is useful if you want to know whether a book is audible and what is the length difference between the mp3 file and the aax file of the book.
+
+	Rate your confidence in the description on a scale of 1-5: 4
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: openaudible>desktop>swt>manager>AudibleGUI.java> connect [line 255]
+	Description:
+	This method initiate a url connection and if the connection fails then output the connection error.
+	
+	It tries to connect to a url, while catching the errors and then outputs the error stack trace for further debugging.
+	
+	This method is useful if you want to create a web connection and catches the connection errors for further inspection. 
+
+
+	Rate your confidence in the description on a scale of 1-5: 5
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: openaudible>desktop>swt>manager>menu>CommandCenter.java> reallyQuit [line 260]
+	Description: If there are in-progress tests, this method double checks whether user really want to exit the program.
+	
+	It composes an inquiry message, whose content is adaptive to different system, to confirm if user really wants to exit or quit, by showing the in-progress test numbers and allow the user to cancel the exit action.
+
+	This method is useful if you want to check whether user really want to quit or exit by showing the user the amount of in-progress tests. 
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session.	|
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session. 	|
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: openaudible>util>Util.java> urlGetArgs [line 125]
+	Description:
+	This method get the content after "?" and parse the argument values.
+	
+	It extract the content after "?" in the url, split it by "&" and store the keyword-value pairs in the hashmap, and if there are more then two elements in a keyword-value pair or the parse of user has something wrong then it returns the errors.
+	
+	This method is useful if you want to parse the arguments from a given URL.
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: openaudible>util>DebugBuffer.java> accept [line 35]
+	Description:
+	This method maintains the debug information within given length while updating the debug information.
+	
+	It creates a new string buffer for debug if the debug is null, otherwise it appends a separator to the debug, and once the length of debug exceed the max length then it clears the existing content in debug and to append new information into it.
+	
+	This method is useful if you want to maintain a debug log within fixed length while updating its information. 
+
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+
+	Method 7: openaudible>books>Book.java> checkBook [line 101]
+	Description: This method checks if the books contains id and full title.
+	
+	It goes through the book element's attribute and check the element in the required set is missing from the book.
+	
+	This method is useful if you want to check the existence of required elements in a book.
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: openaudible>convert>BookMerge.java> mergeItem [line 27]
+	Description:
+	This method merges two book and keeps the longer book's elements.
+	
+	It merges the books' information by comparing the length of the elements and keeps the longer book's elements. 
+
+	This method is useful if you want to merge two books and store the more comprehensive book elements.
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

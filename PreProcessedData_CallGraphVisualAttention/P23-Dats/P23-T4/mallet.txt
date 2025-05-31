@@ -1,0 +1,152 @@
+-> Project: "mallet"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 					Project Synopsis:  
+| 			MALLET: MAchine Learning for LanguagE Toolkit
+| MALLET is a Java-based package for statistical natural language processing, document classification, 
+| clustering, topic modeling, information extraction, and other machine learning applications to text. 
+-----------------------------------------------------------------------------------------------------
+
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: mallet>regression>LinearRegression.java> predict [line 30]
+	Description:
+	1. this method returns a prediction for a location.
+	2. this method calculates the prediction by accumulating the value from index multiply with location.
+	3. this method is called when it need the prediction for a regression.
+
+	
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: mallet>optimize>OrthantWiseLimitedMemoryBFGS.java> optimize [line 100]
+	Description:
+	1. this method optimize based on iterations and return a boolean indicating it is optimized or not.
+	2 this method accept an integer means how many iteration times and update the directions then it checks for ValueTerminationCondition and GradientTerminationCondition and compare the number of iteration to return a boolean.
+	3. this method is called when training the model to optimize .
+
+
+	Rate your confidence in the description on a scale of 1-5: 2
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: mallet>regression>CoordinateDescent.java> toString [line 165]
+	Description:
+	1. this method change the output to string type.
+	2. this method calculates sumSquaredError and reformat other parameters, adding labels and explanations and then return those information as a string.
+	3. this method is helpful in reformat for the whole program.
+
+	Rate your confidence in the description on a scale of 1-5: 	5
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: mallet>types>FeatureInducer.java> induceFeaturesFor [line 179]
+	Description:
+	1. this method add AugmentableFeature for the elements in a InstanceList.
+	2. this method accept a instancelist and two booleans, it first check if the features are added, if there is no features added, it will loop through the list and add feature, it will throw exception is the type is not fit.
+	3. this method is helpful when the program need features.
+
+
+	Rate your confidence in the description on a scale of 1-5: 2
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session |
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: mallet>types>InvertedIndex.java> InvertedIndex [line 17]
+	Description:
+	1. this method accepts an instance list and then copies the content in that list to ii.
+	2. this method requires an instance list and creates an array list based on the size of DataAlphabet in that instance list, then this method copies the feature factor from the instance list to the new array.
+	3. this method is helpful when initializing the feature index and constructing the basic arrays.
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: mallet>types>Multinomial.java> ensureCapacity [line 290]
+	Description:
+	1. this method update the size and count to ensure the capacity.
+	2. this method require an index, if the index exceed the size, it will enlarge the size; if the count array's length is less than  index, it will enlarge the array for it.
+	3. this method is helpful when the program needs to estimate and increase the size of array, it can ensure the array is large enough and avoid index out of bound.
+
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+
+	Method 7: mallet>cluster>GreedyAgglomerative.java> improveClustering [line 61]
+	Description:
+	1. this method improve clustering by calculating the best score.
+	2. this method requires a clustering as input and then find the best score in it; if the best score is less than stop threshold put the best score into log info, else, update the cluster based on its best score's position.
+	3. this method is helpful when finding the best cluster.
+
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: mallet>types>SparseMatrixn.java> plusEquals [line 257]
+	Description:
+	1. this method accumulates a SparseVector's value at certain location to a double array.
+	2. this method requires a ConstantMatrix and a double, then it calls other plusequals function based on the type of constantmatrix.
+	3. this method is helpful when updating the value in array "values".
+
+	Rate your confidence in the description on a scale of 1-5: 2
+	
+	
+	
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

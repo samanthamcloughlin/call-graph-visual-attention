@@ -1,0 +1,181 @@
+-> Project: "openaudible"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 				     Project Synopsis:  					    |
+| 					OpenAudible						    |
+|	  A cross-platform desktop application for downloading and managing your Audible audiobooks.|
+-----------------------------------------------------------------------------------------------------
+
+#####################################-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: openaudible>Audible.java> find [line 522]
+	Description:
+	The find function finds all books in the system that match the string parameter passed in. The match can either be by title, author, narrator, or asin. 
+	
+	The function first gathers all books in the system and loops through all of them, checking if the parameter is contained in any of the fields noted above. If so, it is added to the match list that is returned. 
+	
+	This function can be used for when the user is trying to find a specific book or if the user has a favorite narrator or author they wish to search by. 
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	4
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: openaudible>books>Book.java> checkBook [line 101]
+	Description:
+
+	This function checks that the book contains the required fields, product ID and a full title.
+	
+	The function is called on a book object and returns an empty string if the book has the required fields but returns a error message with the required field that is missing if something is wrong, with the product ID being checked and returned before the title.
+	
+	The function is used whenever books are being loaded, such as in the library, to make sure that they have the required fields before being displayed to the user.
+
+	Rate your confidence in the description on a scale of 1-5: 
+	4
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: openaudible>convert>BookMerge.java> mergeItem [line 27]
+	Description:
+	The function merges an item of the 2 books by either choosing the first or second option, whichever is longer, saves the result to the first book, and returns a boolean about whether it's changed. 
+	
+	The function calls a helper method that chooses whether or not the variable should be updated. For infolinks, the second one is always picked, however, for all other fields, if the second one is longer than the first, it'll overwrite it with the second one. 
+	
+	This is called when two books have the same product IDs, which usually means that they are the same book and should have the same information, so it fills in the first copy with any missing/new information from the second copy.
+
+
+	Rate your confidence in the description on a scale of 1-5:
+	3
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: openaudible>AudibleCLI.java> test [line 240]
+	Description:
+	
+	The function is used to print out the difference in length between an MP3 file of the book and and the AAX file of the same book. 
+	
+	The function first checks that the book has an mp3 file associated with it. Then it gets both the mp3 and the aax files of the books and prints out the name of the mp3 file, the length of the mp3 file, the length of the aax file, and the difference in length. 
+	
+	The function is called through the doCommand by inputting test2. I'm not sure that this is something the user is supposed to actually use as opposed to the other stuff in the list such as downloading, but might be more for devs to check their work. 
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session.	|
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session. 	|
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: openaudible>util>DebugBuffer.java> accept [line 35]
+	Description:
+	The debugbuffer is buffer that logs things like exceptions and has a max limit of characters it won't go over as well as a separator for between messages. 
+	
+	The function first checks that a buffer exists and creates one if it doesn't and adds a separator if it already does. Then it checks if it's over the limit, and if so, it gets rid of the first bit and adds a ... to the end before appending the new debug output. 
+	
+	This function is used a lot, by pretty much all other functions that can throw an error in order to log the error. 
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	2
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: openaudible>util>Util.java> urlGetArgs [line 125]
+	Description:
+	
+	The function makes sure that a url with api parameters is formatted correctly and if so, it returns the parameters in a hashmap. 
+	
+	The function first checks if it has parameters by looking for the ? and then for each of the parameters, separated by &, checks to make sure that it has both a left and right side of the = before adding it to the hashmap, throwing if it's not proprly formatted. 
+	
+	The function is used when parsing a download URL to make sure that the url is valid and then using the args to look for the book. 
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+
+	Method 7: openaudible>desktop>swt>manager>menu>CommandCenter.java> reallyQuit [line 260]
+	Description:
+	
+	This method displays a message that makes sure that a user really wants to quit/exit the app when there's existing tests running. 
+	
+	The function first checks if there's any tests running (it should actually never have tests running since it's assigned to 0 in the first line) and then displays a popup message with two buttons, Quit(on Mac) or Exit and Cancel, to the user and returns true if the user clicks the Quit/Exit button on the popup/
+	
+	The function is used when a user attempts to close the app to make sure there's no processes or tests running before closing it. 
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	4
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: openaudible>desktop>swt>manager>AudibleGUI.java> connect [line 255]
+	Description:
+	
+	The connect function first tries to log in and then opens a browser which the user can look at books. 
+	
+	The method uses a helper method to first check if the user is logged in, and if so, opens a browser with their account set to the home page. If not, it just opens a browser tab with home page that isn't logged in. There's a bunch of errors that can happen, leading to stuff like not being able to open the browser or just not being able to sign the user in first. 
+	
+	The method is used when a user executes the connect command and wants to open the audible browser.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	2
+	
+	
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

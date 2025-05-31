@@ -1,0 +1,168 @@
+
+ Project: "MLTK"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+-----------------------------------------------------------------------------------------------------
+Project Synopsis: MLTK (Machine Learning Tool Kit) is a collection of various supervised machine 
+learning algorithms, which is designed for directly training models and further development.
+-----------------------------------------------------------------------------------------------------
+	
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 1: core>processor>Discretizer.java> computeBins [line 122]
+	Description:
+	
+	This method attempts to group a list of elements with a value and weight into a sorted group of bins organized by weight and medians of the values.
+
+	The method works by first grouping by value, and then combining the larger bins to meet the required bin size.
+	
+	This method is used when discretizing attributes in the dataset when training or predicting.
+
+	Rate your confidence in the description on a scale of 1-5: 3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: predictor>tree>RTreeLearner.java> getStats [line 64]
+	Description:
+
+	This method computed the sum of weights, sum of targets * weights, and the weighted mean of a list of instances.
+	
+	This method returns true if all the targets are the same.
+	
+	This method is used when building decision tree learners.
+	
+	
+	Rate your confidence in the description on a scale of 1-5: 3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: util>OptimUtils.java> fitIntercept [line 108]
+	Description:
+	
+	This method computes the amount to perturb the intercept given predictions, residuals, and the expected y vaules.
+	
+	This method also updates the residuals if the magnitude of the residuals is not close 0 or 1.
+	
+	This method is used to train binary classifiers.
+
+		
+	Rate your confidence in the description on a scale of 1-5: 2
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: predictor>gam>SPLAMLearner.java> computeGradient [line 1025]
+	Description: 
+	
+	This method computes the gradient by multiplying the block matrix with rTrain uses the indices provided.
+	
+	This method initializes the gradient to 0 if no indices are provided.
+	
+	This methd is used when performing learning passes in the SPLAM learner.
+		
+
+	Rate your confidence in the description on a scale of 1-5: 3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session.
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: predictor>tree>TreeInteriorNode.java> write [line 76]
+	Description:
+	
+	This method recursively prints out a binary tree, first the node, then the left, and then finally the right child.
+	
+	This method prints out prints out the class name, attribute index, and split point.
+	
+	This method is used to prit out the contents of tree models.
+		
+
+	Rate your confidence in the description on a scale of 1-5: 4
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 6: core>BinnedAttribute.java> parse [line 66]
+	Description:
+	
+	This method parses a string into a BinnedAttribute.
+	
+	The format of the string is "<attrName>: binned (<numBins>;<boundaries>;<medians>)"
+
+	This method is used when reading the binned attributes of instances from a file.
+		
+	Rate your confidence in the description on a scale of 1-5: 5
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 7: core>io>InstancesReader.java> parseDenseInstance [line 159]
+	Description:
+	
+	This method parses a list of strings into an Instance object that consists of a list of values and a target.
+	
+	An index can be provided that is used to indicate which index in the list of strings contanis the target, and if it's not specified, the target is NaN.
+	
+	This method is used when reading instances and attributes from a file
+		
+	Rate your confidence in the description on a scale of 1-5: 4
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: core>processor>InstancesSplitter.java> split [line 286]
+	Description:
+	
+	This method partitions a list of instances so that the sizes of each partition matches the ratios provided.
+	
+	If an attribute is provided and it's not numeric, each partition is ensured to have the provided ratio of each of the possible values of the attribute.
+		
+	This method is used to create cross validation folds when performing cross validation.
+	
+		
+	Rate your confidence in the description on a scale of 1-5: 4
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

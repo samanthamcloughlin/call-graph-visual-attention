@@ -1,0 +1,7 @@
+GifSequenceReader.read()  (com.sksamuel.scrimage.nio.internal)
+GifSequenceReader.readLSD()  (com.sksamuel.scrimage.nio.internal)
+    GifSequenceReader.readShort()(2 usages)  (com.sksamuel.scrimage.nio.internal)
+        GifSequenceReader.read()(2 usages)  (com.sksamuel.scrimage.nio.internal)
+    GifSequenceReader.read()(3 usages)  (com.sksamuel.scrimage.nio.internal)
+GifSequenceReader.err()  (com.sksamuel.scrimage.nio.internal)
+GifSequenceReader.readColorTable(int)  (com.sksamuel.scrimage.nio.internal)

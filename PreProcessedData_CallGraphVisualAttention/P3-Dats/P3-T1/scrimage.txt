@@ -1,0 +1,182 @@
+
+-> Project: "srcimage"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 										Project Synopsis:  
+| Scrimage is an immutable, functional, and performant JVM library for manipulation of images.
+| The aim of this library is to provide a simple and concise way to do common image operations, 
+| such as resizing to fit a required width and height, converting between formats, applying filters and so on.
+-----------------------------------------------------------------------------------------------------
+
+
+#####################################---CALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session  |
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: scrimage>canvas>Canvas.java> draw [line 46]
+	Description:
+	This method does the work of displaying (or drawing) the image in the context where it is meant to appear with any transformations it is meant to have.
+	
+	The method takes in a collection of Drawables, which are different types of shapes or elements that can occur in an image. For each Drawable, the method takes all of the components of the image and converts them to RichGraphics (which I assume make the image "richer" looking in some sense) and draws the components using the corresponding Drawable's draw method which provides the (x,y) points for where the shape should be drawn.
+	.
+	This method is needed because this project is a library for manipulating images and once the images are manipulated they need to be displayed--this method displays the final images.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: scrimage>filter>PipelineFilter.java> apply [line 19]
+	Description:
+	
+	This method applies filters to an image.
+	
+	If the image type is ARGB or RGB then the original image is used, otherwise a copy of the image using the ARGB color components is made for the use of having filters applied. Then, all of the filters in the collection of filters are applied.
+	
+	This method is needed to apply filters to images, which is necessary for the project because filtering is one of the image operations provided by this library.
+
+
+	
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: scrimage>metadata>OrientationTools.java> reorient [line 22]
+	Description:
+	
+	This method changes the orientation of an image (e.g. rotates and/or mirrors it).
+	
+	This method takes in an image and its metadata and finds the first image orientation in a potential list of orientations. Depending on what the orientation is, the image can be rotated 90, 180, or 270 degrees, or not at all, and mirrored or not mirrored. The rotation and mirroring are tied together in that, for example, case OneEightyMirrored will both turn the image 180 degrees and mirror it, whereas case OneEighty will only rotate the image 180 degrees.
+	
+	This method is needed to change the orientation of the image which is one of the image operations provided by this library.
+	 
+
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: srcimage>nio>internal>GifSequenceReader.java> readHeader [line 577]
+	Description:
+	
+	This method reads the image header of a .gif image.
+	
+	The method first reads the first 6 characters of data, which are the image header. If the header does not start with GIF then the image is not a .gif or has the wrong type of header and an error is thrown. Then, information about the image is read including the width, height, gcdFlag (and some sort of boolean logic is done on the flag, not sure what this is for), gctSize (some sort of bit shifting is done on this, not sure why), bgIndex, and pixelAspect. If there are no errors and the gct flag is true then a table of colors for the gif is read and something called bgColor is set. bgColor is just an int, based on the naming and my understanding of gifs I think it has to do with what the beginning colors of the gif are since gifs are moving images but I'm not totally sure.
+	
+	This method helps this image operation library handle images of the .gif file format.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+#####################################---RECALIBRATION REQUIRED---####################################
+
+	Method 5: srcimage>scaling>AwtNearestNeighbourScale.java> scale [line 8]
+	Description:
+	
+	This method rescales an image but interpolates what the colors of the pixels should be in the case up upscaling the picture using a nearest neighbors approach (i.e. looking at the colors of the nearest pixels).
+	
+	This method takes in an image, gets the image's graphic elements, rescales the image to the specified size, using a nearest neighbors approach to determine the colors of added pixels in the case of upscaling.
+	
+	This method is important because any good image processing package needs the ability to make images bigger or smaller!
+
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: srcimage>subpixel>LinearSubpixelInterpolator.java> summands [line 59]
+	Description:
+	
+	This method adds a particular weight value to the A, R, G, and B values of every pixel. (What is this weight/what is its purpose? I don't know.)
+	
+	This method takes in an (x,y) coordinate, corresponds the coordinate with some width and height, and then iterates through the int/weight pairs at every (x,y) coordinate and scales the A, R, G, and B values at that pixel by the specified weight.
+	
+	This method is used in some notion of a subpixel that tells the pixel what A, R, G, and B value should be in that subpixel--but I'm not sure why a weight is being added. But this is important for rendering pixels of an image so that the colors of the pixel are specified.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 7: scrimage>ImmutableImage.java> fill [line 320]
+	Description:
+	
+	This method adds colors in an image.
+	
+	This method uses a particular type of Painter (each of which draw the colors in a particular way) to fill in the target with a particular color. If the Painter is a LinearGradient painter some special setup is required before painting.
+	
+	This method is necessary for rendering images with color.
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 8: scrimage>AwtImage.java> points [line 174]
+	Description:
+	
+	This method creates an array of all the possible (x,y) coordinates in an image.
+	
+	This method uses the specified width and height of an image to create a two-dimensional array of Point objects (each Point object represents a coordinate in (x,y) space) for all of the (x,y) points in the iamge.
+	
+	This method is used in both AwtImage.java and MutableImage.java to enable the program to iterate over all of the (x,y) coordinates in an image for various purposes, including returning a 2D array of all of the rgb values in an image.
+	
+
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+	
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!
+

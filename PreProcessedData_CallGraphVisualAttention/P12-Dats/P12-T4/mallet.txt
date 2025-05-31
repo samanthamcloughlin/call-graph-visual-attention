@@ -1,0 +1,169 @@
+-> Project: "mallet"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 					Project Synopsis:  
+| 			MALLET: MAchine Learning for LanguagE Toolkit
+| MALLET is a Java-based package for statistical natural language processing, document classification, 
+| clustering, topic modeling, information extraction, and other machine learning applications to text. 
+-----------------------------------------------------------------------------------------------------
+
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: mallet>regression>LinearRegression.java> predict [line 30]
+	Description:
+	This method use least square method to predict the linear regression results.
+	
+	It takes in instances as feature vectors and multiplies each of them with the corresponding parameters with the same index.
+	
+	This method is useful if you want to perform a linear regression.
+
+	
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: mallet>cluster>GreedyAgglomerative.java> improveClustering [line 61]
+	Description:
+	This method finds the two clusters with the best score to merge.
+	
+	It compares all the pairs of clusters and aims to find the pair with the largest best score, and if the best score is greater than the stopping threshold then it will merge the two clusters with the largest best score, otherwise, it shows that it is converged.
+	
+	This method is useful when you want to select the clusters that is necessary to be merged and improve the clustering result.
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: mallet>types>FeatureInducer.java> induceFeaturesFor [line 179]
+	Description:
+	This method evaluates the data type of the input features.
+	
+	It checks each feature to see if they are instances of augmentable feature vectors or feature vector sequence, if they are instances of augmentable feature vectors then append it to the feature conjunction list; if they are feature vector sequence, then change the data type of each element in the sequence as augmentable feature vector and store it in the feature conjunction list; otherwise, it indicates that the data is not supported.
+	
+	This method is useful when you want to extract feature vectors to a feature conjunction list and ensure their data type are all augmentable feature vectors.
+
+
+	Rate your confidence in the description on a scale of 1-5: 	5
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: mallet>types>SparseMatrixn.java> plusEquals [line 257]
+	Description:
+	This method add value to a given sparse vector or sparse matrix m.
+	
+	It checks if m is a sparse vector, if so then it directly add the value onto m, otherwise if m is a sparse matrix, it checks if the size m complies with the given size, if so then it adds the value to m. 
+	
+	This method is useful when you want to update a sparse vector or sparse matrix value by add a given value to each element of the sparse vector or sparse matrix.
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session |
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: mallet>types>InvertedIndex.java> InvertedIndex [line 17]
+	Description:
+	This method checks if a given list is feature vector data, if so then it stores the non-zero data into a new list.
+	
+	It first checks if the input list contains feature vector data, and only if the data type is feature vector will it go through all the elements in the input list and save the non-zero ones.
+	
+	This method is useful if you want to save the non-zero feature vector data into a list.
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: mallet>regression>CoordinateDescent.java> toString [line 165]
+	Description:
+	This method calculates the sum of squared error for a linear regression prediction result.
+	
+	It calculates the residual of each prediction and sums up the squared residual as the sum of squared error.
+	
+	This method is useful if you want to evaluate the performance of a linear regression model through the sum of squared error.
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+
+	Method 7: mallet>types>Multinomial.java> ensureCapacity [line 290]
+	Description:
+	This method calculate the appropriate length of counts based on a given index.
+	
+	After comparing size with index and the length of counts with min capacity to get the larger length of counts, it repetitively enlarges the length of counts twice until it is larger than the input index.
+	
+	This method is useful when you want to ensure the counts have enough capacity to store all then input based on the input maximum index.
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: mallet>optimize>OrthantWiseLimitedMemoryBFGS.java> optimize [line 100]
+	Description:
+	This method optimizes the parameters of OWL-BFGS within the given number of iterations.
+	
+	It calculates the steep descending direction of gradients, map it by the inverse Hessian matrix, tune the sign of the descending gradients, does a backtracing line search, and then evaluate the gradients; if the value difference is lower than the tolerance, or the gradient is lower than the gradient tolerance, or the number of iteration reaches the input maximum number of iteration, then it will stop the optimization.
+	
+	This method is useful when you want to optimize the parameters of OWL-BFGS within a certain iterations.
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

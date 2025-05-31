@@ -1,0 +1,159 @@
+
+-> Project: "srcimage"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 										Project Synopsis:  
+| Scrimage is an immutable, functional, and performant JVM library for manipulation of images.
+| The aim of this library is to provide a simple and concise way to do common image operations, 
+| such as resizing to fit a required width and height, converting between formats, applying filters and so on.
+-----------------------------------------------------------------------------------------------------
+
+
+#####################################---CALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session  |
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: scrimage>canvas>Canvas.java> draw [line 46]
+	Description:
+        The method is responsible for creating a canvas of 2D objects from a collection and apply it over an existing image. 
+        The method iterates through each drawable object in the collection and creates objects of RichGraphics2D. 
+        This function is needed to draw 2D objects over an existing image.
+
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+		4
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: srcimage>nio>internal>GifSequenceReader.java> readHeader [line 577]
+	Description:
+		This method reads the header of a GIF file.
+		The method verifies the type of the file by checking the first 6 characters and initializes the GCT color table and the BG color.
+		It allows the read() method to verify the file before starting to read the content of the GIF file.
+	
+	
+	Rate your confidence in the description on a scale of 1-5: 
+		4
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: srcimage>scaling>AwtNearestNeighbourScale.java> scale [line 8]
+	Description:
+		This method is used to scale an image to a desired height and width. 
+		It first creates a copy of the input image with the provided height and width information and then uses the nearest neighbour interpolation values to scale the final image.
+		The AwtImage class uses this method to scale an image.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+		3
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: srcimage>subpixel>LinearSubpixelInterpolator.java> summands [line 59]
+	Description:
+		This method returns a matrix of color information based on the weights of a specific pixel coordinate.
+		The method takes a coordinate of a pixel, reads the weights, and multiplies the each color information.
+		It is utilized in the subpixel method to separate the channel information of a given coordinate.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	 	1
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session    |
+-----------------------------------------------------------------------------------------------------
+#####################################---RECALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session    |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: scrimage>ImmutableImage.java> fill [line 320]
+	Description:
+		This method fills the background of an image.
+		The method takes an argument painter to determine if the filling pattern is linear gradient and returns the filled image to applied to a canvas.
+		It is used in the MutableImage class to transform an image.
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+		4
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: scrimage>metadata>OrientationTools.java> reorient [line 22]
+	Description:
+		This method orients an image when required.
+		Depending on the description from the image metadata, the method can flip or rotate an image.
+		This method is called by the ImmutableImageLoader class when loading an image to reorient if needed.
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+		5
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 7: scrimage>filter>PipelineFilter.java> apply [line 19]
+	Description:
+		This method applies one or more filters to an image.
+		The method first make a copy of the image depending on the type of the file then iterates through the collection of filters and applies them using the apply method.
+		This method is used by the PipelineFilter class to apply a set of filter to an image.
+
+	Rate your confidence in the description on a scale of 1-5: 
+		4
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 8: scrimage>AwtImage.java> points [line 174]
+	Description:
+		The method returns an array of points for the height and width of an image.
+		It iterates to the height and width of the AWT image and appends them points to an array.
+		This method is called whenever another method needs access to the points of an image
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+		3
+	
+	
+	
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!
+

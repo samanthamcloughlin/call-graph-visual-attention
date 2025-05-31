@@ -1,0 +1,215 @@
+-> Project: "mallet"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 					Project Synopsis:  
+| 			MALLET: MAchine Learning for LanguagE Toolkit
+| MALLET is a Java-based package for statistical natural language processing, document classification, 
+| clustering, topic modeling, information extraction, and other machine learning applications to text. 
+-----------------------------------------------------------------------------------------------------
+
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: mallet>regression>LinearRegression.java> predict [line 30]
+	Description:
+	
+	This method returns a prediction after receiving an instance of a Feature Vector.
+	
+	A double Array is initialized with an intial predetermined size and then the feature 
+	vector is looped over and a summation is calculated between the paramters array and the
+	predictors feature vector and this summation value is returned at the end of the function.
+	
+	This method would be useful for making a classification prediction for a given feature 
+	vector in a machine learning-type application.
+	
+	
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: mallet>types>SparseMatrixn.java> plusEquals [line 257]
+	Description:
+	
+	This method is defining and overriding the method plusequals that it inherited from
+	the interface Matrix.java.
+	
+	This method checks if Matrix addition can take place between two different ConstantMatrix
+	objects and will throw the correct errors specifying if the dimensions do not support
+	the Matrix addition. Otherwise the ConstantMatrix is added to the Values SparseVector
+	that is a member variable.
+	
+	This method is necessary to perform matrix addition operations and would be useful for various
+	ML and Linear Algebraic operations.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 5
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: mallet>types>FeatureInducer.java> induceFeaturesFor [line 179]
+	Description:
+	
+	This method receives an instance list and iterates over the objects in said list to check
+	what type of vector they are and extract the data from them.
+	
+	Specifically, while iterating over the list, the method checks if the object in the instance
+	list is a AFV or an FVS and extracts their data and adds them to the FeatureConjunction List
+	that is a member variable of the class.
+	
+	This method would be useful for extracting data from a wide range of Feature Vectors that can be
+	used in a variety of Vector operations.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: mallet>types>Multinomial.java> ensureCapacity [line 290]
+	Description:
+	
+	This method ensures that a double array counts has the correct capacity for further use
+	in estimation operations.
+	
+	The method receives an index and checks if the double array needs to be resized because the index
+	exceeds the current size. If it does exceed, a new array is created with the new size and an array
+	copy operation takes place before setting the original counts array to the temporary one.
+	
+	This utility function is useful for determining when an array needs to be resized with further
+	capacity. By checking capacity before resizing, the program can ensure memory is not being wasted.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session |
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: mallet>cluster>GreedyAgglomerative.java> improveClustering [line 61]
+	Description:
+	
+	This method receives a clustering object and loops through its features and updates
+	the values if the prior clustering object is exceeds these values.
+	
+	The method loops through the dimensions of the clustering object and updates the 
+	values if the best score variable exceeds the current index score. Once this process
+	completes, the best score is compared against the stopping threshold and if it hasn't
+	exceeded, the clustering object is returned with new values.
+	
+	The method would be useful for updating weights of feature vectors during various
+	ML processes such as K-nearest neighbor operation.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6:  mallet>regression>CoordinateDescent.java> toString [line 165]
+	Description:
+	
+	This method converts the Sum Squared Error value into a string so that it can be displayed
+	to standard output.
+	
+	The method starts by calculating the result of the loss function SSE and once the value is
+	calculated, the individual results of the summation are displayed before a final value is
+	summized at the end of the string.
+	
+	This method is useful for visualizing the results of the loss function Sum Squared Error and is
+	useful for Linear Regression.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+
+	Method 7: mallet>types>InvertedIndex.java> InvertedIndex [line 17]
+	Description:
+	
+	This method is the only constructor for the class InvertedIndex.
+	
+	The method receives an instance list object and stores it in "ilist" before unpacking its feature
+	vector parameters and storing them in an array.
+	
+	This method is necessary for creating Inverted Index objects and would be useful for storing an
+	inverted instance of various FeatureVector objects.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8:mallet>optimize>OrthantWiseLimitedMemoryBFGS.java> optimize [line 100]
+	Description:
+
+	This method conducts the optimization of weights in a Regression style machine learning process and
+	returns whether it has converged or not.
+	
+	The method makes several calls to other methods including ones that update the weights that steer
+	the gradient closer to their optimal point. The process continues until a maximum amount of epochs
+	is reached at which point the method returns true.
+	
+	This process is useful for optimizing a neural network using Linear Regression with a specified 
+	number of epochs. It can ensure the model is fully optimized before further use.
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

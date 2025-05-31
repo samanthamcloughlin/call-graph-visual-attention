@@ -1,0 +1,145 @@
+
+ Project: "MLTK"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+-----------------------------------------------------------------------------------------------------
+Project Synopsis: MLTK (Machine Learning Tool Kit) is a collection of various supervised machine 
+learning algorithms, which is designed for directly training models and further development.
+-----------------------------------------------------------------------------------------------------
+	
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 1: core>processor>Discretizer.java> computeBins [line 122]
+	Description: This computes the number of bins for data preprocessing. I think it does this by computing the max size of data the model can have then filling
+	out an array with weights for the nodes in the model to allow for altering weights. This makes an easier way to alter the weights of nodes in algorithms like 
+	backpropogation for training a model; but I really didnt get this
+
+
+	Rate your confidence in the description on a scale of 1-5: 1
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: predictor>tree>RTreeLearner.java> getStats [line 64]
+	Description: This method gets the data in a stats node and uses it for understanding that node/children. This does this by going and finding the root of a tree
+	and then traversing down the tree to collect the information of the nodes storing them in a list and returning that to the user. This allows to the person 
+	training the model to get the information from the tree to evaluate the model they are using or to alter the weights and biases of the tree.
+
+	
+	
+	Rate your confidence in the description on a scale of 1-5: 2
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: predictor>tree>TreeInteriorNode.java> write [line 76]
+	Description: This method prints out the AttIndex and SplintPoint for each interior node and their children. This accomplishes this by locating the first node or root 
+	interior node printing its info to the terminal, which it then calls a recursive call to itself on the left and right children of the node printing out their information.\
+	This allows the index of a node to be printed making a Picture of what the tree looks like
+	
+
+		
+	Rate your confidence in the description on a scale of 1-5: 1
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: core>BinnedAttribute.java> parse [line 66]
+	Description: this function takes read in data and then extracts part from it getting information from a string. It does this by sectioning off information of data
+	that are in the string format and then returns the information about the data as the form of a BinnedAttirbute. This is important in the processing of data types
+	like getting numbers from words.
+		
+
+	Rate your confidence in the description on a scale of 1-5: 1
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session.
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: core>processor>InstancesSplitter.java> split [line 286]
+	Description: This function splits the training into different segments. It does this by getting a list of the attributes that are trying to stratify and
+	then makes a list distributing that attribute into the segments of the list to act as a schedule for the model to run simultaneously. This is useful because it allows
+	models to train a lot faster
+
+		
+
+	Rate your confidence in the description on a scale of 1-5: 1
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 6: util>OptimUtils.java> fitIntercept [line 108]
+	Description: yeah I am not sure on this one it seems like it is a function used when adjusting the weights of the function to try and mnake the model more accurate.
+	It does this by what looks like taking math some information and using the predictions to calculate; other than that I am not sure, I know it is used in the
+	training portion as a function of the models optimizer, and can be imporant to the project as a whole because it helps later calculations be easier...
+
+	
+		
+	Rate your confidence in the description on a scale of 1-5: 1 (but if I could do a zero I would because I did not understand this one)
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 7: predictor>gam>SPLAMLearner.java> computeGradient [line 1025]
+	Description: This function computes a gradient used for the machine learning model to help calculate the step size it has for learning.  It takes the number of columns
+	in the input matrix and uses that as a size bound and then iterates through the rest of the inputs and uses those to calculate new values for the gradient. This function allows for a
+	changing/varying step size in the machine learning model so it doesn't over step and miss the point of optimization but also doesn't train to the extreme
+	
+
+		
+	Rate your confidence in the description on a scale of 1-5: 2
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: core>io>InstancesReader.java> parseDenseInstance [line 159]
+	Description: This function helps parse a data that is dense in size meaning that there was a large amount of data or an array of strings. It does this by iterating
+	through each element of the array and parsing the string individually tracking the information in a var to return to the user. This helps parse more than just one instance or dataset at once
+	allowing for a better ML model training efficiency.
+		
+
+		
+	Rate your confidence in the description on a scale of 1-5: 1
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

@@ -1,0 +1,183 @@
+
+-> Project: "srcimage"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 										Project Synopsis:  
+| Scrimage is an immutable, functional, and performant JVM library for manipulation of images.
+| The aim of this library is to provide a simple and concise way to do common image operations, 
+| such as resizing to fit a required width and height, converting between formats, applying filters and so on.
+-----------------------------------------------------------------------------------------------------
+
+
+#####################################---CALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session  |
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: scrimage>canvas>Canvas.java> draw [line 46]
+	Description:
+        This method takes a collection of Drawables objects and draws them on the target image.
+        
+        This method makes a copy of the target image, creates a Graphics2D object, iterates over every Drawables object to configure them into RichGraphics2D and finally, it returns a Canvas object after disposing the Graphics2D object.
+        
+        This method can be useful to extend the canvas with a collection of Drawables objects from the old canvas.
+
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: scrimage>metadata>OrientationTools.java> reorient [line 22]
+	Description:
+	
+	This method takes an ImmutableImage object and ImageMetadata object, and orients back the image to the original orientation.
+	
+	The method takes the list of orientation made on the image with the help the ImageMetadata object, finds out the initial orientation, and uses switch cases to move back to the initial orientation.
+	
+	This method helps to move to the original orientation while loading or parsing an image.  
+	
+	
+
+
+	
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: scrimage>filter>PipelineFilter.java> apply [line 19]
+	Description:
+	
+	This method takes an ImmutableImage object and applies filters on this object after creating a copy of the object.
+	
+	This method first checks if the input ImmutableImage object is represented as an 8-bit RGB or RGBA color; if it does, it copy the image as it is or converts to represent 8-bit RGBA color and finally applies the filters on the copied object.
+	
+	This method helps to apply the correct filter one by one on the input image.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: srcimage>nio>internal>GifSequenceReader.java> readHeader [line 577]
+	Description:
+	This method reads the header of Gif sequence.
+	
+	This method first reads 6 characters ID, checks if it starts with "GIF" to have the correct format, reads the LSD and color table if their is no error, and get the background color from the color table.
+	
+	This method is helpful to check if it is dealing with the correct format and gets other necessary header information. 
+	
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session.	|
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session. 	|
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: scrimage>AwtImage.java> points [line 174]
+	Description:
+	The method creates an array of Point object.
+	
+	This method first declares an array of Point object with the size of width times height, traverse every point from 0 to width and 0 to height, and creates a new Point object and store in the array to return it from the method.
+	
+	The method can help to create an array of Point object to modify them individually for different purpose.  
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: srcimage>scaling>AwtNearestNeighbourScale.java> scale [line 8]
+	Description:
+	This method sets the rendering hints while scaling with the nearest neighbour scale.
+	
+	This method creates a new BufferedImage object from the height, width and a BufferedImage object, takes the Graphics2D object, set the rendering hints, scaling the image with the rendering hints, and returns the scaled image.
+	
+	This method is used to scale the image based on the nearest neighbour scale.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 7: scrimage>ImmutableImage.java> fill [line 320]
+	Description:
+	This method creates an ImmutableImage object filled with color of a Painter object.
+	
+	This method creates a blank ImmutableImage object, checks if it will be filled as a linear gradient and to which way, i.e. height or width, and fills the image with Painter object's color and returns it.
+	
+	This method can be helpful to transform the background by filling with linear gradient color.
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 8: srcimage>subpixel>LinearSubpixelInterpolator.java> summands [line 59]
+	Description:
+	This methods creates an array to have the color information every pixel.
+	
+	This method creates two lists of pair for pixel coordinates which contains the coordinates and weights, then creates an array to contain the weighted color information for each pixel and return the array.
+	
+	This method helps to get the weighted information for each pixel to do linear sub-pixel interpolation. 
+	
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+	
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!
+

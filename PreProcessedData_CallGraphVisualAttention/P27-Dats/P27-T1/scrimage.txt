@@ -1,0 +1,176 @@
+
+-> Project: "srcimage"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 										Project Synopsis:  
+| Scrimage is an immutable, functional, and performant JVM library for manipulation of images.
+| The aim of this library is to provide a simple and concise way to do common image operations, 
+| such as resizing to fit a required width and height, converting between formats, applying filters and so on.
+-----------------------------------------------------------------------------------------------------
+
+
+#####################################---CALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session  |
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: scrimage>canvas>Canvas.java> draw [line 46]
+	Description:
+        
+	The method draws a collection of drawables onto the existing canvas object and returns it.
+	
+	It doesn't modify the existing canvas and instead returns a new one.
+
+	This method allows you to draw graphics primitives, such as arcs, shapes, lines, and text onto an existing image without modifying it.
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: srcimage>nio>internal>GifSequenceReader.java> readHeader [line 577]
+	Description:
+	
+	This method reads and verifies the header of an animated GIF.
+
+	This method also sets the g color table and background color if it it exists.
+	
+	This method determines the image width, height, and g color table, which is used when decoding the frames of the animated GIF.
+	
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: srcimage>scaling>AwtNearestNeighbourScale.java> scale [line 8]
+	Description:
+	
+	This method scales an image to the provided width and height using the nearest neighbor interpolation algorithm.
+	
+	Transparency is preserved.
+	
+	This method uses functionality form jaw.awt package, instead of using the custom implemention in the ScrimageNearestNeighbourScale class
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: scrimage>filter>PipelineFilter.java> apply [line 19]
+	Description:
+	
+	This method applies a collection of filters in a specified order onto the provided image.
+	
+	The image is converted to ARGB if it is not already ARGB or RGB.
+	
+	This seems to provide a provide a way to chain a series of java.awt BufferedImageOp operations on an ImmutableImage object.
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session    |
+-----------------------------------------------------------------------------------------------------
+#####################################---RECALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session    |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: scrimage>ImmutableImage.java> fill [line 320]
+	Description:
+	
+	This method fills the entire ImmutableImage with a specific type of paint, such as a solid color or gradient.
+	
+	If the paint is of type LinearGradient, and the coordinates are int min or max, it updates the range to be from 0 to the width or height.
+	
+	This method is used by the BackgroundGradient class which transforms an image to a new image that is a horizontal linear gradient consisting of the two most dominant colors in the image.
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: srcimage>subpixel>LinearSubpixelInterpolator.java> summands [line 59]
+	Description:
+
+	This method tries to approximate the RGBA color value of a subpixel by linearly interpolating nearby pixels.
+	
+	Generally, the code interpolates between the two nearest pixels, but when the coordinate is on the border of the image, the original color is used.
+	
+	This method is used by AwtImage and ImmutableImage to approximate subpixels.
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 7: scrimage>metadata>OrientationTools.java> reorient [line 22]
+	Description:
+	
+	This method rotates and flips an image to reverse the orientation described the exif metadata of the file.
+	
+	If there are multiple orientations in the exif tags, it only uses the first one.
+	
+	This reorientation is done if the requests it when loading an ImmutableImage via ImmutableImageLoader.
+
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 8: scrimage>AwtImage.java> points [line 174]
+	Description:
+	
+	This method returns a flattened array of Points with the same size as the image.
+	
+	The coordinates of the points are all ints.
+	
+	This is a helper function that is used to make it easier to iterate through all the pixels of the image, when applying operations that require such type of iteration.
+
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!
+

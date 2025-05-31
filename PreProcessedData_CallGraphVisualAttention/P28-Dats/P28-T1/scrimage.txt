@@ -1,0 +1,159 @@
+
+-> Project: "srcimage"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 										Project Synopsis:  
+| Scrimage is an immutable, functional, and performant JVM library for manipulation of images.
+| The aim of this library is to provide a simple and concise way to do common image operations, 
+| such as resizing to fit a required width and height, converting between formats, applying filters and so on.
+-----------------------------------------------------------------------------------------------------
+
+
+#####################################---CALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session  |
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: scrimage>canvas>Canvas.java> draw [line 46]
+	Description:
+        This takes a collection of drawables and returns a new canvas with the drawables on it.
+        It does this by iterating through the collection of drawables and creating a new Rich2D object each one, drawing it on the canvas, and finally returning the new canvas.
+        This method looks to be important in drawing images on the canvas whenever necessary.
+
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	4
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: srcimage>scaling>AwtNearestNeighbourScale.java> scale [line 8]
+	Description:
+	This accepts an image, width and height, and then scales the inputted image by that width and height.
+	This method works by creating a new BufferedImage object, getting the info and setting rendering information, drawing the new image and then returning it.
+	This method is important when scaling an image by a specific width and height.
+	
+
+	
+	Rate your confidence in the description on a scale of 1-5: 
+	5
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: srcimage>subpixel>LinearSubpixelInterpolator.java> summands [line 59]
+	Description:
+	This takes in an x and y and returns a 2D array with the corresponding RGBA values.
+	This method works by getting a list of coordinates of pixels in the width and height, then looping through each pair, obtaining the weight of the corresponding pixel, and returning an array with the corresponding alpha, and rgb values. 
+	This method seems important in figuring out what color each pixel should be displayed as when manipulating.
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	3
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: srcimage>nio>internal>GifSequenceReader.java> readHeader [line 577]
+	Description:
+	This method reads in the header of the file that is presumably inputted into the Scrimage program, checks to make sure it is a GIF, and sets the background color.
+	This method works by reading in each character of the header into `id`, returning an error if `id` does not start with "GIF", obtaining more info about the file and then querying the color table to set the background color.
+	This method seems important in Scrimage's GIF editing capability - it checks to make sure that the file is in the right format and sets background color.
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	4
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session    |
+-----------------------------------------------------------------------------------------------------
+#####################################---RECALIBRATION REQUIRED---####################################
+
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session    |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: scrimage>ImmutableImage.java> fill [line 320]
+	Description:
+	This method seems to fill in an image that is selected with a filled rectangle with a linear gradient as the color.
+	This method takes in a painter object and checks to see if it has a linear gradient associated with it - it then draws a filled rectangle that covers the entire width and height of the image with either the linear gradient or the plain painter object.
+	This method seems important when covering the selected image with a user selected color or gradient.
+	
+
+	Rate your confidence in the description on a scale of 1-5: 
+	4
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: scrimage>filter>PipelineFilter.java> apply [line 19]
+	Description:
+	This method is used to apply filters to an image.
+	This method performs operations on a copy of the inputted image for safety - it first makes sure that image type is in the correct format (argb or rgb), then it applies each filter in the collection.
+	This method seems important in applying filters to an image that a user has selected.
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	4
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 7: scrimage>AwtImage.java> points [line 174]
+	Description:
+	This method creates an array of points with a size identical to the width and height of the image.
+	This method instantiates an array of size width * height, then loops through each and creates a point object with an x and y for each. 
+	This method seems important when setting up the coordinate system of the image - each pixel of the image is represented by a point with an x and y. 
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	5
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 8: scrimage>metadata>OrientationTools.java> reorient [line 22]
+	Description:
+	This method defines various cases in which a user can flip or rotate the original image.
+	This method simply defines the various cases the user can perform on the image, including flipping across the X axis and rotating by certain amounts of degrees.
+	This method is useful when a user of Scrimage would like to reorient the image they are manipulating by flipping or rotating it.
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	5
+	
+	
+	
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+I didn't run into any issues, but the keyboard was a little tough to type on.
+
+
+Please call the administrator!
+

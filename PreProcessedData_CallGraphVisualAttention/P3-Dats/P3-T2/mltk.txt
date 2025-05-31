@@ -1,0 +1,157 @@
+
+ Project: "MLTK"
+-----------------------------------------------------------------------------------------------------
+Project Synopsis: MLTK (Machine Learning Tool Kit) is a collection of various supervised machine 
+learning algorithms, which is designed for directly training models and further development.
+-----------------------------------------------------------------------------------------------------
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+	
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 1: core>processor>Discretizer.java> computeBins [line 122]
+	Description:
+	
+	This method creates bins for categorizing elements of the training set based on their attributes.
+	
+	It takes in a list of elements and a maximum number of bins and calculates the boundary and median points of the required bins based on the elements to be binned.
+	
+	This method helps to categorize the training data based on its properties (e.g. if the training data is numerical it might put it into bins of numbers 1-10, 10-20, etc.) 
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: core>processor>InstancesSplitter.java> split [line 286]
+	Description:
+	
+	This method helps to split a dataset.
+	
+	It takes in Instances (lists of the data in the dataset), an optional attribute of the data, and ratios, and splits the data into partitions of sizes based on the input ratios and optionally stratifies the dataset based on the specified attribute (i.e. makes sure that data of that attribute is equally distributed amongst the output partitions).
+	
+	This method can be important for creating partitions of the dataset for things like training, testing, and cross-validation.
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: core>io>InstancesReader.java> parseDenseInstance [line 159]
+	Description:
+	This method converts the read in data and its class label and converts it to objects of type Instance.
+	
+	It takes in an array of Strings data and the class value, converts the array of Strings to an array of doubles, and takes the class value into account when converting the array of strings to the array of doubles (in the case that the class index is greater than or equal to 0 the class index affects the values of the converted array of doubles before and after the index of classIndex in the array and I'm not sure why).
+	
+	This method helps the program read in data from files and convert it into the format that the rest of the program uses.
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: predictor>gam>SPLAMLearner.java computeGradient [line 1025]
+	Description: 
+	
+	This method computes the gradient when doing one pass of learning over the input data.
+	
+	It takes in index and block which indicate which part of the data to consider, rTrain (not exactly sure what this is), and gradient (the already-computed gradient for this data) and computes the gradient for another pass over the data.
+	
+	This method performs an important step in training the data using the SPLAMLearner, which is one learner offered in this toolkit. 
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session.
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: core>BinnedAttribute.java> parse [line 66]
+	Description:
+	
+	This method takes in a string representation of binned attributes and represents this data with the BinnedAttribute class.
+	
+	The method takes in the string representation generated by BinnedAttribute.toString() and parses it to get the name of the data as well as the number of bins or the boundaries and medians of the bins, and then represents this data as a BinnedAttribute.
+	
+	This method is used in the AttributesReader to read in String representations of binned attributes from files of input data.
+
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 6: predictor>tree>RTreeLearner.java> getStats [line 64]
+	Description:
+	
+	This method fills out a stats array and determines if any of the targets are the same as the first target.
+	
+	This method takes in Instances (a list of data) and a stats array to fill out, fills out stats[0], stats[1], and stats[2] based on the weight and target values of all of the instance data, and returns false if any of the targets are the same as the first target, true if not.
+	
+	This method helps build RegressionTrees and DecisionTables.
+
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 7: util>OptimUtils.java> fitIntercept [line 108]
+	Description:
+	
+	This method creates a line of best fit with the predicted data and the residual data.
+	
+	It takes in the predicted data, an array for the residual data, and the y values and fills in the residual array (through calling computePseudoResidual) as well as returns the delta between the predicted and actual values for the data.
+	
+	This method is used in various binary classifiers throughout the toolkit: when the classifiers are training they want to continually minimize the delta between the predicted and actual values until the line with the smallest delta is found.
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8:predictor>tree>TreeInteriorNode.java> write [line 76]
+	Description:
+	
+	This method writes the contents of a TreeInteriorNode.
+	
+	It takes in a PrintWriter and writes the class name, the AttIndex and SplintPoint for that node, and then recurses through the left and write children to write their contents, until the whole tree is written.
+	
+	This method allows users of the toolkit to see the contents of a RegressionTree or DecisionTable that they have built/trained.
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session.
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+	
+	Method 9: predictor>tree>ensemble>BoostedDTables.java> regress [line 153]
+	Description:
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 10: predictor>evaluation>ConvergenceTester.java>  ConvergenceTester [line 53]
+	Description:
+	
+	
+	
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

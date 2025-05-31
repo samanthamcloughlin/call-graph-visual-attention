@@ -1,0 +1,7 @@
+CRF.predict(InstanceList)  (cc.mallet.fst)
+CRFTrainerByLabelLikelihood.trainWithFeatureInduction(InstanceList, InstanceList, InstanceList, TransducerEvaluator, int, int, int, ...)(4 usages)  (cc.mallet.fst)
+    CRFTrainerByLabelLikelihood.trainWithFeatureInduction(InstanceList, InstanceList, InstanceList, TransducerEvaluator, int, int, int, ...)  (cc.mallet.fst)
+        TUI.main(String[])(2 usages)  (cc.mallet.share.mccallum.ner)
+        SimpleTagger.train(InstanceList, InstanceList, TransducerEvaluator, int[], String, String, String, ...)  (cc.mallet.fst)
+            SimpleTagger.main(String[])  (cc.mallet.fst)
+CRF.induceFeaturesFor(InstanceList)  (cc.mallet.fst)

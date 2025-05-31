@@ -1,0 +1,238 @@
+,fixation_id,fixation_run_id,fixation_start_event_time,fixation_order_number,x,y,fixation_target,source_file_line,source_file_col,token,syntactic_category,xpath,left_pupil_diameter,right_pupil_diameter,duration
+0,5a8ae3dd-c817-4bcf-8ea3-6a042522b7fd,1741305340344,133544077671728152,1,517.278,648.611,mallet.txt,50,11,,,,2.40109,2.64909,250
+1,1f815503-5dba-4685-ad0b-2d8b48a88ad0,1741305340344,133544077677568113,2,601.115,439.154,mallet.txt,51,22,,,,2.25781,2.50156,408
+2,bc977568-d1e7-4a4c-8300-aafbd75d2a41,1741305340344,133544077682644368,3,704.059,269.0,mallet.txt,50,35,,,,2.22403,2.4905,317
+3,09831c68-9d7b-46ef-bfee-e277cf0d80bf,1741305340344,133544077686561066,4,785.556,316.889,mallet.txt,54,38,,,,2.3184,2.61375,84
+4,1b7ba0c8-96f8-4379-94d7-3cec3051fa63,1741305340344,133544077688221859,5,724.333,289.778,mallet.txt,52,34,,,,2.35409,2.57996,112
+5,484f91d9-b7cc-45ba-8ba7-cee79e633d5c,1741305340344,133544077691726234,6,798.625,113.917,mallet.txt,43,39,,,,2.36067,2.5927,610
+6,6dd07efe-b860-4301-9d86-d9cc643595bf,1741305340344,133544077698313695,7,714.727,110.818,mallet.txt,43,30,,,,2.36695,2.63298,216
+7,b1fb521f-11af-4093-aa26-cd6024a225ec,1741305340344,133544077703144359,8,796.056,111.389,mallet.txt,43,39,,,,2.41419,2.6622,3457
+8,4ffdd67d-45ac-4984-b165-f2fd77d6c4bc,1741305340344,133544077740795945,9,788.222,112.556,mallet.txt,43,38,,,,2.40301,2.66858,134
+9,2ebaf4a5-c885-4bd9-b7bb-6b855ebb5ee0,1741305340344,133544077742479381,10,748.44,114.8,mallet.txt,43,34,,,,2.35203,2.57042,490
+10,8f5f6eb1-4dd7-4107-a42c-4721b394b324,1741305340344,133544077750060783,11,766.75,109.0,mallet.txt,43,36,,,,2.43983,2.6926,107
+11,9b4ad5f6-fd7d-446b-a087-c1a9e5e1fe97,1741305340344,133544077751483175,12,615.071,111.286,mallet.txt,43,17,,,,2.65577,2.92146,291
+12,cde3156d-55d1-469e-99ab-e406cb76cf12,1741305340344,133544077755046862,13,639.533,497.933,mallet.txt,63,25,,,,2.57502,2.80781,159
+13,1bfd6357-4b02-45a4-a7ee-8dca3e8960b6,1741305340344,133544077759462750,14,678.528,280.0,mallet.txt,52,34,,,,2.14409,2.39892,568
+14,49da4930-00d5-438c-9ac5-2dcf761fa4e5,1741305340344,133544077768157170,15,608.93,274.479,mallet.txt,52,23,,,,2.31738,2.54839,657
+15,5e648408-48da-4ef4-a4c3-1e6e2e9bfa60,1741305340344,133544077807314331,16,639.091,280.909,mallet.txt,52,24,,,,2.55018,2.77947,199
+16,790e27d8-fde2-4dc5-91e3-8c7d3db52729,1741305340344,133544077810147543,17,728.714,316.0,mallet.txt,54,31,,,,2.36283,2.69099,117
+17,ae815298-2294-4dcb-8e8d-0212c17c4c97,1741305340344,133544077821897173,18,758.778,278.056,mallet.txt,52,38,,,,2.25382,2.49636,156
+18,73b1055d-7060-43c3-85f4-d147c6db1e3c,1741305340344,133544077823631162,19,706.824,277.863,mallet.txt,52,30,,,,2.16493,2.39758,444
+19,a64817d8-8491-4c42-9eff-9221b613f14b,1741305340344,133544077828312002,20,768.847,283.373,mallet.txt,52,38,,,,2.00849,2.2518,550
+20,4ef26f7e-8f39-462c-8483-8253db7c778c,1741305340344,133544077835475145,21,874.071,280.286,mallet.txt,51,51,,,,2.04991,2.28785,251
+21,ccbe58cf-1b56-417c-b73f-65b6b9906a48,1741305340344,133544078048826245,22,890.679,512.036,mallet.txt,64,52,,,,2.20097,2.48191,225
+22,b0d805fc-d768-4fd4-bc3f-cdf42fd5a2e8,1741305340344,133544078051988512,23,887.0,291.429,mallet.txt,52,53,,,,2.26729,2.58107,100
+23,9eb74092-ac56-42b6-873b-7350e635f9ca,1741305340344,133544078053237532,24,870.75,289.333,mallet.txt,52,50,,,,2.34378,2.58281,125
+24,80d8029f-cc13-45ab-99d9-5dbfd8065ebc,1741305340344,133544078061488079,25,889.833,284.278,mallet.txt,51,52,,,,2.56015,2.85146,208
+25,9ec6597a-838e-4124-a318-4f8ad1ae2377,1741305340344,133544078570093808,26,641.286,192.714,Matrix.java,10,25,extends,unit->interface->super_list->extends,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:super_list[@pos:start='10:25' and @pos:end='10:46']/src:extends[@pos:start='10:25' and @pos:end='10:46'],2.30967,2.59272,173
+26,f6baa55f-d314-48c8-8424-92c302f4edf5,1741305340344,133544078572254582,27,807.3,186.2,Matrix.java,10,42,ConstantMatrix,unit->interface->super_list->extends->super->name,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:super_list[@pos:start='10:25' and @pos:end='10:46']/src:extends[@pos:start='10:25' and @pos:end='10:46']/src:super[@pos:start='10:33' and @pos:end='10:46']/src:name[@pos:start='10:33' and @pos:end='10:46'],2.19498,2.48959,148
+27,53403b6f-ebba-42c4-9bbc-020ffd8261d6,1741305340344,133544078575003559,28,767.222,188.389,Matrix.java,10,39,ConstantMatrix,unit->interface->super_list->extends->super->name,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:super_list[@pos:start='10:25' and @pos:end='10:46']/src:extends[@pos:start='10:25' and @pos:end='10:46']/src:super[@pos:start='10:33' and @pos:end='10:46']/src:name[@pos:start='10:33' and @pos:end='10:46'],1.9088,2.49377,217
+28,ec6a9e06-5237-4ea2-9676-8f06e3fe8fa5,1741305340344,133544078582343197,29,756.7,194.4,Matrix.java,10,37,ConstantMatrix,unit->interface->super_list->extends->super->name,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:super_list[@pos:start='10:25' and @pos:end='10:46']/src:extends[@pos:start='10:25' and @pos:end='10:46']/src:super[@pos:start='10:33' and @pos:end='10:46']/src:name[@pos:start='10:33' and @pos:end='10:46'],2.45576,2.69373,191
+29,f5cc6750-efc3-4cce-9c7d-40fdd2927494,1741305340344,133544078584910996,30,563.5,234.0,Matrix.java,13,14,setValue,unit->interface->block->function_decl->type->specifier,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:block[@pos:start='11:1' and @pos:end='38:1']/src:function_decl[@pos:start='13:9' and @pos:end='13:59']/src:type[@pos:start='13:9' and @pos:end='13:19']/src:specifier[@pos:start='13:9' and @pos:end='13:14'],1.84488,2.73278,93
+30,6b825655-2e87-40cd-a4f4-e4c34d527286,1741305340344,133544078607817321,31,587.75,189.167,Matrix.java,10,19,Matrix,unit->interface->name,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:name[@pos:start='10:18' and @pos:end='10:23'],2.33378,2.61149,185
+31,25c900ef-7561-4e95-9ecf-be90eafb5332,1741305340344,133544078610092721,32,559.556,253.148,Matrix.java,13,10,void,unit->interface->block->function_decl->type->specifier,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:block[@pos:start='11:1' and @pos:end='38:1']/src:function_decl[@pos:start='13:9' and @pos:end='13:59']/src:type[@pos:start='13:9' and @pos:end='13:19']/src:specifier[@pos:start='13:9' and @pos:end='13:14'],2.48283,2.74407,367
+32,2172b119-dfea-4cbb-8b26-99f222981204,1741305340344,133544078615592458,33,722.917,249.083,Matrix.java,13,31,indices,unit->interface->block->function_decl->parameter_list->parameter->decl->type->name->name,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:block[@pos:start='11:1' and @pos:end='38:1']/src:function_decl[@pos:start='13:9' and @pos:end='13:59']/src:parameter_list[@pos:start='13:30' and @pos:end='13:58']/src:parameter[@pos:start='13:31' and @pos:end='13:43']/src:decl[@pos:start='13:31' and @pos:end='13:43']/src:type[@pos:start='13:31' and @pos:end='13:43']/src:name[@pos:start='13:31' and @pos:end='13:35']/src:name[@pos:start='13:31' and @pos:end='13:33'],2.38922,2.5924,225
+33,6206af27-0230-4e9e-9e3c-08c96252f01b,1741305340344,133544078618261018,34,618.704,264.535,Matrix.java,13,17,setValue,unit->interface->block->function_decl->type->name,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:block[@pos:start='11:1' and @pos:end='38:1']/src:function_decl[@pos:start='13:9' and @pos:end='13:59']/src:type[@pos:start='13:9' and @pos:end='13:19']/src:name[@pos:start='13:16' and @pos:end='13:19'],2.48142,2.73483,675
+34,8eb00cb7-874c-4f31-a915-5697687c95a4,1741305340344,133544078625256647,35,780.409,269.848,Matrix.java,14,37,double,unit->interface->block->function_decl->parameter_list->parameter->decl->type->name,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:block[@pos:start='11:1' and @pos:end='38:1']/src:function_decl[@pos:start='14:9' and @pos:end='14:57']/src:parameter_list[@pos:start='14:36' and @pos:end='14:56']/src:parameter[@pos:start='14:37' and @pos:end='14:41']/src:decl[@pos:start='14:37' and @pos:end='14:41']/src:type[@pos:start='14:37' and @pos:end='14:41']/src:name[@pos:start='14:37' and @pos:end='14:39'],2.44016,2.67312,642
+35,93a928c7-8efe-42bd-b8d6-b4cc9d81371b,1741305340344,133544078633928952,36,595.294,277.529,Matrix.java,15,16,incrementSingleValue,unit->interface->block->function_decl->type->name,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:block[@pos:start='11:1' and @pos:end='38:1']/src:function_decl[@pos:start='15:9' and @pos:end='15:63']/src:type[@pos:start='15:9' and @pos:end='15:19']/src:name[@pos:start='15:16' and @pos:end='15:19'],2.37613,2.68884,133
+36,756dc081-2d31-4b46-b5e8-00dfa19ff75d,1741305340344,133544078636096258,37,599.267,329.967,Matrix.java,17,22,setValueAtLocation,unit->interface->block->function_decl->name,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:block[@pos:start='11:1' and @pos:end='38:1']/src:function_decl[@pos:start='17:3' and @pos:end='17:57']/src:name[@pos:start='17:15' and @pos:end='17:32'],2.46513,2.72983,526
+37,6a7e323e-5a7a-45f3-9178-be2bdab7f3fd,1741305340344,133544078641739587,38,564.059,472.735,Matrix.java,25,13,WHITESPACE,unit->interface->block->function_decl->type->specifier,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:block[@pos:start='11:1' and @pos:end='38:1']/src:function_decl[@pos:start='25:9' and @pos:end='25:65']/src:type[@pos:start='25:9' and @pos:end='25:19']/src:specifier[@pos:start='25:9' and @pos:end='25:14'],2.16156,2.46395,277
+38,53a9e637-9cdd-4208-9c65-350035decd47,1741305340344,133544078650155780,39,550.766,152.702,Matrix.java,8,14,mallet,unit->package->name->name,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:package[@pos:start='8:1' and @pos:end='8:24']/src:name[@pos:start='8:9' and @pos:end='8:23']/src:name[@pos:start='8:12' and @pos:end='8:17'],2.20052,2.49695,593
+39,473a8da9-94bd-4948-854b-b7541c237037,1741305340344,133544078656332070,40,682.5,187.643,Matrix.java,10,29,extends,unit->interface->super_list->extends,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:super_list[@pos:start='10:25' and @pos:end='10:46']/src:extends[@pos:start='10:25' and @pos:end='10:46'],2.32351,2.60478,208
+40,c06217bf-4133-442f-b60d-30b7c3297dbb,1741305340344,133544078658845878,41,772.091,193.545,Matrix.java,10,40,ConstantMatrix,unit->interface->super_list->extends->super->name,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:super_list[@pos:start='10:25' and @pos:end='10:46']/src:extends[@pos:start='10:25' and @pos:end='10:46']/src:super[@pos:start='10:33' and @pos:end='10:46']/src:name[@pos:start='10:33' and @pos:end='10:46'],2.44827,2.68927,149
+41,3929e32f-6acc-4bf7-b9a9-bb83ed99fd69,1741305340344,133544078661006505,42,532.941,164.059,Matrix.java,8,13,mallet,unit->package->name->name,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:package[@pos:start='8:1' and @pos:end='8:24']/src:name[@pos:start='8:9' and @pos:end='8:23']/src:name[@pos:start='8:12' and @pos:end='8:17'],2.23683,2.66669,292
+42,4e8b510d-17de-4d61-9723-2eafbc6afc15,1741305340344,133544078664927920,43,769.526,189.579,Matrix.java,10,38,ConstantMatrix,unit->interface->super_list->extends->super->name,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:super_list[@pos:start='10:25' and @pos:end='10:46']/src:extends[@pos:start='10:25' and @pos:end='10:46']/src:super[@pos:start='10:33' and @pos:end='10:46']/src:name[@pos:start='10:33' and @pos:end='10:46'],2.43668,2.66004,342
+43,8c9e0058-23fe-45c5-bf99-03f25700f779,1741305340344,133544078669512379,44,660.913,380.87,Matrix.java,20,24,ConstantMatrix,unit->interface->block->function_decl,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:block[@pos:start='11:1' and @pos:end='38:1']/src:function_decl[@pos:start='20:9' and @pos:end='20:43'],2.40849,2.70915,184
+44,050eb002-0691-456d-baad-23a5ed53f497,1741305340344,133544078674512887,45,683.333,266.519,Matrix.java,14,26,setSingleValue,unit->interface->block->function_decl->name,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:block[@pos:start='11:1' and @pos:end='38:1']/src:function_decl[@pos:start='14:9' and @pos:end='14:57']/src:name[@pos:start='14:21' and @pos:end='14:34'],2.39527,2.68837,213
+45,0804ecd7-c240-40ea-9f4f-8b5e2a18744e,1741305340344,133544078677094728,46,761.143,188.143,Matrix.java,10,38,ConstantMatrix,unit->interface->super_list->extends->super->name,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:super_list[@pos:start='10:25' and @pos:end='10:46']/src:extends[@pos:start='10:25' and @pos:end='10:46']/src:super[@pos:start='10:33' and @pos:end='10:46']/src:name[@pos:start='10:33' and @pos:end='10:46'],2.49578,2.65775,142
+46,5c1b2557-01c7-4b6f-82ba-6437b405d184,1741305340344,133544078679011989,47,616.467,360.133,Matrix.java,19,19,setAll,unit->interface->block->function_decl->type->name,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:block[@pos:start='11:1' and @pos:end='38:1']/src:function_decl[@pos:start='19:9' and @pos:end='19:38']/src:type[@pos:start='19:9' and @pos:end='19:19']/src:name[@pos:start='19:16' and @pos:end='19:19'],2.34836,2.64302,150
+47,8d72b12f-2dfc-4a5a-919b-2d4373727dd9,1741305340344,133544078681842986,48,567.727,378.182,Matrix.java,20,14,set,unit->interface->block->function_decl->type->specifier,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:block[@pos:start='11:1' and @pos:end='38:1']/src:function_decl[@pos:start='20:9' and @pos:end='20:43']/src:type[@pos:start='20:9' and @pos:end='20:19']/src:specifier[@pos:start='20:9' and @pos:end='20:14'],2.14145,2.66364,133
+48,e0838efa-01df-4ebb-9d22-b232e6f164df,1741305340344,133544078683428232,49,596.913,372.217,Matrix.java,20,15,set,unit->interface->block->function_decl->type,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:block[@pos:start='11:1' and @pos:end='38:1']/src:function_decl[@pos:start='20:9' and @pos:end='20:43']/src:type[@pos:start='20:9' and @pos:end='20:19'],2.30098,2.58673,449
+49,c1b3abb6-10ec-4a36-9798-ab55d03c47a9,1741305340344,133544078688929876,50,700.156,398.689,Matrix.java,21,26,setWithAddend,unit->interface->block->function_decl->name,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:block[@pos:start='11:1' and @pos:end='38:1']/src:function_decl[@pos:start='21:9' and @pos:end='21:68']/src:name[@pos:start='21:21' and @pos:end='21:33'],2.31565,2.59151,365
+50,7d1be8f8-9283-4517-a3e2-29c97abd4afb,1741305340344,133544078695928205,51,664.613,357.387,Matrix.java,19,24,double,unit->interface->block->function_decl->name,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:block[@pos:start='11:1' and @pos:end='38:1']/src:function_decl[@pos:start='19:9' and @pos:end='19:38']/src:name[@pos:start='19:21' and @pos:end='19:26'],2.33626,2.68472,300
+51,7521e58c-bad1-489f-8635-5aa809959bb1,1741305340344,133544078699927653,52,586.5,411.395,Matrix.java,22,20,setWithFactor,unit->interface->block->function_decl,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:block[@pos:start='11:1' and @pos:end='38:1']/src:function_decl[@pos:start='22:9' and @pos:end='22:68'],2.25087,2.5533,965
+52,a43ad81c-549d-4f96-8545-e71f6536d3e9,1741305340344,133544078709745360,53,578.516,399.323,Matrix.java,21,14,setWithAddend,unit->interface->block->function_decl->type->specifier,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:block[@pos:start='11:1' and @pos:end='38:1']/src:function_decl[@pos:start='21:9' and @pos:end='21:68']/src:type[@pos:start='21:9' and @pos:end='21:19']/src:specifier[@pos:start='21:9' and @pos:end='21:14'],2.25159,2.53835,259
+53,8bf3b013-e669-4210-93e1-74bcbb7d841a,1741305340344,133544078713515270,54,565.833,616.417,Matrix.java,33,14,double,unit->interface->block->function_decl->type->specifier,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:block[@pos:start='11:1' and @pos:end='38:1']/src:function_decl[@pos:start='33:9' and @pos:end='33:38']/src:type[@pos:start='33:9' and @pos:end='33:21']/src:specifier[@pos:start='33:9' and @pos:end='33:14'],2.25965,2.49601,199
+54,eaade0c7-bddb-4a1f-820c-20d5afb0b392,1741305340344,133544078715746591,55,601.568,652.788,Matrix.java,35,16,absNormalize,unit->interface->block->function_decl->type->name,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:block[@pos:start='11:1' and @pos:end='38:1']/src:function_decl[@pos:start='35:9' and @pos:end='35:37']/src:type[@pos:start='35:9' and @pos:end='35:21']/src:name[@pos:start='35:16' and @pos:end='35:21'],2.07105,2.51849,1110
+55,ded9f421-4928-4f8a-9464-72e9c7b3a07a,1741305340344,133544078729418121,56,595.8,277.6,Matrix.java,15,15,incrementSingleValue,unit->interface->block->function_decl->type,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:block[@pos:start='11:1' and @pos:end='38:1']/src:function_decl[@pos:start='15:9' and @pos:end='15:63']/src:type[@pos:start='15:9' and @pos:end='15:19'],2.33767,2.6081,301
+56,a5c514ac-f89e-4dd7-9ff1-96ac45e78093,1741305340344,133544078732677941,57,592.338,254.353,Matrix.java,13,16,setValue,unit->interface->block->function_decl->type->name,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:block[@pos:start='11:1' and @pos:end='38:1']/src:function_decl[@pos:start='13:9' and @pos:end='13:59']/src:type[@pos:start='13:9' and @pos:end='13:19']/src:name[@pos:start='13:16' and @pos:end='13:19'],2.27791,2.56339,876
+57,ec5c1e77-452d-4ddb-8343-a757cbd3d2e6,1741305340344,133544078741599956,58,524.5,273.9,Matrix.java,13,9,void,unit->interface->block->function_decl->type->specifier,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:block[@pos:start='11:1' and @pos:end='38:1']/src:function_decl[@pos:start='13:9' and @pos:end='13:59']/src:type[@pos:start='13:9' and @pos:end='13:19']/src:specifier[@pos:start='13:9' and @pos:end='13:14'],1.82141,2.6005,331
+58,4bc0a05b-b584-463c-bf99-dd1503f2e3b5,1741305340344,133544078746075773,59,578.667,303.333,Matrix.java,17,18,setValueAtLocation,unit->interface->block->function_decl->name,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:block[@pos:start='11:1' and @pos:end='38:1']/src:function_decl[@pos:start='17:3' and @pos:end='17:57']/src:name[@pos:start='17:15' and @pos:end='17:32'],2.4242,2.68008,268
+59,82c1f557-2cf3-4e7b-b531-d1d330a82052,1741305340344,133544078748996799,60,569.316,260.158,Matrix.java,14,14,setSingleValue,unit->interface->block->function_decl->type->specifier,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:block[@pos:start='11:1' and @pos:end='38:1']/src:function_decl[@pos:start='14:9' and @pos:end='14:57']/src:type[@pos:start='14:9' and @pos:end='14:19']/src:specifier[@pos:start='14:9' and @pos:end='14:14'],0.747581,2.59741,159
+60,76ae44a9-cb9c-4411-8d92-0ac5f0f2df6a,1741305340344,133544078750836825,61,565.792,269.083,Matrix.java,14,15,setSingleValue,unit->interface->block->function_decl->type,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1']/src:block[@pos:start='11:1' and @pos:end='38:1']/src:function_decl[@pos:start='14:9' and @pos:end='14:57']/src:type[@pos:start='14:9' and @pos:end='14:19'],1.95125,2.68334,418
+61,28d1fa34-2286-4970-8c1c-81bde218731c,1741305340344,133544078760581805,62,557.077,190.462,Matrix.java,10,15,interface,unit->interface,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:interface[@pos:start='10:1' and @pos:end='38:1'],1.87043,2.71277,160
+62,f192243e-2ede-4288-b836-498b27d0ce6d,1741305340344,133544078762931805,63,546.429,165.714,Matrix.java,8,13,mallet,unit->package->name->name,//src:unit[@filename='C:/Users/elide-double-blind/Downloads/Projects/Projects/mallet/src/cc/mallet/types/Matrix.java']/src:package[@pos:start='8:1' and @pos:end='8:24']/src:name[@pos:start='8:9' and @pos:end='8:23']/src:name[@pos:start='8:12' and @pos:end='8:17'],1.7265,2.7659,92
+63,d0f259d2-1d9b-4511-b008-930ac5b2c6e3,1741305340344,133544080701963300,64,597.4,502.4,mallet.txt,64,22,,,,2.37971,2.60665,454
+64,fb851d39-ff54-4327-92cd-658facd9e5b4,1741305340344,133544080707075451,65,814.222,489.0,mallet.txt,63,44,,,,2.29327,2.45463,167
+65,b4602952-e477-4710-af5f-4bca2da71e6a,1741305340344,133544080710128544,66,1158.5,497.917,mallet.txt,63,82,,,,2.23219,2.38669,145
+66,187a16e5-6ebc-473e-b824-3243a0ebbe8c,1741305340344,133544080712333502,67,1251.1,496.1,mallet.txt,63,92,,,,2.26478,2.46266,173
+67,32d179c9-2ece-4bff-9baa-fd249a46a66e,1741305340344,133544080716502752,68,555.154,564.462,mallet.txt,67,13,,,,2.34228,2.60197,143
+68,ec00e795-076f-4f39-ba1e-67b3db40b840,1741305340344,133544080718134164,69,652.833,533.0,mallet.txt,65,26,,,,2.47219,2.68979,169
+69,76123421-eeb5-4f3e-bc55-c70460d50c92,1741305340344,133544080720132884,70,866.811,519.149,mallet.txt,64,52,,,,2.27776,2.50553,645
+70,6e98947b-a01d-4c8e-8dd1-f108dc6c627d,1741305340344,133544080727497524,71,701.143,112.333,mallet.txt,43,30,,,,2.36752,2.66705,615
+71,277d8015-da00-45d6-9428-177b0bfd30a3,1741305340344,133544080734249790,72,599.5,563.6,mallet.txt,67,17,,,,2.42433,2.74517,226
+72,fe97bdb0-7cc3-475c-befd-d275e8c78957,1741305340344,133544080738502264,73,747.28,258.36,mallet.txt,50,38,,,,2.36922,2.54755,261
+73,8202e8be-fa93-4283-b7c6-b8426fdc4e26,1741305340344,133544080742002016,74,527.059,246.647,mallet.txt,50,12,,,,2.28498,2.5411,225
+74,528c56f1-8182-4c80-ad2b-3360163852bb,1741305340344,133544080744584207,75,585.294,259.0,mallet.txt,51,19,,,,2.3482,2.66467,141
+75,39cfdfaf-de88-4626-b5e4-1a775878e363,1741305340344,133544080748585037,76,861.471,325.471,mallet.txt,54,45,,,,2.39092,2.69022,234
+76,6797e1d0-fb58-47e5-b3ba-a158961a0567,1741305340344,133544080752166305,77,889.167,307.167,mallet.txt,54,49,,,,2.26059,2.58628,91
+77,df7ae403-8fb4-4fec-b901-7c825ddddb6f,1741305340344,133544080770501685,78,985.643,316.214,mallet.txt,54,59,,,,2.34511,2.64855,145
+78,b2780382-2c10-4d6c-b0f5-18a42b8ab63f,1741305340344,133544081986775558,79,736.636,503.636,mallet.txt,63,35,,,,2.5108,2.79447,119
+79,e18bb395-a91a-4b84-a0f6-5a7ef8cdf48c,1741305340344,133544081992210938,80,503.308,340.308,mallet.txt,55,6,,,,2.24985,2.5378,290
+80,4aa9f25b-2bc3-42e6-a09a-f18223f38aa3,1741305340344,133544081999464570,81,465.84,342.44,mallet.txt,55,2,,,,2.64004,2.96689,390
+81,2183eadf-490d-459b-845d-71da9d8f43a5,1741305340344,133544082004131170,82,511.629,340.457,mallet.txt,55,2,,,,2.40799,2.73632,700
+82,9d4b788f-5e64-4c40-883a-96fbd107c24a,1741305340344,133544082016548502,83,506.667,414.667,mallet.txt,59,7,,,,2.89955,3.16454,99
+83,5f18c8f5-d0d0-4acc-813a-426df5a96ee4,1741305340344,133544082018384387,84,452.273,363.182,mallet.txt,56,2,,,,2.83402,3.09933,157
+84,8bce5f3f-2252-4872-8573-fa877283ce5a,1741305340344,133544082030468136,85,478.143,336.982,mallet.txt,55,5,,,,2.39746,2.81923,508
+85,cb0d1880-b948-491d-bcae-51390262094a,1741305340344,133544082035796939,86,499.843,355.534,mallet.txt,56,5,,,,2.63025,2.92751,1735
+86,734bc6cb-c16d-4d45-8c01-3da67f3a0338,1741305340344,133544082059222360,87,538.034,334.356,mallet.txt,55,11,,,,2.82946,3.15092,572
+87,84690617-bb20-443c-a304-7a0365ae27a0,1741305340344,133544082068220190,88,560.472,324.014,mallet.txt,54,13,,,,2.42656,2.76164,783
+88,54f5de04-9fec-434a-aa31-e8bbcfe108b7,1741305340344,133544082076219306,89,580.348,320.174,mallet.txt,54,15,,,,2.24051,2.56834,259
+89,d619716b-8e42-4cac-a38b-abf7d7719cbf,1741305340344,133544082079281001,90,653.388,356.254,mallet.txt,56,23,,,,2.53761,2.85148,986
+90,3e8f4bfb-4ef6-4973-a09f-620c9e7fd377,1741305340344,133544082090301592,91,681.636,115.455,mallet.txt,43,26,,,,2.57843,2.84585,100
+91,72838303-4725-4228-9ad3-768413ec389c,1741305340344,133544082091968756,92,667.529,344.0,mallet.txt,56,25,,,,2.59239,2.86344,358
+92,8672ea16-8bc5-4764-a355-b331ffb57caf,1741305340344,133544082099213693,93,491.538,356.769,mallet.txt,56,7,,,,2.65048,2.96518,251
+93,89a50aeb-d1eb-4fb8-931e-f479c9e71712,1741305340344,133544082102634931,94,626.789,365.737,mallet.txt,56,20,,,,2.55483,2.89517,408
+94,5ad58de8-609d-42e4-b5f5-c5472d5967a3,1741305340344,133544082107133382,95,532.909,360.273,mallet.txt,56,10,,,,2.41176,2.7663,392
+95,e074f1b6-7ccd-4a64-87eb-86222abc20b5,1741305340344,133544082111800138,96,599.182,361.182,mallet.txt,56,17,,,,2.61005,2.96814,208
+96,fc30b99d-cf0f-4e16-8d58-274e7e5a7624,1741305340344,133544082120050624,97,536.146,348.756,mallet.txt,55,9,,,,2.75117,3.11439,375
+97,f3123a10-4650-45c0-afee-4bf36ac480b5,1741305340344,133544082127552906,98,509.788,339.718,mallet.txt,55,8,,,,2.54216,2.89297,746
+98,3921811c-dba1-406e-afab-194f4da86079,1741305340344,133544082142724923,99,535.402,343.385,mallet.txt,55,8,,,,2.50489,2.84602,1049
+99,3f2b7f44-cb18-4458-a187-dca498bf5582,1741305340344,133544082160305530,100,637.158,349.175,mallet.txt,56,21,,,,2.47792,2.80739,1225
+100,dfa5a349-cdb9-4655-a3be-10a65dd23d67,1741305340344,133544082184639600,101,662.067,346.933,mallet.txt,56,23,,,,2.86741,3.15754,317
+101,0fe7aa17-44a1-4ddd-b644-6f7b0b64b8b6,1741305340344,133544082189381726,102,766.833,115.167,mallet.txt,43,36,,,,2.37349,2.61719,99
+102,382a8f0c-4b3c-43d2-bb75-722015323b18,1741305340344,133544082190802769,103,702.818,110.409,mallet.txt,43,31,,,,2.19901,2.45921,283
+103,5b9556d8-f28b-4e70-a812-15426d417a18,1741305340344,133544082194723227,104,725.0,322.045,mallet.txt,54,31,,,,2.19504,2.48315,307
+104,5d02c74e-ab4a-4431-a5e2-d2a70efb819c,1741305340344,133544082198219649,105,694.892,110.703,mallet.txt,43,28,,,,2.37426,2.64086,474
+105,c74f3512-baae-4443-9110-d52eaa906db6,1741305340344,133544082203886017,106,799.4,359.4,mallet.txt,56,39,,,,2.46674,2.77806,243
+106,0e64084c-fd4b-4be3-977b-af7131bc976c,1741305340344,133544082209054281,107,681.889,115.667,mallet.txt,43,26,,,,2.40762,2.72098,197
+107,60e6a892-6045-4308-b029-a50e674fc9a4,1741305340344,133544082211451678,108,825.4,340.0,mallet.txt,56,42,,,,2.53904,2.78242,111
+108,0639c0b6-10b8-402b-bf77-e668e8483a38,1741305340344,133544082212803511,109,816.25,349.938,mallet.txt,56,41,,,,2.57644,2.88451,192
+109,233b6dda-5258-4968-ac96-130c607489ad,1741305340344,133544082215965280,110,795.5,356.962,mallet.txt,56,39,,,,2.25132,2.58741,509
+110,d9d3c5d9-32fe-4499-9355-1463d6b7f91b,1741305340344,133544082222052675,111,675.222,114.741,mallet.txt,43,25,,,,2.47882,2.81447,433
+111,3b0355b9-858e-4ff7-9970-0041dd9606c5,1741305340344,133544082226803271,112,814.393,337.75,mallet.txt,54,40,,,,2.3162,2.62484,507
+112,41a65e43-582a-4f9e-8a2f-d5c35c8b252f,1741305340344,133544082232464726,113,735.075,111.375,mallet.txt,43,32,,,,2.36028,2.62555,858
+113,12194606-e58e-43c4-a66c-2198d4282fd0,1741305340344,133544082242053757,114,861.2,325.6,mallet.txt,54,46,,,,2.37819,2.61348,101
+114,ee43e749-4b5e-411f-b1df-c1b1f2b13349,1741305340344,133544082243700733,115,890.2,349.533,mallet.txt,56,49,,,,2.47707,2.69328,242
+115,2d7e8efc-ee11-471d-9f35-73ed696fdf9d,1741305340344,133544082254889723,116,916.333,358.111,mallet.txt,56,53,,,,2.56941,2.80484,99
+116,47859fc5-8c23-4302-87ee-35cee05499d7,1741305340344,133544082256100876,117,936.4,353.8,mallet.txt,56,55,,,,2.49544,2.71546,162
+117,3c86635f-2bc4-4f0f-8843-b74c2a0cdf08,1741305340344,133544082258305942,118,947.5,341.438,mallet.txt,54,56,,,,2.24933,2.47071,249
+118,36dad556-3053-4fdf-a334-5fe945510b11,1741305340344,133544082261302008,119,500.221,334.727,mallet.txt,54,5,,,,2.25974,2.55359,722
+119,d4de4467-ffbe-4097-b478-176264851194,1741305340344,133544082272311075,120,471.234,347.909,mallet.txt,55,2,,,,2.52264,2.82319,674
+120,2d8f575b-da9a-4e7e-8ee1-0a262287d714,1741305340344,133544082279224316,121,528.394,368.01,mallet.txt,57,8,,,,2.47394,2.79973,951
+121,1b79abb5-84c6-4e77-9a3f-5b2d9b026e56,1741305340344,133544082289103280,122,813.857,357.5,mallet.txt,56,41,,,,2.46818,2.77028,178
+122,f7bec276-f11d-4712-a68d-459301a9142a,1741305340344,133544082294057292,123,589.545,373.695,mallet.txt,57,17,,,,2.49976,2.82005,2066
+123,384eb968-f4d1-43a5-be48-87a878c92f5e,1741305340344,133544082320558748,124,626.474,361.982,mallet.txt,56,19,,,,2.73292,3.05119,534
+124,63e6ec8f-5f3b-437a-88c3-8ad75de7f0e1,1741305340344,133544082326474332,125,680.86,357.605,mallet.txt,56,26,,,,2.19398,2.49107,566
+125,78864ee6-792b-4229-86cd-aa916938167b,1741305340344,133544082332373300,126,693.545,376.182,mallet.txt,56,27,,,,2.25859,2.59877,127
+126,45f5fda6-a854-4c4b-869f-3e3df483dac8,1741305340344,133544082334225927,127,704.781,380.344,mallet.txt,57,28,,,,2.37294,2.6721,684
+127,047fd60d-d28a-4de0-baaa-d495c5775350,1741305340344,133544082345478784,128,747.179,366.641,mallet.txt,56,34,,,,2.6928,2.98989,375
+128,dc09e0ad-2ffd-47e9-a897-b4758c59dfa3,1741305340344,133544082352540780,129,622.5,347.333,mallet.txt,56,20,,,,2.19541,2.52114,199
+129,5fddd968-8360-489c-8d90-44759747ad99,1741305340344,133544082355391237,130,754.833,366.0,mallet.txt,56,35,,,,2.35467,2.66422,84
+130,0426db93-6e68-4fcf-99fc-4d2ab697bfe2,1741305340344,133544082359975365,131,773.286,365.429,mallet.txt,56,37,,,,2.45714,2.68924,115
+131,59152f9e-cf40-4499-8d51-9bacc384cc18,1741305340344,133544082363143053,132,694.364,361.364,mallet.txt,56,28,,,,2.41811,2.65279,107
+132,0e7ab0fa-3960-43bf-8761-91c10853713c,1741305340344,133544082364475737,133,616.8,362.2,mallet.txt,56,19,,,,2.35216,2.6386,109
+133,9e551e0f-ceeb-4fc2-b0ea-809ea8fe35e7,1741305340344,133544082365808101,134,626.654,370.744,mallet.txt,57,26,,,,2.47594,2.76972,875
+134,6dbda6af-516c-4462-a679-987db0962314,1741305340344,133544082374976538,135,667.714,373.857,mallet.txt,57,25,,,,2.39895,2.65365,216
+135,52696d7a-e7d6-4611-969c-35065ac6b6ab,1741305340344,133544082384047947,136,694.489,364.511,mallet.txt,56,28,,,,2.71133,3.04938,380
+136,1976b1ef-3501-4d00-9a83-0e5781eb1d57,1741305340344,133544082388145357,137,705.273,366.273,mallet.txt,56,29,,,,2.32884,2.67567,166
+137,52dd612e-7880-4f5b-aa3d-1dc88bd203c8,1741305340344,133544082391560566,138,743.8,361.4,mallet.txt,56,33,,,,2.12393,2.47616,192
+138,77008f4b-09b4-48ef-aee1-19a65117a5bc,1741305340344,133544082394024859,139,764.4,373.2,mallet.txt,57,34,,,,2.25286,2.6183,121
+139,ae58016c-e5f0-4a85-909a-f28e8de07235,1741305340344,133544082395810163,140,784.778,372.778,mallet.txt,57,38,,,,2.40897,2.72379,517
+140,2c951193-6b5c-42a4-9b64-f28e0e11cf91,1741305340344,133544082404225771,141,689.913,379.957,mallet.txt,57,29,,,,2.51072,2.76381,375
+141,ca1c7be3-d6bc-4ce5-8216-8ea615da97b3,1741305340344,133544082409560422,142,815.714,378.143,mallet.txt,57,41,,,,2.42613,2.67637,157
+142,1d33c680-a3be-41a7-94c0-474b7bff5451,1741305340344,133544082411561577,143,851.054,375.0,mallet.txt,57,45,,,,2.50314,2.76601,569
+143,afa4cebd-67c2-4c7c-aa51-e2ea0be996dd,1741305340344,133544082422148952,144,843.375,376.25,mallet.txt,57,44,,,,2.56129,2.99008,240
+144,809c0ba7-fe16-4bf3-a59b-7ffdef2656a7,1741305340344,133544082428729089,145,893.917,364.542,mallet.txt,56,50,,,,2.44107,2.76245,308
+145,157b70a2-57fe-4d1a-b1b4-849d1a0ce085,1741305340344,133544082437277750,146,836.702,365.825,mallet.txt,57,44,,,,2.26842,2.60479,687
+146,6d54873a-42db-4467-be31-cc0b9a28ede8,1741305340344,133544082446979040,147,838.231,374.923,mallet.txt,57,43,,,,2.51209,2.71815,425
+147,1dd89f06-72b5-4f13-8b1f-55bea53ee7ed,1741305340344,133544082459234299,148,875.722,364.611,mallet.txt,56,48,,,,2.61749,2.88791,192
+148,98ee1a93-a81c-4a82-8782-73aade4ade38,1741305340344,133544082461314102,149,894.923,370.077,mallet.txt,57,51,,,,2.3832,2.67342,109
+149,f9219aa9-5cac-4fa8-be61-89738aeba082,1741305340344,133544082463053116,150,912.357,353.214,mallet.txt,56,52,,,,2.2131,2.49823,135
+150,35f90368-e216-4582-a5f0-8c0db2e99709,1741305340344,133544082464646315,151,935.182,353.364,mallet.txt,54,55,,,,2.20538,2.48959,108
+151,6012d013-868d-4a3a-a26a-6b1e0669eb34,1741305340344,133544082466111535,152,920.462,380.154,mallet.txt,57,52,,,,2.38892,2.66021,295
+152,137198e2-8e0c-4cea-a4f2-da3ce850105d,1741305340344,133544082474066603,153,946.125,389.0,mallet.txt,57,56,,,,2.53069,2.86164,833
+153,ab9cbb9c-21e7-45ec-a4c2-f99dcfccd636,1741305340344,133544082486399626,154,1005.87,379.619,mallet.txt,57,63,,,,2.43295,2.72654,1366
+154,96b27fea-36df-4c19-8111-475d5932a8c8,1741305340344,133544082500226229,155,1051.98,383.148,mallet.txt,57,67,,,,2.53122,2.82553,1100
+155,e0a5931f-2059-461d-ab32-87eb693cb4b9,1741305340344,133544082511897948,156,924.462,371.923,mallet.txt,57,53,,,,2.45732,2.72499,173
+156,bd3ed4db-b4d4-4722-8fb7-8d1804d03543,1741305340344,133544082515231481,157,895.154,372.769,mallet.txt,57,50,,,,2.48777,2.68797,542
+157,5cf1a871-068a-4a9a-81d7-6b615df68d50,1741305340344,133544082521230783,158,897.889,112.111,mallet.txt,43,50,,,,2.45126,2.72049,225
+158,c01c39a5-fa3a-41c3-9ded-958c4c9b5570,1741305340344,133544082523983941,159,844.711,359.978,mallet.txt,56,46,,,,2.50204,2.77082,524
+159,e76d2894-7f8a-4b56-8317-5b701aedb541,1741305340344,133544082529482432,160,822.692,364.923,mallet.txt,56,42,,,,2.41179,2.68699,117
+160,11d67208-f375-4180-815d-666ec78b93f3,1741305340344,133544082532732330,161,814.867,364.067,mallet.txt,57,41,,,,2.39875,2.64327,140
+161,67546c48-e732-4f89-8ca1-622635849d16,1741305340344,133544082534481742,162,813.235,372.971,mallet.txt,57,41,,,,2.49184,2.74284,359
+162,b21ecd2b-9a58-4c9e-a04a-cd0b93675eed,1741305340344,133544082540229604,163,846.2,114.0,mallet.txt,43,45,,,,2.67167,3.00559,326
+163,e45583d8-b716-4b9a-9b51-d2a70052f17d,1741305340344,133544082544236143,164,953.875,108.625,mallet.txt,43,57,,,,2.51144,2.7819,134
+164,8b89f89b-3c23-4344-8b0a-2ef596fe0fa7,1741305340344,133544082546898445,165,832.917,357.083,mallet.txt,56,42,,,,2.28359,2.60677,131
+165,3b78babd-7b8f-408f-9470-22c604e3112b,1741305340344,133544082548899890,166,839.833,360.833,mallet.txt,56,44,,,,2.38901,2.71895,140
+166,d6325c12-16b7-466c-931c-439fbf62e39f,1741305340344,133544082550712894,167,831.929,347.357,mallet.txt,54,43,,,,2.38084,2.73338,158
+167,42aeed35-e55e-4088-bfc6-f425391ea174,1741305340344,133544082552643259,168,814.778,355.556,mallet.txt,54,41,,,,2.38851,2.64994,85
+168,c181cd08-6779-4052-abcc-393aeb0b86a5,1741305340344,133544082553649596,169,835.729,361.435,mallet.txt,56,44,,,,2.44138,2.74467,834
+169,86fc9ae5-ff9f-4f04-b6f8-3d0612241941,1741305340344,133544082562400289,170,955.083,121.75,mallet.txt,43,56,,,,2.59507,2.91069,299
+170,38fd41ef-a5d7-42a6-afe0-750b4513d0cb,1741305340344,133544082566566587,171,848.682,346.545,mallet.txt,56,45,,,,2.37983,2.64965,309
+171,ffaedfc3-d29a-4c18-bcc4-4ed3519d80c4,1741305340344,133544082575470655,172,851.974,363.538,mallet.txt,56,45,,,,2.73983,3.06887,417
+172,85a4cb5f-0af6-43f8-abbf-00c2f30d5fa1,1741305340344,133544082581478559,173,890.792,344.708,mallet.txt,54,50,,,,2.13435,2.45868,382
+173,ab5bca37-c301-466a-8f5b-0f4c71cffd32,1741305340344,133544082587067901,174,941.545,113.727,mallet.txt,43,55,,,,2.28423,2.611,298
+174,c1e2bb12-8bef-4fd3-9763-c41dfc9e12a6,1741305340344,133544082590563308,175,936.867,357.833,mallet.txt,56,56,,,,2.32523,2.6291,341
+175,c021f19a-f674-4809-87b3-1883e4b7a04f,1741305340344,133544082594132251,176,966.676,377.054,mallet.txt,57,59,,,,2.44892,2.70561,592
+176,137a26fb-5102-4d02-b108-7222f887a615,1741305340344,133544082600578798,177,948.429,109.714,mallet.txt,43,56,,,,2.55939,2.84115,282
+177,eddd8c05-c27a-4b18-83b7-f897008fc5fa,1741305340344,133544082604070178,178,1024.64,343.56,mallet.txt,57,65,,,,2.34962,2.60371,667
+178,5a968612-58bb-40da-8026-c3a757719577,1741305340344,133544082614715419,179,964.533,109.6,mallet.txt,43,58,,,,2.39791,2.66152,460
+179,5e6f6081-a000-48fe-a49e-118245eccd3b,1741305340344,133544082621234248,180,1027.75,352.25,mallet.txt,54,64,,,,2.32333,2.53845,224
+180,35ed73f5-614f-4cbb-9953-21dcb8587bf7,1741305340344,133544082625819730,181,1020.5,377.0,mallet.txt,57,64,,,,2.26958,2.55598,91
+181,c48d234d-afc3-4c39-81d7-aa4be8cb73a1,1741305340344,133544082628383250,182,981.733,109.467,mallet.txt,43,60,,,,2.36932,2.6616,310
+182,ff393bc6-a060-4de6-a7b8-2542a01fd7a2,1741305340344,133544082633383879,183,1023.25,380.25,mallet.txt,57,64,,,,2.36198,2.61423,185
+183,e4bf2f4a-344e-4c7b-a6b4-fc25ff18b597,1741305340344,133544082636319068,184,904.563,365.25,mallet.txt,57,52,,,,2.31497,2.55202,183
+184,a8d9df6c-8174-4ea0-aade-fd2c8fc56ce6,1741305340344,133544082641821491,185,1087.21,378.368,mallet.txt,57,71,,,,2.16089,2.44855,450
+185,b6d90b0f-7999-4914-87d6-a28d2954a819,1741305340344,133544082649805067,186,1126.1,379.976,mallet.txt,57,74,,,,2.27052,2.55342,1052
+186,98a8db5c-f807-4a09-ac1a-14a3d8b6b6ce,1741305340344,133544082666410323,187,1235.43,377.609,mallet.txt,57,88,,,,2.5076,2.76132,606
+187,759c32c6-538b-4f09-b807-584803bfa986,1741305340344,133544082677326561,188,1309.79,377.949,mallet.txt,57,96,,,,2.27453,2.60542,1957
+188,54bf580f-b832-4cd7-9911-2292aefc67bf,1741305340344,133544082726657217,189,1336.0,379.438,mallet.txt,57,99,,,,2.39518,2.75364,223
+189,08c38724-dc35-42c2-ad74-dcefb4546fe4,1741305340344,133544082731906335,190,1371.76,377.533,mallet.txt,57,111,,,,2.40097,2.75954,657
+190,1e441551-ded6-437a-9557-f2b328140f49,1741305340344,133544082738721557,191,1497.93,381.286,mallet.txt,57,117,,,,2.40521,2.73949,160
+191,1fa3b4e4-aaad-4ace-8081-ce420e57c84d,1741305340344,133544082753324635,192,1504.67,379.0,mallet.txt,57,118,,,,2.4644,2.71562,1298
+192,0e1301a5-b55e-4003-80a2-10a8770bb993,1741305340344,133544082775071829,193,1621.5,382.389,mallet.txt,57,132,,,,2.43229,2.76948,441
+193,d56e74bc-d4bb-4405-842f-0ca90a365389,1741305340344,133544082780311684,194,1310.43,384.857,mallet.txt,57,96,,,,2.5263,2.84359,217
+194,bd7d8004-5b93-4c8d-be60-5de6318f77c6,1741305340344,133544082783405441,195,1630.33,376.0,mallet.txt,57,132,,,,2.59488,2.85985,209
+195,294bae93-2ee4-4cf5-91bf-5fcc559dcddf,1741305340344,133544082790412855,196,773.667,377.75,mallet.txt,57,36,,,,2.63046,2.90382,116
+196,a1d9879e-ac9c-4b91-b6b7-c117f22fc76b,1741305340344,133544082791828043,197,962.125,365.625,mallet.txt,57,57,,,,2.6086,2.8463,167
+197,d5f94dae-90cf-482f-bbf3-b811f0884615,1741305340344,133544082803992329,198,1746.22,382.791,mallet.txt,57,140,,,,2.66471,2.97826,2067
+198,5c206782-60c0-4eaf-bfec-48e2c79f438b,1741305340344,133544082832328966,199,1609.12,379.48,mallet.txt,57,175,,,,2.51998,2.85607,2407
+199,c3af48ed-52a0-4145-b202-611485208ab8,1741305340344,133544082865331484,200,1682.78,378.486,mallet.txt,57,178,,,,2.54386,2.90751,1125
+200,5d9d2703-d108-4672-874b-c84a3681c301,1741305340344,133544082880991495,201,549.286,364.762,mallet.txt,56,11,,,,2.30312,2.62744,184
+201,f262a93b-2d3a-4b3a-8aaf-6422be246759,1741305340344,133544082882994269,202,465.0,369.556,mallet.txt,57,2,,,,2.21834,2.5562,174
+202,cdb64edf-c375-4bbb-9472-ea6d1b0ef210,1741305340344,133544082897006368,203,766.5,385.167,mallet.txt,57,36,,,,2.61485,3.02215,141
+203,66788985-b98d-4bd3-9718-e12497df69d8,1741305340344,133544082900498511,204,485.84,363.04,mallet.txt,55,2,,,,2.18826,2.50363,266
+204,8cce0913-236e-4061-b222-5d103337a786,1741305340344,133544082903413329,205,502.054,345.857,mallet.txt,55,7,,,,2.19408,2.46277,457
+205,fd05015b-97fc-4d85-a8e0-84eaeedf2caf,1741305340344,133544082913982834,206,489.4,347.55,mallet.txt,56,3,,,,2.45331,2.735,160
+206,df626134-ecd4-4da1-ac4e-b36c0f5e2f29,1741305340344,133544082915980676,207,914.5,361.719,mallet.txt,56,53,,,,2.56277,2.86669,360
+207,f9205af1-08a4-45c3-ade2-b37e9ce91096,1741305340344,133544082925245566,208,505.04,338.8,mallet.txt,54,6,,,,2.30825,2.61817,218
+208,d770e26f-94e1-48c3-ac05-1d1010f85c17,1741305340344,133544082934479364,209,703.0,111.915,mallet.txt,43,29,,,,2.49445,2.75145,1151
+209,bd21e77d-111a-49c6-8ca3-63c2b5a26cdb,1741305340344,133544083222839169,210,586.923,340.769,mallet.txt,54,16,,,,2.33874,2.55986,191
+210,aeb38db4-830b-4da0-b89a-aad2598ee9bc,1741305340344,133544083224923592,211,583.0,315.25,mallet.txt,54,16,,,,2.40902,2.56418,84
+211,1fb61d32-52bd-42da-9a99-366297e95dc5,1741305340344,133544083231585690,212,480.857,455.929,mallet.txt,61,4,,,,2.30473,2.58554,492
+212,7a75d535-726b-442f-bcb2-554435401eed,1741305340344,133544083237501912,213,453.316,392.263,mallet.txt,58,2,,,,2.42394,2.70584,225
+213,e32ae6fa-ed86-4756-a445-82133ad7143b,1741305340344,133544083244673459,214,593.909,556.273,mallet.txt,66,19,,,,2.66116,2.98436,84
+214,94509f06-cd10-42cd-8195-519e8952cf71,1741305340344,133544083253022425,215,462.959,394.863,mallet.txt,58,2,,,,2.66124,3.0266,699
+215,d4f99274-6e16-4a5f-9f4f-6e82ca69f749,1741305340344,133544083260259703,216,495.188,386.625,mallet.txt,57,4,,,,2.26746,2.63165,121
+216,21ef0d39-ff6a-4391-8435-2477b55de9b0,1741305340344,133544083261782943,217,703.0,392.513,mallet.txt,58,38,,,,2.48107,2.80245,5090
+217,a758143f-0735-411f-8930-1a161ed53bbc,1741305340344,133544083312843914,218,786.854,382.813,mallet.txt,57,38,,,,2.62599,2.89231,425
+218,d28a834d-f0a7-4570-b24e-a0cdf9f71c50,1741305340344,133544083317260130,219,785.669,389.038,mallet.txt,58,38,,,,2.59543,2.85192,1156
+219,2b7c54c2-f0ba-419c-ae92-5b4a121d0d5f,1741305340344,133544083331682311,220,857.842,384.75,mallet.txt,57,45,,,,2.47654,2.73473,674
+220,53dc6049-43c9-4eab-8f35-ec700cc22fb4,1741305340344,133544083340756954,221,899.045,382.5,mallet.txt,57,50,,,,2.14549,2.44347,201
+221,2afa848f-155d-434c-8bf5-f87ce50098cb,1741305340344,133544083343059243,222,898.176,397.0,mallet.txt,58,50,,,,2.16985,2.47999,270
+222,3bc5a16b-18da-472f-9388-36055fb738d1,1741305340344,133544083346012510,223,917.133,394.067,mallet.txt,58,53,,,,2.29801,2.57658,267
+223,144b3ded-65c0-4585-bf78-71ae8186ba49,1741305340344,133544083352256628,224,950.867,381.533,mallet.txt,58,56,,,,2.46816,2.56308,135
+224,b00cebf0-1142-4299-a366-d1b43eb1bb88,1741305340344,133544083353848862,225,898.167,386.238,mallet.txt,58,50,,,,2.53994,2.83627,367
+225,f9fc3c26-3c26-4144-a245-8c44e7dfb86f,1741305340344,133544083363182432,226,978.134,395.949,mallet.txt,58,57,,,,2.42611,2.72323,3050
+226,3842b680-d445-43e7-9eb4-d2fdbf78af1b,1741305340344,133544083395681364,227,585.409,393.727,mallet.txt,58,13,,,,2.60477,2.91323,424
+227,d3eacf6b-b755-4f65-a881-263f351868f4,1741305340344,133544083405059870,228,1104.42,395.983,mallet.txt,58,72,,,,2.48527,2.76817,1212
+228,292f4a69-7ab1-45dd-917d-1c1550074df0,1741305340344,133544083417682632,229,629.241,380.379,mallet.txt,57,20,,,,2.46633,2.75348,232
+229,362dca61-ce07-4fdb-98b6-5e588cf364d4,1741305340344,133544083420851535,230,1194.69,396.692,mallet.txt,58,83,,,,2.45659,2.73502,141
+230,14ae3675-7907-4a12-8413-ebd1176e5efd,1741305340344,133544083423413804,231,1243.47,385.014,mallet.txt,57,89,,,,2.44034,2.70474,1561
+231,d0f246ea-9d26-41a5-848f-1c3d1524744b,1741305340344,133544083446165748,232,1245.12,383.765,mallet.txt,57,89,,,,2.76312,3.07346,134
+232,8567f7fb-b5c9-4069-bd21-6b6b14973449,1741305340344,133544083448749123,233,455.818,458.727,mallet.txt,61,1,,,,2.2499,2.57394,1435
+233,1e83d536-8b1b-41ec-8220-01b84a5e20ac,1741305340344,133544083470367486,234,462.0,466.696,mallet.txt,62,2,,,,2.78042,3.15005,248
+234,718ac0e4-2d6f-414c-b827-2f5b7c753c6c,1741305340344,133544083473161770,235,493.926,536.778,mallet.txt,65,8,,,,2.48443,2.78228,252
+235,7ae2d9e3-ba71-4047-9095-75634ea81485,1741305340344,133544083476016412,236,588.222,530.556,mallet.txt,65,18,,,,2.25561,2.50135,131
+236,1dc5e7f8-63a2-4f25-a25c-0acfa40d63a1,1741305340344,133544083477495890,237,718.833,533.5,mallet.txt,65,34,,,,2.15846,2.43156,126

@@ -1,0 +1,153 @@
+
+ Project: "MLTK"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+-----------------------------------------------------------------------------------------------------
+Project Synopsis: MLTK (Machine Learning Tool Kit) is a collection of various supervised machine 
+learning algorithms, which is designed for directly training models and further development.
+-----------------------------------------------------------------------------------------------------
+	
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 1: core>processor>Discretizer.java> computeBins [line 122]
+	Description:
+	
+	This method can be used to compute the bins from the given list.
+	This method checks the length of the list, if it is smaller than upper bound, return the list;
+		if the length is larger than the maximum size, group the elements depending on their weight and then return the bins.
+	This method can be used to check the bins' boundaries and medians.
+	
+	Confident: 2
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: core>BinnedAttribute.java> parse [line 66]
+	Description:
+	
+	This method can be used to parse attributes of given bins.
+	This method first finds the length of the input bins and return the bins if it is 1;
+		otherwise, it returns the boundary and medians and boundaries for all the bins.
+	This method can be used to obtain attributes of the bins when reading data from the buffer.
+	
+	confident: 3 
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: predictor>tree>RTreeLearner.java> getStats [line 64]
+	Description:
+	
+	This method can be used to get statistics of given instances.
+	To be more specific, this method check through each instance by obtaining a target first, and then
+		it checks whether all target are found; it returns false if any target is not found and true otherwise.
+	This method can be used in multiple cases, including building regression trees, decision tables or
+		implementing greedy algorithms.
+		
+	confident: 3
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: core>io>InstancesReader.java> parseDenseInstance [line 159]
+	Description: 
+	
+	This method can parse the values in a dense instance.
+	Specifically, this method finds the class index first; if it is smaller than 0, the method returns a list a vectors
+		that contains the values beong to that class; and if it is larger than 0, assign values to different vectors based onthe index.
+	This method can be used to parse the read instance or used to test some example instances.
+	
+	confident: 2
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session.
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: predictor>gam>SPLAMLearner.java computeGradient [line 1025]
+	Description:
+	
+	This method computes the gradient of the values in a given block.
+	This method checks throught each element in a given block and it computes the gradient for this
+		element by multiplying it with the training value.
+	This method can be used to conduct a one pass training on a set of data.
+	
+	confident: 4
+
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 6: util>OptimUtils.java> fitIntercept [line 108]
+	Description:
+	
+	This method can be used to computer the parameter delta of predictions.
+	This method first checks each prediction and compute eta and theta, then it it calculate delta based on
+		the value of eta and theta and it also adds the prediction and delat pair to the vector, computes the
+		residule and returns delta.
+	This method can be used when building a binary classifier, or when to find the maximum lambda binominal.
+	
+	Confident: 4
+
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 7: core>processor>InstancesSplitter.java> split [line 286]
+	Description:
+	
+	This method partitions given instances into multiple datasets.
+	When attToStratify or strara is null, this method splits the given instances into 2 parts with the given ratio;
+		otherwise, it checks the length of required dataset, and for each required ratio it splits the instances into
+		different datasets.
+		
+	confident: 3
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: predictor>tree>TreeInteriorNode.java> write [line 76]
+	Description:
+	
+	This method prints the tree nodes in a given tree.
+	This method iterates through a tree recursively and prints out all the tree nosed; to be more
+		specific, it prints all nodes in the left subtree first, and then prints all nodes in the right subtree.
+	This method can be used for many cases; for example it can be used to print the tree node values in
+		ensemble trees, boosted trees, random forest and regression tree.
+		
+	confident: 5
+		
+
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

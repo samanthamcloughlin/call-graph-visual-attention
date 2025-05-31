@@ -1,0 +1,146 @@
+
+ Project: "MLTK"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+-----------------------------------------------------------------------------------------------------
+Project Synopsis: MLTK (Machine Learning Tool Kit) is a collection of various supervised machine 
+learning algorithms, which is designed for directly training models and further development.
+-----------------------------------------------------------------------------------------------------
+	
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 1: core>processor>Discretizer.java> computeBins [line 122]
+	Description:
+
+This method compute the boundart and medians number of the Bin objects.
+It does that, but taking a list and max bin numbers  and traverse through it. the list elemest is the total weight of the object, the total weight is then divided by the maxnum bins.
+It serves a crucial steps to calculate the correct bin size.
+
+	Rate your confidence in the description on a scale of 1-5:3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: predictor>tree>RTreeLearner.java> getStats [line 64]
+	Description:
+This serves a boolean function that checked the attributes of the instances object.
+It checks the object by first get the weight and target attributes, then returns the boolean values, if the third elemetnts in the stats list is nan then make it zero.otherwise return false.
+	It serves a step to traverse and check all of the elements in the objects to make sure its correctness for later steps.
+	
+	Rate your confidence in the description on a scale of 1-5:2
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: util>OptimUtils.java> fitIntercept [line 108]
+	Description:I think this serves a function to make sure the parameters fit into certain experssions.
+	It returns the correct value of delata by traversing the predictons array and also update the theta and eta value of the residual array.
+	The retuned delta value is then used to perform other actions
+	
+
+		
+	Rate your confidence in the description on a scale of 1-5:3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: predictor>gam>SPLAMLearner.java> computeGradient [line 1025]
+	Description: 
+	It compute the gradient value and append the values into the geradient array.
+	there's a nested loop in this function, for each elements in the block array, the gradient array is updated by times the block array elements and the tTrain block elements.
+	This is important as the gradient array is used to perform in may action when we do traniing and also used in onepass.
+		
+
+	Rate your confidence in the description on a scale of 1-5:4
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session.
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: core>BinnedAttribute.java> parse [line 66]
+	Description:
+
+		This method parse the attribuiute of the bin object.
+		It read in a String object, parse the meaning of the string by split the : mark. it then create a new bin obect when the boundaries and medians is being parsed.
+		I think this method will convert the string obect into correct bin objects with the correct attributes.
+
+	Rate your confidence in the description on a scale of 1-5:4
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 6: predictor>tree>TreeInteriorNode.java> write [line 76]
+	Description:
+this is a method by the interior treenode of a treenode obect that print the atrtributes of the treenode out.
+This method should be called after the read method when the att index and Split data point are already being parsed. the mnethod will finish when all the children tree node is finished printing.
+this method is important to get information of the attrobutes of the treenode.
+
+	
+		
+	Rate your confidence in the description on a scale of 1-5:3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 7: core>io>InstancesReader.java> parseDenseInstance [line 159]
+	Description:This method parse the the dense instance into a normal instance object.
+	each elements of the original dense data array is being performed by the parseDouble rfunction which convert the string into a double numeric value, this process is also determined by the class index which are given out.
+	This methos serves as a converter that convert the string data into numeric values, then the parsed instance objects will be able to perform other actions since it's converted.
+	
+
+		
+	Rate your confidence in the description on a scale of 1-5:4
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: core>processor>InstancesSplitter.java> split [line 286]
+	Description:This method split the instance object according to its ration number.
+	First it checks whether the strata data is null or not. If the strata data is there, then the new instance list will be updated and be splited with the correct partion. the new splited dataset is then updated.
+		This method or process is crucial to create the validaton fold method that will requried the instance object being splited into correct ratio.
+
+		
+	Rate your confidence in the description on a scale of 1-5:2
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

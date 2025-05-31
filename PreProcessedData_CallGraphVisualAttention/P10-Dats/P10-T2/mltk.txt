@@ -1,0 +1,159 @@
+
+ Project: "MLTK"
+-----------------------------------------------------------------------------------------------------
+Project Synopsis: MLTK (Machine Learning Tool Kit) is a collection of various supervised machine 
+learning algorithms, which is designed for directly training models and further development.
+-----------------------------------------------------------------------------------------------------
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+	
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 1: core>processor>Discretizer.java> computeBins [line 122]
+	Description:
+	This method takes a list of Double Element objects and maximum bin size to create Bins object from them.
+	
+	This method first gets the stats from the list of Double Element objects, if the size of the stats list is lower than the maximum bin size, it uses the stats array to create the Bins object; otherwise, it creates the Bins based on the median and average weight.
+	
+	This method is necessary to discretize the data into the same weighted bins.
+
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: predictor>gam>SPLAMLearner.java computeGradient [line 1025]
+	Description:
+	This method computes the block-wise gradient from the training set.
+	
+	This method traverse each block and calculates the gradients by accumulating data from each block and training set.
+	
+	This method is useful for regression and binary classification to calculate gradients by passing it one time.
+
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: util>OptimUtils.java> fitIntercept [line 108]
+	Description:
+	This method is fitting intercept using the prediction and residual.
+	
+	This method first calculate the eta and theta value, then computes the delta value which indicates how close the predication is.
+	
+	This method is helpful in binary classification to fit the intercept based on the prediction. 
+	
+	
+	
+	Rate your confidence in the description on a scale of 1-5: 3
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: core>BinnedAttribute.java> parse [line 66]
+	Description: 
+	This method is used to parsed the Bins information.
+	
+	This method first parses the input string to get bins size, if bins is not null, it parses the boundaries and medians to create the BinnedAttribute object; otherwise it only use the number of bins to create BinnedAttribute object.
+	
+	This method helps to parse the Bins information from a AttributesReader. 
+	
+	
+	
+	
+	
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session.
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: predictor>tree>RTreeLearner.java> getStats [line 64]
+	Description:
+	This method calculates the stats from the list of instance.
+	
+	The method initiates the stats with 0, traverses the each instance to get the weight and target, the first stats is accumulating the weights, the second stats is weight times target and the third stats is ratio of the first two stats, and the method returns a boolean value, stdIs0 which can be false if the target is not equal to the first target.
+	
+	This method is used in different tree based machine learning algorithms like regression tree, decision tree, random regression tree etc. 
+
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 6: core>processor>InstancesSplitter.java> split [line 286]
+	Description:
+	This method splits a list of instances based on the given ratio.
+	
+	This method first check it needs to use stratify or not, if it does, which type of stratify to use, and then it splits the instances based on the ratio.
+	
+	This is used to split the dataset into training, test and validation set based on the given ratio.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 7: predictor>tree>TreeInteriorNode.java> write [line 76]
+	Description:
+	This method prints the tree with their attIndex and splitPoint.
+	
+	This method prints the canonical name of the interior node of a tree with its attIndex and splitPoint and then print the left and right child of the tree.
+	
+	This method can be used to see the predicted tree from different classifiers. 
+	
+	
+	
+	Rate your confidence in the description on a scale of 1-5: 4
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: core>io>InstancesReader.java> parseDenseInstance [line 159]
+	Description:
+	This method parses the dense instances from the data using a classIndex.
+	
+	This method checks if the class index is less than 0 or not, if it is less than 0, it parses the data and returns an Instance object by setting classValue as NaN; otherwise, it shifts all the values after class index by 1 in the new array of Doubles and returns the instance object with this array and class value from the dataset using the class index.
+	
+	This method can be used to parse a dataset and have the right class value.
+	
+	
+	
+	Rate your confidence in the description on a scale of 1-5: 3
+	
+	
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

@@ -1,0 +1,146 @@
+
+ Project: "MLTK"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+-----------------------------------------------------------------------------------------------------
+Project Synopsis: MLTK (Machine Learning Tool Kit) is a collection of various supervised machine 
+learning algorithms, which is designed for directly training models and further development.
+-----------------------------------------------------------------------------------------------------
+	
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 1: core>processor>Discretizer.java> computeBins [line 122]
+	Description:
+	1. this method get a list and return a new Bin.
+	2. this method get a list and its max number, if the list length under the max number, it will make it to a bin, else it will increase the number. 
+	3. this method is needed to compute bins.
+
+	Rate your confidence in the description on a scale of 1-5: 1
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: core>io>InstancesReader.java> parseDenseInstance [line 159]
+	Description:
+	1. this method return Instance from a string array based on the value of classIndex passed in.
+	2. this method is called when reading in a instance, changing "?" to na.
+	3. this method helps the whole program to load in instances from files.
+	
+	
+	Rate your confidence in the description on a scale of 1-5: 3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: util>OptimUtils.java> fitIntercept [line 108]
+	Description:
+	1. this method returns the value of 0 or the sum of residual over sum of absolute residual * (1-residual).
+	2. this method accept expected value, residual, and actually value, it return a calculated value which is fitIntercept. this method is called to build binary classifier.
+	3. this method helps to calculate the demanded value in the whole program.
+
+		
+	Rate your confidence in the description on a scale of 1-5: 3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: predictor>tree>TreeInteriorNode.java> write [line 76]
+	Description: 
+	1. this method print out notifications and write things into a tree.
+	2. there are different version of write override on each other to fulfill different request, this method is called when the program need to write something.
+	3. this method helps to write information in to the tree
+		
+
+	Rate your confidence in the description on a scale of 1-5: 2
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session.
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: core>processor>InstancesSplitter.java> split [line 286]
+	Description:
+	1.this method split instance by ratios and depends on attToStratify value.
+	2. this method is called when createCrossValidationFolds and in some conditions in main.
+	3. this method helps with storing information into datasets.
+		
+
+	Rate your confidence in the description on a scale of 1-5: 2
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 6: predictor>tree>RTreeLearner.java> getStats [line 64]
+	Description:
+	1. this method gets an instance, a double array and returns a boolean value which checks whether there are target in the instance equal to the first target in it.
+	2. this method is called when building the algorithm.
+	3. this method helps to create nodes.
+	
+		
+	Rate your confidence in the description on a scale of 1-5: 3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 7: core>BinnedAttribute.java> parse [line 66]
+	Description:
+	1. this method split and transform the string it reads in to a Binned Attribute.
+	2. this method get a string and split by ":" ,"(", ")" ";" to transform it to demanded style, it is called in read method.
+	3. this method helps to extract the needed information from the raw data that it reads in.
+
+		
+	Rate your confidence in the description on a scale of 1-5: 5
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: predictor>gam>SPLAMLearner.java> computeGradient [line 1025]
+	Description:
+	1. this method compute Gradient.
+	2. this method get index, block, rTrain, and gradient as four arrays and then loop through the length of block to reset the value of gradient from index and  rTrain array. this method is called in do one pass.
+	3. this method helps with reseting the value of gradient in the algorithm.
+
+		
+	Rate your confidence in the description on a scale of 1-5: 4
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

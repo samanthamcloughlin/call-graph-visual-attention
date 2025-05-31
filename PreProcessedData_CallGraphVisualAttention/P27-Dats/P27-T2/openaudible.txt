@@ -1,0 +1,169 @@
+-> Project: "openaudible"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 				     Project Synopsis:  					    |
+| 					OpenAudible						    |
+|	  A cross-platform desktop application for downloading and managing your Audible audiobooks.|
+-----------------------------------------------------------------------------------------------------
+
+#####################################-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: openaudible>Audible.java> find [line 522]
+	Description:
+	This method finds a list of books where the string parameter matches the asin, author, title, or narrated by fields.
+	
+	The list of books returned are sorted by title, and a lock is ensured the books searched are vaild.
+	
+	The method is used to provide functionality for the "find" command in the CLI interface, and as a helper method for other commands.
+
+
+	Rate your confidence in the description on a scale of 1-5: 5 
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: openaudible>desktop>swt>manager>menu>CommandCenter.java> reallyQuit [line 260]
+	Description:
+	If there are any tests running, this method asks the user again if they really want to quit the application, but there seems to be a bug because testsInProgress is a local variable, which is always 0.
+	
+	If the user is on a Mac, the word quit is used instead of exit.
+	
+	This method is called when the application's onClose event is being handled.
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: openaudible>convert>BookMerge.java> mergeItem [line 27]
+	Description:
+	This method combines an existing book in the system with an updated version of the book from the user's Audible library.
+	
+	Generally, the book with the longer book element value is used, except for cust_id, user_id, and infoLink, where the one from the updated book is used.
+	
+	This function is used whenever the user requests to update the system's current library, and books are considered to be updated if the cust_id isn't changed or more than one book has changed
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: openaudible>AudibleCLI.java> test [line 240]
+	Description:
+	This function prints the mp3 and aax filenames, sizes, and differences in sizes for all the books in the list, and is called when using the test2 command
+	
+	This function checks if the mp3 file exists and assumes that the aax file also exists if the mp3 file exists.
+
+	This function is needed because mp3 files are created from aax files, and this function verifies that the file was downloaded and converted successfully.
+	
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session.	|
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session. 	|
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: openaudible>books>Book.java> checkBook [line 101]
+	Description:
+	This method checks if a given book has both a product id and a title.
+	
+	This method returns an error message if there is an error, or an empty string if there is no error
+
+	This method is used throughout the code to verify if a book has been properly parsed by the html scraper, or when updating the user's library.
+	
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: openaudible>desktop>swt>manager>AudibleGUI.java> connect [line 255]
+	Description:
+	This method connects to the user's Audible account using a GUI progress bar to indicate progress.
+	
+	If the user is not logged in, an error is reported to the user.
+
+	This method is used whenever an AudibleScaper object is needed, which is used to retrieve data about the user's Audible library.
+	
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+
+	Method 7: openaudible>util>DebugBuffer.java> accept [line 35]
+	Description:
+	This method appends the provided string to the end of a buffer with a max size.
+	
+	If the max size of the buffer is exceeded, the entire buffer of that size is replaced with "...", and the new data is appended
+
+	This class is used to keep track of the error output from when using ffmpeg to convert the aax file to mp3.
+	
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: openaudible>util>Util.java> urlGetArgs [line 125]
+	Description:
+	This method is used to parse the query arguments of an HTTP URL.
+	
+	If the URL has the same query argument argument more than once, it will only save the last query argument.
+	
+	This method is used to extract book elements from columns that contain download links where the download URL contains the string "cds.audible"
+
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

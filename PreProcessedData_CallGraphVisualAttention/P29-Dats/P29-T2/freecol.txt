@@ -1,0 +1,152 @@
+-> Project: "freecol"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 										Project Synopsis:  											|
+| 	FreeCol:  FreeCol is a turn-based strategy game based on the old game Colonization, 			|
+|	and similar to Civilization. The objective of the game is to create an independent nation.		|
+-----------------------------------------------------------------------------------------------------
+
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: freecol>tools>FlagTest.java> SetColors [line 209]
+	Description: This is a method that sets the colors on the printed flag, it is apart of the flagtest class that when called sets the color of the flag preventing it from being just black and
+	white lines. It starts by getting the union, star, and then decal colors and puts them all into an array and then sets the background color of the frame. This allows the flag to understand what colors it has on it 
+	as which can help prep for later coloring in the flag
+	
+	
+	Rate your confidence in the description on a scale of 1-5: 2
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: freecol>server>FreeColServer.java> changeServerState [line 349]
+	Description: This function is apart of the server for the game, it basically is what helps the server know what state it is in, for example someone is playing then ends the game, well this goes and 
+	updates telling the server to change to being endgame. This does this by getting the current state of the server and getting the current state of the player and then going and running a case check to find
+	out what state the player is in and updates it accordingly. This helps the player by fittign their server or matching to a server that alligns with where they are right now in game, ie loading in or in the game etc
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: freecol>common>io>FreeColXMLReader.java> readId [line 219]
+	Description: This one I am not certain of, but basically I think it gets the information of a tile which is representative of land that you can possibly claim. It does this by getting the ID attribute of the
+	tile and then parses it taking the prefix or everything before the ":" and uses that to classify what it is. This is important for the users because to advance in the game you need to claim tiles or defend yours, and
+	this function is a helper function for many others to help identify the attributes of a tile or land
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 	2
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: freecol>client>gui>mapviewer>CanvasMapViewer.java> drawRenderingTimeStrings [line 121]
+	Description: this shows stats for rendering the map, this repaints the maps on a canvas or frame in java and then goes and displays how long the map is taking to render giving a benchmark on how much of the land has changed\
+	and this is done by the longer it takes to render the more of the map that has been claimed. This is done by setting a start time for rendering and then once the rendering of the map is done it does math to calculate the
+	average time it takes vs what was the average time last rendering. This is important to the whole project because it lets you figure out how much of the map is claimed minimizing the DS needed
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 1
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session |
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: freecol>common>model>Monarch.java> initializeCaches [line 209]
+	Description: this function basically goes and creates a "Cache " that is the list of all the monarchs available troops and their moves. This is done by simulating a cache or quick access of information which
+	is made by making various data structures (arrays) and initializing them with the information of available resources at the monarchs disposal, so that when they decide to make a move then they can quickly pull from their ordered
+	data instead of having to go through all of its components letting it get what it needs faster. This allows for quicker action on the monarchs part so there is not a lot of delay between decision to make a move and execution
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 2
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: freecol>common>model>pathfinding>CostDeciders.java> getCost [line 198]
+	Description: This function determines the cost to move into a new tile checking to see if that is a good mood. This is accomplished by getting the information about the current location and the place you want
+	to go as well as the resources that they have to get there, and then checks if it is too much or if it is an illegal move and tells the player if they can or cant go there as well as the cost for them to 
+	consider. This is important because it allows the player to better make a strategy about their next move
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+
+	Method 7: freecol>common>model>FreeColObject.java> compareIds [line 148]
+	Description: This one gets the IDS of two free objects or spaces and compares them to each other to see if they are not the same space, like if you are not trying to make a move on a space that is already yours
+	This is accomplished by making a function call to get the IDS of each space and then comparing each of them to each other and deciding if they are equal or not. This helps the player avoid making moves on
+	their own space wasting resources. Idk tho
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 1
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: freecol>client>gui>SwingGUI.java> updateUnitPath [line 443]
+	Description: this function creates a path for a user to get to a tile, and tells them if they can or not. This is done by getting the location of the tile they want to go to and then if it is a valid call, goes and makes
+	a call to a function for making the path and then makes the path for the user and then sets the unite path for that. This is important because it allows the user to go and set a united path to a certain 
+	destination that they can then evaluate on if taking it is the right strategy
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 2
+	
+	
+	
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

@@ -1,0 +1,141 @@
+
+ Project: "MLTK"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+-----------------------------------------------------------------------------------------------------
+Project Synopsis: MLTK (Machine Learning Tool Kit) is a collection of various supervised machine 
+learning algorithms, which is designed for directly training models and further development.
+-----------------------------------------------------------------------------------------------------
+	
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 1: core>processor>Discretizer.java> computeBins [line 122]
+	Description:
+	This method is for creating Bins given a list of stats and a max number of bins and it returns a Bin object. It checks if the size of the stats in the list that the method was passed is greater than or less than the max number of Bins, if it is less than the max no. of Bins, then the method returns a Bins object that was created using the stats from the inputed list as both the boundary and median arrays , if it is greater than the max no. of Bins, then the method calculates a bin size based off of the size of the list of stats and the max number of Bins, and then iterates through the stats list to create two seperate lists for the boundary and median array to then pass to the Bin constructor. This method is used by the project in other methods for computing the Bins but for different inputs. 
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 4
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: predictor>gam>SPLAMLearner.java> computeGradient [line 1025]
+	Description:
+	This method computes a gradient given a sparse data set (rTrain) and a set of values (block).
+	This method takes an array of gradients, an array of indexes, an array of a sparse dataset (rTrain) and 2d array of blocks and iterates through the gradient array to add the values of the blocks with the 	values of rTrain. This method is used by the project in the doOnePass methods when building a binary classifier. 
+
+	
+	
+	Rate your confidence in the description on a scale of 1-5: 3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: core>io>InstancesReader.java> parseDenseInstance [line 159]
+	Description:
+	This method takes an array of string and returns an instance with a vector of doubles. This method takes an array of string data and an integer ClassIndex and when the classIndex is less than 0, it iterates through the string array, and converts the values from strings to doubles, if the classIndex is greater than or equal to 0, then the method performs a similar iteration while checking the value of the classIndex and varying behavior based on its value. This method is used by the project when reading large files and Strings.
+	
+
+		
+	Rate your confidence in the description on a scale of 1-5: 3
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: predictor>tree>TreeInteriorNode.java> write [line 76]
+	Description: 
+	This method prints out the interior node of a tree and it's left and right nodes. It first prints the  canonical name of the class and then the AttIndex and the SplintPoint values, before printing out the node and the nodes to it's left and right. This method is used throughout the project when the program wants to print out a copy of a tree e.g. in the ensemble method.
+	
+		
+
+	Rate your confidence in the description on a scale of 1-5: 4
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session.
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: util>OptimUtils.java> fitIntercept [line 108]
+	Description:
+	This method is for calculating where the intercept occurs given an array of predictions, residuals, and y values.
+	This method calculates delta by first calculating eta and theta by iterating through the residuals array and if the absolute value of theta is greater than the mathematical value of epsilon, then delta is eta/theta, else delta is 0, and the method returns the value of delta. This method is used by the program when building Binary Classifiers.
+
+		
+
+	Rate your confidence in the description on a scale of 1-5:4
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 6: core>processor>InstancesSplitter.java> split [line 286]
+	Description:
+	This method takes a set Instances and splits them into an array of instances based on the ratios that the method is provided. This method takes Instances instances, String attToStratify, and double ratios and returns an array of Instances, it performs null checks and calls other split() methods if a null value is found, it then procedes to partition the Instances into different datasets and returns a dataset of the same length as the ratios. This method is used by the project for splitting/partitioning datasets. 
+
+	
+		
+	Rate your confidence in the description on a scale of 1-5: 4
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 7: core>BinnedAttribute.java> parse [line 66]
+	Description:
+	This method takes a string object and splits it based on ":" and ";" and returns a BinnedAttribute based on the length of the string. The method splits the string into an array based on ": " and then takes the data in position 1 of the split array, finds the start and end position by finding the opening and closing brackets within the string "( )" and then splits the data that was within the brackets using ";" as a deliminator, and stores these new string values in an array strs, it then creates a BinnedAttribute based on the values in the array strs. The project uses this method when reading attributes. 
+	
+
+		
+	Rate your confidence in the description on a scale of 1-5: 4
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: predictor>tree>RTreeLearner.java> getStats [line 64]
+	Description:
+	This method is for getting the stats of a regression tree learner and it takes a set of Instances and an array of stats and returns true if the standard deviation is 0 (stdIs0). The method iterates through each instance, getting the weight and target for each instance, and if target of each instance is not equal to the first instance's target, it returns false. This method is used within the project when the project is building decision tables and regression trees.
+		
+
+		
+	Rate your confidence in the description on a scale of 1-5: 4
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

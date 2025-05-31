@@ -1,0 +1,174 @@
+-> Project: "openaudible"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 				     					Project Synopsis:  					    				|
+| 											OpenAudible						 				    |
+|	  A cross-platform desktop application for downloading and managing your Audible audiobooks.|
+-----------------------------------------------------------------------------------------------------
+
+#####################################-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: openaudible>Audible.java> find [line 522]
+	Description:
+	
+	The method finds books with requested string value.
+	
+	It iterates over each book and collect a set of metadata to check if any metadata from any book contains the input string value.
+	
+	The method is useful when trying to determine if some wanted string values are in a set of books.
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: openaudible>books>Book.java> checkBook [line 101]
+	Description:
+
+	The method checks if a book misses any metadata.
+	
+	It firstly define a set of required metadata attributes and iterates each of the attributes to check if the book contains it.
+	
+	The method is useful when some metadata is required for a given book.
+
+	Rate your confidence in the description on a scale of 1-5: 5
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: openaudible>desktop>swt>manager>AudibleGUI.java> connect [line 255]
+	Description:
+
+	The method connects a user to the book scripts on the website.
+	
+	The method firstly creates a browser and then connects a user to the book scripts via the browser after ensuring the user has been logged in.
+	
+	The method is useful when providing a logged user with the book resources.
+
+	Rate your confidence in the description on a scale of 1-5: 4
+
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: openaudible>convert>BookMerge.java> mergeItem [line 27]
+	Description:
+	
+	The method checks if a metadata attribute of a book has changed after merging the attribute with another book.
+	
+	It merges a metadata attribute of two books by setting some conditions and returning the attribute value with longer characters.
+	
+	The method is useful when keeping the metadata attributes of a book as detailed as possible.
+
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session.	|
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session. 	|
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: openaudible>AudibleCLI.java> test [line 240]
+	Description:
+	
+	The method checks the difference between the mp3 file and aax file for each book in the book list.
+	
+	It iterates over each book to check the length difference between the mp3 file and aax file of the book if the book as both of them.
+	
+	The method is useful when keeping the consistency of different audio files for a book.
+
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: openaudible>desktop>swt>manager>menu>CommandCenter.java> reallyQuit [line 260] 
+	Description:
+	
+	The method checks if a user really wants to quit the program.
+	
+	It collects all ongoing progresses and show them to the user to confirm the quit request.
+	
+	The method is useful when ensuring the quit request from a user causes minimal loss.
+
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+
+	Method 7: openaudible>util>DebugBuffer.java> accept [line 35]
+	Description:
+	
+	The method accepts more messages to print in debug information.
+	
+	The method firstly maintains a valid status of the current debug information and then add the new message to the debug.
+	
+	The method is useful when new debug messages come and should be added to the valid debug information.
+
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: openaudible>util>Util.java> urlGetArgs [line 125]
+	Description:
+	
+	The method collects are arguments from a sent url link.
+	
+	It creates a mapping object to include all arguments inside the input url link in the key-value pairs.
+	
+	The method is useful when tracking the arguments from a link to keep a valid user session.
+
+
+	Rate your confidence in the description on a scale of 1-5: 5
+	
+	
+	
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

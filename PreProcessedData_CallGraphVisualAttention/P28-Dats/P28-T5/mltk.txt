@@ -1,0 +1,177 @@
+
+ Project: "MLTK"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+-----------------------------------------------------------------------------------------------------
+Project Synopsis: MLTK (Machine Learning Tool Kit) is a collection of various supervised machine 
+learning algorithms, which is designed for directly training models and further development.
+-----------------------------------------------------------------------------------------------------
+	
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 1: core>processor>Discretizer.java> computeBins [line 122]
+	Description:
+
+	This method computes and returns bins from a inputted list of elements and max bin size.
+	
+	It does this by getting the weights of all elements, calculating the boundaries and medians bsaed on inputted/calculated bin size, and then finally 
+	returning the bins with the appropriate values.
+	
+	This method is important for discretizing data into bins, which is important in machine learning for clustering by intervals and other methods.
+
+	Rate your confidence in the description on a scale of 1-5:
+
+	4
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: core>io>InstancesReader.java> parseDenseInstance [line 159]
+	Description:
+
+	This method parses an inputted data string with index, and returns an instance object that contains a vector of doubles and a class value.
+	
+	It does this by first determining if the inputted class index is positive or negative - if it is negative, it formats all the data from the string into 
+	doubles and returns an instance with a vector of those values and a class value of NaN; if it is positive, it performs a similar iteration but returns an
+	instance with the vector and the value at the class index.
+	
+	This method seems important in parsing a string into an actual instance object that can be used elsewhere in other methods.
+	
+	Rate your confidence in the description on a scale of 1-5:
+
+	4
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: core>BinnedAttribute.java> parse [line 66]
+	Description:
+	
+	This method parses through an inputted string and returns a BinnedAttribute object with the corresponding data.
+	
+	It does this by taking the string (something like `name: bin size; bin boundaries; bin medians`), and then splitting on its special characters - doing this,
+	it returns a BinnedAttribute object with the name and the bin size if there are no boundaries and medians listed; if there are, then it parses through them
+	and returns the object with the name and the corresponding bins. 
+	
+	This method seems important in creating bins that can be interacted with in other methods.
+		
+	Rate your confidence in the description on a scale of 1-5:
+
+	4
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: core>processor>InstancesSplitter.java> split [line 286]
+	Description: 
+	
+	This method is used to split a dataset by a inputted strata method, ratios, and a list of instances - it returns a list of instances that are split in
+	accordance with the parameters. 
+	
+	It does this by checking the strata method, and if it is null, it simply splits the instance list along the input ratio (shuffles dataset and partitions 
+	into different instances) - if not, it iterates through the dataset and partitions based on the strata and sum of ratios and returns the list of instances. 
+	
+	This method seems important in splitting datasets into multiple parts, which is important in machine learning to separate data into training and validation
+	sets.
+
+	Rate your confidence in the description on a scale of 1-5:
+
+	3
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session.
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: predictor>tree>RTreeLearner.java> getStats [line 64]
+	Description:
+
+	This method returns a boolean from an inputted set of instances and array of doubles.
+	
+	It does this by first updating stats (an array with 3 values - total weights, sum, and weighted mean), going through each instance until an instance with 
+	a target that is equal to the first instance's target is foundand setting stdIs0 to false, and then updating the weighted mean and returning stdIs0 - if it
+	doesn't run into anything, then it returns true after updating the total weights and sum.
+	
+	This method seems important in creating a regression tree, specifically in updating the weighted mean, total weights and sum and then determining what nodes 
+	to make.
+
+	Rate your confidence in the description on a scale of 1-5:
+
+	4
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 6: util>OptimUtils.java> fitIntercept [line 108]
+	Description:
+
+	This method returns delta after a variety of calculations based on an input of the prediction array, residual array and original value array.
+	
+	It does this by adding up all the residuals and calculating theta for each prediction, then calculating delta (sum of residuals / theta) - if theta is 
+	greater than epsilon (which is the threshold 1e-8), it adds delta to the prediction vector and calculates pseudo residuals; then, it returns delta.
+	
+	This method is important in returning delta, which is important in fitting an intercept in many machine learning classifier models.
+		
+	Rate your confidence in the description on a scale of 1-5:
+
+	5
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+	
+	Method 7: predictor>tree>TreeInteriorNode.java> write [line 76]
+	Description:
+	
+	This method seems to write out the class, name, attribute index and split point from each node along a tree model.
+	
+	It does this by obtaining the relevant info, printing it out, and then recursively calling itself on the left and right child of the tree.
+	
+	This method is important in logging the contents of each node in a ML model.
+		
+	Rate your confidence in the description on a scale of 1-5:
+
+	5
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: predictor>gam>SPLAMLearner.java> computeGradient [line 1025]
+	Description:
+		
+	This method accepts an index, block, rtrain, and gradient array to compute the gradient.
+	
+	It does this by iterating through the two-dimensional block array, and then calculating the gradient for each value by iteratively adding the product of 
+	the corresponding block and rtrain values.
+	
+	This method is important in computing the gradient for a SPLAM model (not sure what SPLAM is, but some sort of ML model).
+		
+	Rate your confidence in the description on a scale of 1-5:
+
+	4
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

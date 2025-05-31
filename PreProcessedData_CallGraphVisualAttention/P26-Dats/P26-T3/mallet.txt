@@ -1,0 +1,153 @@
+-> Project: "mallet"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 					Project Synopsis:  
+| 			MALLET: MAchine Learning for LanguagE Toolkit
+| MALLET is a Java-based package for statistical natural language processing, document classification, 
+| clustering, topic modeling, information extraction, and other machine learning applications to text. 
+-----------------------------------------------------------------------------------------------------
+
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: mallet>regression>LinearRegression.java> predict [line 30]
+	Description:
+	This method retrieves prediction values for an instance.
+	The method initializes the instance into a feature vector, and aggregates the parameters and prediction values at each index.
+	The method is used by regressions to retrieve predictions on training data
+
+	
+	Rate your confidence in the description on a scale of 1-5: 
+	3
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: mallet>regression>CoordinateDescent.java> toString [line 165]
+	Description:
+	This method converts a training data instance into string format. 
+	The method first runs predictions on the training data, and then it iterates through the data vector and appends each data item to a string.
+	The method is used when training data needs to be displayed in a more readable format. 
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	4
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: mallet>types>SparseMatrixn.java> plusEquals [line 257]
+	Description:
+	The method copies a constant matrix object to an array
+	The method converts input to a sparse matrix object, then iterates through the matrix - multiplies each value by a factor and copies to a new array.
+	The method is used for converting constant matrix into array format?
+
+
+	Rate your confidence in the description on a scale of 1-5: 	
+	1
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: mallet>types>FeatureInducer.java> induceFeaturesFor [line 179]
+	Description:
+	Method adds a selection of features to an instance list.
+	Method stores instance list to an augmentable feature vector, then changes features based on parameters & selected features.
+	Method used for when an instance list needs to be uniformly augmented.
+
+	Rate your confidence in the description on a scale of 1-5: 
+	2
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session |
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: mallet>types>InvertedIndex.java> InvertedIndex [line 17]
+	Description:
+	This method ensures that all instances in an instance list are uniform.
+	Method initializes instances as a feature vector, and then initializes the instance to each index of the vector.
+	Method is used for initializing new featureIndex object.
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	2
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: mallet>types>Multinomial.java> ensureCapacity [line 290]
+	Description:
+	Method recalibrates the size of a multinomial array. 
+	Validates that size is greater than index, continuously doubles counts length until the new length is reached, and then declare a new array of newLength size.
+	Method is used in incrementation to ensure the index does not exceed the size of the array.
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	2
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+
+	Method 7: mallet>optimize>OrthantWiseLimitedMemoryBFGS.java> optimize [line 100]
+	Description:
+	Method performs OWL-BFGS optimization algorithm
+	Method calls various helper method to perform the steps in OWL-BFGS, and then performs validation on exiting / terminating iterations. 
+	Method is an optimization function called in many model training methods. 
+
+	Rate your confidence in the description on a scale of 1-5: 
+	3
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: mallet>cluster>GreedyAgglomerative.java> improveClustering [line 61]
+	Description:
+	Method performs filtering on a clustering and updates its score matrix
+	Method iterates through clusterings to find the best score among 2 clustering, and then merges the 2 best clusters
+	Method is used for data cleaning of clusterings, and optimizing clustering score.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	2
+	
+	
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

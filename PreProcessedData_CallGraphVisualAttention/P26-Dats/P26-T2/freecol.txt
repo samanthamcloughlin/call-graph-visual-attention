@@ -1,0 +1,156 @@
+-> Project: "freecol"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 										Project Synopsis:  											|
+| 	FreeCol:  FreeCol is a turn-based strategy game based on the old game Colonization, 			|
+|	and similar to Civilization. The objective of the game is to create an independent nation.		|
+-----------------------------------------------------------------------------------------------------
+
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: freecol>tools>FlagTest.java> SetColors [line 209]
+	Description:
+	This method sets the colors for a nation's flag in the game.
+	The method first sets individual colors such as union and star. And it then initializes an array of background colors to set the flag's background.
+	This method is needed for various event/state changes in the game, for example if a position is updated or a new nation is introduced.
+	
+	
+	Rate your confidence in the description on a scale of 1-5: 
+	3
+	
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: freecol>client>gui>mapviewer>CanvasMapViewer.java> drawRenderingTimeStrings [line 121]
+	Description:
+	This method draws a graph depicting the rendering times of the game's map
+	The method calculates real-time updates and averages of the game's rendering time and plots them with a Graphics tool.
+	The method can be used for debugging or analysis purposes, to visualize the program's performance. 
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	4
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: freecol>common>model>FreeColObject.java> compareIds [line 148]
+	Description:
+	The method compares the ID numbers of 2 free colony objects.
+	The method first validates both IDs to ensure valid type and value, and then compares the 2 objects. 
+	The method is used in various comparator cases in the program, likely to differentiate 2 colonies
+
+
+	Rate your confidence in the description on a scale of 1-5: 	
+	3
+
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: freecol>common>io>FreeColXMLReader.java> readId [line 219]
+	Description:
+	The method reads the ID of free col objects.
+	The method obtains the ID attribute tag of the object, performs some formatting (only for certain object types), and returns
+	The method is used in many functions using freecolobjects, as ID retrieval is necessary to identify and perform operations on the objects.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	3
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session |
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: freecol>common>model>Monarch.java> initializeCaches [line 209]
+	Description:
+	This method initializes the caches for a Monarch object in the game.
+	The method initializes caches for both unit types and military roles of the Monarch.
+	The method is used in various turn changes or game updates, as changes to a Monarch object must be updated.
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	3
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: freecol>common>model>pathfinding>CostDeciders.java> getCost [line 198]
+	Description:
+	This method determines the cost of a unit move in the game.
+	The method uses the update in the unit's location to calculate cost, and also validates that the move is valid before updating.
+	The method is used in function controlling the game's updates and turns, as it is used for validation and updating game data.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	4
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+
+	Method 7: freecol>client>gui>SwingGUI.java> updateUnitPath [line 443]
+	Description:
+	The method updates the path of a certain unit in order to guide it towards its destination.
+	The method uses pathfinding to determine whether a valid path exists for the unit to move toward its destination.
+	The method is used in functions driving the movement and traveling of in-game units.
+
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	5
+	
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: freecol>server>FreeColServer.java> changeServerState [line 349]
+	Description:
+	The method handles changes in the game server's state.
+	The method updates the gameserver under various cases such as pre-game, loading, and in game. It updates the appropriate state for all connections to the server.
+	The method is likely used for networking purposes, ensuring uniform changes across all players for major events such as starting and ending the game. 
+
+
+	Rate your confidence in the description on a scale of 1-5: 
+	5
+	
+	
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

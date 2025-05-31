@@ -1,0 +1,167 @@
+-> Project: "mallet"
+
+-> For each method listed below:
+	Step 1: "Start Tracking" on the itrace core as described to you by the study administrator.
+	Step 2: Navigate to the method described using the path, method name, and line number; then inspect the project to understand the context as described in the instructions.
+	Step 3: Write the description in the space provided. 
+	Step 4: When satisfied with the description, "Stop Tracking" in the itrace core.
+	Step 5: Move to the next method and repeat steps 1-4. Please, DO NOT edit any project files or source code.
+
+
+-----------------------------------------------------------------------------------------------------
+| 					Project Synopsis:  
+| 			MALLET: MAchine Learning for LanguagE Toolkit
+| MALLET is a Java-based package for statistical natural language processing, document classification, 
+| clustering, topic modeling, information extraction, and other machine learning applications to text. 
+-----------------------------------------------------------------------------------------------------
+
+#####################################---CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session.
+-----------------------------------------------------------------------------------------------------
+
+	Method 1: mallet>regression>LinearRegression.java> predict [line 30]
+	Description:
+	
+	This method provides a prediction based on parameters of a linear regression model for some datapoint. It
+	does so by initializing the prediction to the intercept and then progressively adding to it coefficient times
+	value. This method is used to calculate residuals for least squares model in the project.
+	
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	5
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 2: mallet>types>SparseMatrixn.java> plusEquals [line 257]
+	Description:
+
+	This method modifies the current sparse matrix object by adding its values with the values in another matrix m
+	times some factor. It does so polymorphically- if m is an instance of SparseVector, its values are directly added;
+	otherwise, if it is a SparseMatrixn then the sizes are compared and then the values are added. This method is used
+	to perform matrix operations within the project.
+
+	Rate your confidence in the description on a scale of 1-5: 
+
+	4
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 3: mallet>optimize>OrthantWiseLimitedMemoryBFGS.java> optimize [line 100]
+	Description:
+
+	This method appears to use gradient descent to optimize a model until it converges or a certain number
+	of iterations have been completed. It does so using several helper methods that make descents in some
+	direction, then map and fix the direction, and evaluate gradient and check termination conditions. This
+	method is used to train different type of models in the project.
+
+	Rate your confidence in the description on a scale of 1-5: 	
+
+	3
+
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 4: mallet>regression>CoordinateDescent.java> toString [line 165]
+	Description:
+
+	This method returns a string representation of the sum squared error of datapoints within the training
+	data calculated as the difference between target/actual value and that predicted by linear regression.
+	It does so by iterating through the training data and calculating residuals for each instance which are
+	added up; then a string is built by iterating the through training data and parameters of the linear
+	regression (the intercept and sum squared error is also printed). This method might be used to provide
+	a string representation of the CoordinateDescent class to help with debugging it.
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	5
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session |
+-----------------------------------------------------------------------------------------------------
+#####################################-RE-CALIBRATION REQUIRED---####################################
+-----------------------------------------------------------------------------------------------------
+|   Note: Start a new tracking session |
+-----------------------------------------------------------------------------------------------------
+
+	Method 5: mallet>types>Multinomial.java> ensureCapacity [line 290]
+	Description:
+
+	This method makes sure that there is sufficient capacity in the multinomial given a certain index. It
+	does so by comparing the index to size (adjusting it if necessary) and then comparing it to counts array
+	size; if index is out of bounds of counts array, the capacity is increased by a factor of 2 until the new
+	length can accomodate index after which the counts array is copied into newCounts. This method is used to
+	ensure the index element in counts is valid before doing operations on it like incrementing.
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	5
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+	Method 6: mallet>types>FeatureInducer.java> induceFeaturesFor [line 179]
+	Description:
+
+	This method seems to induce/set features for an InstanceList given some associated feature selection using
+	an alphabet dictionary and bitset of selected features. It iterates through the list to extract instances and
+	their associated data and polymorphically adds 1 to all selected features in the data. This method is used to
+	train CRF models with feature induction. 
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	3
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+
+
+	Method 7: mallet>cluster>GreedyAgglomerative.java> improveClustering [line 61]
+	Description:
+
+	This method improves the fit of clustering by making pair-wise comparisons between all clusters and
+	finding the best pair of clusters to merge together. The method does so using nested for loops and
+	computing a score using the getScore method; if the score is below a stopping threshold, the process
+	is said to have converged else the two clusters are merged together and an updated clustering object
+	is returned. This method is used by the hill climbing clusterer to find k best clusters.
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	5
+	
+-----------------------------------------------------------------------------------------------------
+|   Note: You MUST stop tracking session and start a new one before moving on to the next method.   |
+-----------------------------------------------------------------------------------------------------
+
+	Method 8: mallet>types>InvertedIndex.java> InvertedIndex [line 17]
+	Description:
+
+	This method is a constructor the InvertedIndex class that initializes attributes based on a passed
+	InstanceList. It creates an inverted index of the list by creating a new arraylist ii with the same
+	size as the data alphabet and then it iterates through all instances, gets their FeatureVector data
+	and adds them at the corresponding index in ii (essentially creating a reverse index based on index
+	rather than individual instance). This class is used to store feature indices within the CoordinateDescent
+	regression model.
+
+	Rate your confidence in the description on a scale of 1-5: 
+	
+	5
+	
+
+	
+Congratulations, you have completed the project! Please remember to "Stop Tracking".
+
+Please describe any issues you faced while completing tasks for this project:
+
+
+
+Please call the administrator!

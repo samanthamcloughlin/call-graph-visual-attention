@@ -1,0 +1,3 @@
+FreeColServer.getServer()(2 usages)  (net.sf.freecol.server)
+Server.setMessageHandlerToAllConnections(MessageHandler)(2 usages)  (net.sf.freecol.server.networking)
+    Connection.setMessageHandler(MessageHandler)  (net.sf.freecol.common.networking)
