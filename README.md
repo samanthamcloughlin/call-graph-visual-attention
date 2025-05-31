@@ -30,10 +30,10 @@ To replicate the analysis, run the following:
 3. **``step_3_generate_metrics.py``** - This file calculates relevant metrics for each trial and saves the resulting data to the ``output`` folder using helper methods from ``coverage_metrics.py`` and ``call_graph_builder.py``. The metrics calculated are: node coverage, weighted node coverage, edge coverage, weighted edge coverage, average fixation duration, number of fixations, and max depth.
    
 4. **``step_4_analysis.py``** - This file performs the analysis of these metrics across both studies individually as well as the combined dataset. Specifically it:
-   *Calculates the average proportion of methods in each project that are in the call graph of each summarized method
-   *Calculates the average fixation position of each code category (e.g. callee graph method, non-call graph method, etc.)
-   *Calculates the proportion of time spent fixating on each code category
-   *Calculates statistics describing mean and average depth
-   *Prepares data for regression analysis and saves the results as csv files
+   * Calculates the average proportion of methods in each project that are in the call graph of each summarized method
+   * Calculates the average fixation position of each code category (e.g. callee graph method, non-call graph method, etc.)
+   * Calculates the proportion of time spent fixating on each code category
+   * Calculates statistics describing mean and average depth
+   * Prepares data for regression analysis and saves the results as csv files
    
 5. **``step_5_regression.Rmd``** - Mixed effect regression analyses are performed using R. This file reports results for all the mixed effect regression analyses related call graph coverage metrics (node coverage, weighted node coverage, edge coverage, and weighted edge coverage) to dependent variables (summary scores, confidence, absolute confidence difference).
