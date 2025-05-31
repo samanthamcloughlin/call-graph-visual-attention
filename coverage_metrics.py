@@ -157,15 +157,18 @@ def calculate_edge_coverage(call_tree_root, call_path):
     all_edges = get_all_edges(call_tree_root)
 
     def calc_weighted(root):
-        denom = len(root.children)
+        if len(root.children) == 0:
+            return 0, 0
+        denom = 1
         num = 0
         for c in root.children:
             edge = f"{root.method}->{c.method}"
             if edge in call_path_edges:
-                num +=1
+                num +=1/len(root.children)
             result = calc_weighted(c)
-            num+= 1/len(root.children) * result[0]
-            denom+= 1/len(root.children) * result[1]
+            if result[1] > 0:
+                num+= 1/len(root.children)*result[0]
+                denom+= 1/len(root.children)*result[1]
         return num, denom
 
     weighted_coverage = calc_weighted(call_tree_root)
